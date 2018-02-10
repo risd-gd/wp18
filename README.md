@@ -106,7 +106,7 @@ Make a fully responsive webpage using only colors
 
 
 
-### Course Objectives
+# Course Objectives
 * Be comfortable creating and editing HTML and CSS
 * Be familiar with jQuery
 * To be comfortable finding solutions to what you don't know
@@ -114,18 +114,26 @@ Make a fully responsive webpage using only colors
 * To better work with developers
 * To adjust existing themes, work with others
 
-### Learning Outcomes
+# Learning Outcomes
 * A series of coded drawings that focus on web layout and interaction
 
-### Disability Statement
+# Disability Statement
 
 Rhode Island School of Design is committed to providing equal opportunity for all students. If you are a student with a disability that may require accommodations to complete the requirements of this class, I encourage you to discuss your learning needs with me during the first week of the term. Once an approval letter from the Office of Disability Support Services is submitted, accommodations will be provided as needed. For more information on how to receive accommodations, please contact Disability Support Services at 401 709-8460 or disabilitysupportservices@risd.edu.
 
-## Inclusivity Statement
+# Inclusivity Statement
 
 No learning can truly occur without accepting each other’s differences — those that we inherit and those that we choose. This course, this Department and this College thrive on self-expression. Students and faculty should feel comfortable using art and design as a means to understand themselves and their work. It is everyone’s responsibility to create an atmosphere of inclusiveness.
 
 
-## Collaboration / Plagiarism / Appropriation
+# Collaboration / Plagiarism / Appropriation
 
 All work is built upon other work; whether explicitly or not. In this course, there will be opportunities to work with your classmates to build something that is shared. Particularly with many deadlines and when learning a new skill, other people’s work may offer a pathway forward. What you do with what you see is important and can be the difference between riffing, appropriating, copying and stealing. As a general rule of thumb, if you see something you are excited about (in class or outside), understand the context in which it was made. What was the design responding to, communicating, and to whom. A deeper understanding of other people’s work generally produces additional ideas, realizations and starts to “fork” the idea (thank you, Github). It’s rare that your design problem is exactly like someone else’s. It is rare that you share the same values, interests, skills, as someone else. Referencing another person’s work can make sense (logo parodies, etc) if that fits your concept. In a school environment it’s best to check in with your teacher to see how to best make your own work truly your own.
+
+# Zero costs
+
+This workshop will not require you to pay for software or printing or server fees.
+
+# Grading
+
+Course is graded pass fail. One unexcused absence fails the course. Check in with instructor if a planned absence is known. It is possible to make up a missed day in another session. Failing grades will be given for a notable amount of missing work or notable errors in the work provided. Passing means you have a working knowledge of the concepts covered in the curriculum.
