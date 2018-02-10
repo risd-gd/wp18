@@ -39,67 +39,34 @@
 
 Sync your work, pull up each other's drawings in browser. Let's airplay a few and see together.
 
-## Demo 5: CSS Grid
-* Defining grid
-* columns/rows
-* units (fr, %, px)
-* min/max
-* gap
+## Week 2 Lessons
 
-### Exercise 4a: Make a flag at a certain size using CSS grid
+* [Part 5: CSS Grid](https://github.com/risd-gd/wpsp18/wiki/Part-5:-CSS-Grid-Basics)
+* [Part 6: CSS Grid box adjustments](https://github.com/risd-gd/wpsp18/wiki/Part-6:-CSS-Grid-box-adjustments)
+* Part 7: CSS Flexbox
+* Assignment 2: Grid/Flexbox drawing
 
-[Choose a country](https://www.crwflags.com/fotw/flags/country.html) with a solid shaped flag and make it using css grid.
-
-### Exercise 4b: Make another
-
-Commit and sync your work. See what others have done. Copy someone else's file and use the grid differently to make your own flag. Do not change the grid css, only the html and how it uses it.
-
-## Demo 6: CSS Grid box adjustments
-* justify and align
-* fit-content
-* autofill
-* intrinsic
-
-### Exercise ?
-
-## Demo 7: CSS Flexbox
-
-* grid
-
-
-
-## Demo 8: Media queries
-
-* queries
-
-## Assignment 2: Grid/Flexbox drawing
-
-Make a fully responsive webpage using only colors
 
 # Week 3
 
 ## Review assignment 2
 
+## Week 3 Lessons
 
-## Demo 8: Interacting with the page
-* hover
-* jquery
-* transition
-* animation
-
-### Exercise: Change one flag into another.
-
-* svg
+* Part 8: Media queries
+* [Part 9: Interacting with the page](https://github.com/risd-gd/wpsp18/wiki/Part-9:-Interacting-with-the-page)
+* Part 10: Working with SVG
 
 ## Assignment 3: Build an abstract model for a website
+
 
 # Week 4
 
 ## Review assignment 3
 
+## Week 4 Lessons
 * Webtype and Type overview
-* scss
-* calc
+* Making a 'real' website
 
 ## Assignment 4: Collect your work into a single page website. Use grid, a screenshot of your work and a link to the actual html. Due in one week.
 
