@@ -16,7 +16,7 @@
 * Download [Github Desktop](https://desktop.github.com/)
 * Clone the repository to your desktop once you have access
 
-## What is in a web page
+## The web in context
 * Browsers, Internet vs Web, URLs, Servers
 * Browsers read HTML. HTML describes content, is structure.
 * HTML, CSS, Javascript
@@ -68,7 +68,9 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 * Webtype and Type overview
 * Making a 'real' website
 
-## Assignment 4: Collect your work into a single page website. Use grid, a screenshot of your work and a link to the actual html. Due in one week.
+## Assignment 4
+
+Collect your work into a single page website. Use grid, a screenshot of your work and a link to the actual html. Due in one week.
 
 
 # Course Overview
@@ -92,6 +94,11 @@ This workshop combines the tactical skills needed to structure web pages with a 
 # Method of Instruction
 
 This course is a hands-on workshop. Students will watch short demonstrations on a projector, then be asked to apply what was seen on their own. Homework will be given from week to week.
+
+# Course Policies and Expectations
+
+Please show up to class on time with your homework already committed to the class repository. Although we are facing our machines during class, please avoid doing non-course computer activities except during breaks. If you finish an exercise early, help a classmate, extend the complexity of the exercise or take a break outside the classroom.
+
 
 # Readings / Resources
 
