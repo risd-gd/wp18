@@ -23,6 +23,7 @@
 * NYTimes [with no CSS](http://wd11.johncaserta.info/examples/nytimes.html)
 
 
+## Week 1 Lessons
 
 * [Part 1: Basic HTML](https://github.com/risd-gd/wpsp18/wiki/Part-1:-Basic-HTML)
 * [Part 2: CSS Basics](https://github.com/risd-gd/wpsp18/wiki/Part-2:-CSS-Basics)
