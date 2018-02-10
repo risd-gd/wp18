@@ -2,9 +2,9 @@
 
 - Assoc. Professor John Caserta, jcaserta@risd.edu
 - Rhode Island School of Design, Graphic Design Dept.
-- GRAPH-xxx is a 1 credit elective studio
+- GRAPH-3188-(01-03) is a 1 credit elective studio
 - Spring 2018, Fridays, 1:10 – 6:10pm in DC 404
-
+- [https://github.com/risd-gd/wpsp18](https://github.com/risd-gd/wpsp18)
 
 # Week 1
 
@@ -71,9 +71,13 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 ## Assignment 4: Collect your work into a single page website. Use grid, a screenshot of your work and a link to the actual html. Due in one week.
 
 
+# Course Overview
+
+This workshop combines the tactical skills needed to structure web pages with a looser more playful compositional mindset. Students are introduced to the structural elements and properties of HTML and CSS through hands-on demos and take-home assignments. Tight technical HTML drawings in week one give way to looser, full-screen abstract compositions in week two. Weeks three and four make use of animation and interactivity using CSS3 and jQuery.
 
 
 # Course Objectives
+
 * Be comfortable creating and editing HTML and CSS
 * Be familiar with jQuery
 * To be comfortable finding solutions to what you don't know
@@ -82,7 +86,16 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 * To adjust existing themes, work with others
 
 # Learning Outcomes
-* A series of coded drawings that focus on web layout and interaction
+
+* A series of coded drawings and mini-projects that focus on web layout and interaction
+
+# Method of Instruction
+
+This course is a hands-on workshop. Students will watch short demonstrations on a projector, then be asked to apply what was seen on their own. Homework will be given from week to week.
+
+# Readings / Resources
+
+Articles and code help is being placed contextually within the [Github course repository](https://github.com/risd-gd/wpsp18) and on an open [Arena channel](https://www.are.na/john-caserta/web-teaching).
 
 # Disability Statement
 
