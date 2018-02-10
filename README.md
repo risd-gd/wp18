@@ -1,4 +1,4 @@
-### Course particulars
+# Web Programming Workshop
 
 - Assoc. Professor John Caserta, jcaserta@risd.edu
 - Rhode Island School of Design, Graphic Design Dept.
@@ -10,10 +10,10 @@
 
 ## Setting up
 
-* Create Github account using your risdemail address. you can change that later.
-* Download Atom
+* Create a [Github account](https://github.com/) using your risdemail address. you can change that later.
+* Download [Atom](https://atom.io/)
 * We'll add you to RISD GD Github Team for the class
-* Download Github Desktop
+* Download [Github Desktop](https://desktop.github.com/)
 * Clone the repository to your desktop once you have access
 
 ## What is in a web page
@@ -24,57 +24,11 @@
 
 
 
-## Part 1: Basic HTML
-* Pagewide tags: critical tags
-* nesting: nav, main, header, footer, aside
-* Block elements: headers, paragraphs, lists
-* Inline elements: strong, em, image, a
-* Attributes (href, title, alt)
-
-### Exercise 1: Describe yourself
-
-Set up a webpage that includes some biographical information to share with your peers. Only use your first name and you may change or delete this page later.
-* Countries/Cities visited (include flags, images)
-* Image or two of your own work
-* Link to your favorite restaurant (Google Map or URL)
-* Your favorite font (link to specimen or more info)
-* Embed trailer of your favorite movie
-
-## Part 2: CSS Basics
-* calling css: external vs internal vs inline
-* units (px, em, rem, %, vh, )
-* box model (border-size): width, padding, margin
-* using four sides (top, right, bottom, left)
-* color (rgba)
-
-### Exercise 2: Add CSS to HTML
-
-Duplicate your first exercise and add internal styles to it. How might you call out certain content?
-
-## Part 3: Basic Layout
-* Catchall tags: divs, spans
-* Using classes and ids
-* Load order, [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-* float
-
-### Exercise 3a: Scandinavian Flag
-
-Start a new html file. Choose one of the [Scandinavian flags](http://www.crwflags.com/fotw/flags/se.html#scdim) and code it using divs, classes and floats. The size of the flag is up to you.
-
-## Part 4: Positioning
-
-* CSS positioning: absolute, relative, fixed
-* aboslute absolutes
-* position values, z-index
-* tranform: rotation
-
-### Exercise 3b: Scandinavian Flag
-
-Start a new html file and make a Scandinavian flag using divs, classes and absolute positioning
-
-## Assignment 1
-
-Draw five small objects using only form/counterform using HTML and CSS.  More here.
+* [Part 1: Basic HTML](https://github.com/risd-gd/wpsp18/wiki/Part-1:-Basic-HTML)
+* [Part 2: CSS Basics](https://github.com/risd-gd/wpsp18/wiki/Part-2:-CSS-Basics)
+* [Part 3: Basic Layout](https://github.com/risd-gd/wpsp18/wiki/Part-3:-Basic-Layout)
+* [Part 4: Positioning](https://github.com/risd-gd/wpsp18/wiki/Part-4:-Positioning)
+* [Assignment 1: Draw five small objects using HTML and CSS.](https://github.com/risd-gd/wpsp18/wiki/Assignment-1:-Draw-found-objects-with-CSS)
 
 
 
