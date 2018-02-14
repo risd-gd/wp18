@@ -4,11 +4,11 @@
     <style>
       body { margin: 0; line-height: 100%; }
       div { background: blue; order: 2;
-        align-self: center;
+      /*  align-self: center; */
       }
       main { display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-        grid-auto-rows: 200px;
+        grid-auto-rows: minmax(300px,auto);
         grid-gap: 1rem;
         counter-reset: my-counter;
       }
@@ -16,8 +16,9 @@
          content: "Grid # " counter(my-counter);
       }
       div:nth-child(3) { order: 1; background: green; }
-      img { width: 100px; height: auto;
+      img {   object-fit: contain; object-position: 0 0;
  }
+  footer { height: 250px; background: yellow; }
     </style>
   </head>
   <body>
@@ -29,5 +30,8 @@
       </div>
       <div></div>
     </main>
+    <footer>
+      <img src="https://www.crwflags.com/fotw/images/d/dz.gif">
+    </footer>
   </body>
 </html>
