@@ -4,7 +4,7 @@
 - Rhode Island School of Design, Graphic Design Dept.
 - GRAPH-3188-(01-03) is a 1 credit elective studio
 - Spring 2018, Fridays, 1:10 – 6:10pm in DC 404
-- [https://github.com/risd-gd/wpsp18](https://github.com/risd-gd/wpsp18)
+- [https://github.com/risd-gd/wp18](https://github.com/risd-gd/wp18)
 
 # Week 1
 
