@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+  <style>
+  .rect1 {background: blue;
+    border-right-color: white;
+    border-right-width: 10px;
+    border-bottom-color: white;
+    border-bottom-width: 10px;
+  }
+  .rect2 { background: red;
+    width:20px; height: 70px;}
+  </style>
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
