@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Simple grid</title>
+    <style>
+    body { display: grid; height: 100vh; grid-template-rows: 1fr 60px; }
+    nav { grid-row: 2/3; background: pink; }
+      nav ul { display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+    }
+      li { border: 1px solid red; list-style-type: none;}
+    </style>
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+    </nav>
+  </body>
+</html>
