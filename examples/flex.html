@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <title>Flex Base</title>
+
+    <style>
+
+		img { width: 100px; height: auto;  }
+		body { margin: 0 ; box-sizing: border-box; }
+
+/* First section */
+		section  {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between; 	/* center space-around */
+	/*	max-width: 1000px;
+			margin: 0 auto;  there is no float center */
+			 height: 400px;
+			 border: 1px solid red;
+			 margin-top: 10px;
+		}
+
+
+			div {   background: green;  align-self: center; justify-self: center;
+				/* self vs content */
+			}
+
+			.two { flex-basis: 300px; }
+
+    </style>
+    </head>
+    <body>
+
+
+
+					<section>
+						<div><img src="../img/record.svg"></div>
+						<div class="two"><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+					</section>
+
+					<section>
+						<div>apple</div>
+						<div class="two">basketball</div>
+						<div>cars cost money</div>
+						<div>door</div>
+						<div>egg</div>
+						<div>feather</div>
+						<div>garage</div>
+					</section>
+
+
+    </body>
+</html>
