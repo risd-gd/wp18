@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <title>Flex Base</title>
+
+    <style>
+
+		img { width: 100%; height: auto;  }
+		body { margin: 0 ; box-sizing: border-box; }
+
+/* First section */
+		section  {
+			display: flex;
+			flex-wrap: wrap;
+				align-content: space-between;
+			justify-content: space-between;
+	/*	max-width: 1000px;
+			margin: 0 auto;  there is no float center */
+		}
+
+
+			div {  height: 400px;  background:
+		green; 			align-self: center; display: flex; align-content: center;
+}
+	.two { flex-basis: fill; }
+
+    </style>
+    </head>
+    <body>
+
+
+
+					<section>
+						<div><img src="../img/record.svg"></div>
+						<div class="two"><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+					</section>
+
+
+    </body>
+</html>

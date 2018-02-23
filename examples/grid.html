@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <title>Grid Base</title>
+
+    <style>
+
+		img { width: 100%; height: auto;  }
+		body { margin: 0 ; box-sizing: border-box; }
+
+/* First section */
+		section  {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			align-content: space-around;
+			justify-content: space-between;
+			grid-gap: 10px;
+			max-width: 1000px;
+			margin: 0 auto; /* there is no float center */
+		}
+
+
+			div { content: url('../img/record.svg'); width: 100%; height: auto; background:
+		green; }
+
+
+    </style>
+    </head>
+    <body>
+
+
+
+					<section>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</section>
+
+
+    </body>
+</html>
