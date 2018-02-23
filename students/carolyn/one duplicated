@@ -1,8 +1,20 @@
 <html>
 <head>
     <title> Carolyn's Page </title>
+    <style>
+        div {background: blue;
+        width: 50px;
+        margin: 50px;
+        height: 100px;
+        border: 20px solid red;
 
-    <nav>
+        float: left;
+      }  </style>
+
+      <body>
+
+
+    <div>
         <ul>
             <li> some things </li>
 
@@ -28,3 +40,6 @@ Paris, London, Amsterdam, Shanghai, America, and Island countries</p>
 
 <h2 style="font-family:helvetica;">Fav Movie</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIPlqEcfyhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</body>
+</html>
