@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <title>Flag 2</title>
+  <style>
+    .blue { background: blue; width: 160px; height: 100px; position: absolute; top: 0; bottom: 0;}
+    .yellow { background: yellow; width: 160px; height: 20px; position: absolute; top: 40; bottom: 0;}
+    .yellow2 { background: yellow; width: 20px; height: 100px; position: absolute; left: 50; top: 0;}
+  </style>
+
+</head>
+
+<body>
+  <div class="blue"></div>
+  <div class="yellow"></div>
+  <div class="yellow2"></div>
+</body>
+
+</html>
