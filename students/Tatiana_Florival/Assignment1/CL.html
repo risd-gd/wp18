@@ -1,0 +1,436 @@
+<html>
+  <head>
+    <title> Cersei Lannister </title>
+      <style>
+        .caption {
+            position: absolute; top: 300px; left: 100px;}
+        .head {
+			      height:125px;
+			      width:118px;
+			      background:red;
+            position: absolute; left: 110px; top: 50px;
+            border-radius: 70px;
+            z-index: 1002
+        }
+        .head2 {
+            height: 120px;
+            width: 90px;
+            background: white;
+            position: absolute; left: 122.5px; top: 80px;
+            border-radius: 37px;
+            z-index: 1002}
+        .jaw1 {
+			      border-left: 10px solid transparent;
+			      border-right: 12px solid transparent;
+			      border-bottom: 28px solid red;
+			      position:absolute; top:154px; left:205px;
+            border-radius: 10px;
+            z-index: 1000}
+        .jaw2 {
+			      border-left: 12px solid transparent;
+			      border-right: 10px solid transparent;
+			      border-bottom: 28px solid red;
+			      position:absolute; top:154px; left:110px;
+            border-radius: 10px;
+            z-index: 1000}
+        .hairbase1 {
+            height:150px;
+			      width:125px;
+			      background:red;
+            position: absolute; left: 105px; top: 43px;
+            border-radius: 90px;
+            z-index: 1001}
+        .neck {
+            height: 30px;
+            width: 53px;
+            border-radius: 10px;
+            position: absolute; top: 192px; left: 143px;
+            background: red;
+            z-index: 1000
+        }
+        .hair1 {
+            height: 53px;
+            width: 100px;
+            border-radius: 23px;
+            position: absolute; top: 59px; left: 120px;
+            background: red;
+            z-index: 1006}
+        .shoulderpad1 {
+			      height:60px;
+			      width:92px;
+			      background:red;
+            position: absolute; left: 83px; top: 221px;
+            border-radius: 10px;
+           
+        }
+        .shoulderpad2 {
+			      height:60px;
+			      width:92px;
+			      background:red;
+            position: absolute; left: 152px; top: 221px;
+            border-radius: 10px;
+        }
+        .shoulderpad3 {
+			      height:35px;
+			      width:105px;
+			      background:red;
+            position: absolute; left: 75px; top: 211px;
+            border-radius: 90px;
+           z-index: 1000
+        }
+        .shoulderpad4 {
+			      height:35;
+			      width:105;
+			      background:red;
+            position: absolute; left: 162px; top: 211px;
+            border-radius: 90px;
+           z-index: 1000
+        }
+        .bigruffle1 {
+			      border-left: 40px solid transparent;
+			      border-right: 50px solid transparent;
+			      border-bottom: 50px solid red;
+			      position:absolute; top:231px; left:42px;
+            border-radius: 90px}
+        .bigruffle2 {
+			      border-left: 50px solid transparent;
+			      border-right: 40px solid transparent;
+			      border-bottom: 50px solid red;
+			      position:absolute; top:231px; left:205px;
+            border-radius: 90px}
+        .mustachecoverbox {
+            width: 14px;
+            height: 14px;
+            background: white;
+            position:absolute; top:139px; left:161px;
+            border-radius: 3px;
+            z-index: 1003}
+        .haircoverforehead2  {
+			      border-left: 10px solid transparent;
+			      border-right: 10px solid transparent;
+			      border-bottom: 88px solid red;
+			      position:absolute; top:94px; left:108px;
+            border-radius: 10px;
+            z-index: 1004}
+        .haircoverforehead1 {
+			      border-left: 10px solid transparent;
+			      border-right: 10px solid transparent;
+			      border-bottom: 88px solid red;
+			      position:absolute; top:94px; left:208px;
+            border-radius: 10px;
+            z-index: 1004}
+        .chain {
+			      height:140px;
+			      width:160px;
+			      background:white;
+            position: absolute; left: 87px; top: 135px;
+            border-radius: 70px;
+             z-index: 900px
+        }
+         .chaincover {
+			      height:140px;
+			      width:145px;
+			      background:red;
+            position: absolute; left: 95px; top: 129.8px;
+            border-radius: 70px;
+             z-index: 900px
+        }
+        .chaincover2 {
+			      height:110px;
+			      width:155px;
+			      background:white;
+            position: absolute; left: 87px; top: 128px;
+             z-index: 901px
+{
+			      height:17px;
+			      width: 14px;
+			      background:green;
+            position: absolute; left: 110px; top: 50px;
+            border-radius: 90px;
+            z-index: 1010
+        }
+        
+        .forehead9 
+		}
+          
+        .faceshaper2 {
+			      height:25px;
+			      width: 23px;
+			      background:red;
+            position: absolute; left: 209px; top: 140px;
+            border-radius: 90px;
+            z-index: 1020;}
+        .wrinklepos {
+			      height:25px;
+			      width: 23px;
+			      background:red;
+            position: absolute; left: 105px; top: 140px;
+            border-radius: 90px;
+            z-index: 1020;}
+      .ruffle4 {
+			      height:35px;
+			      width: 30px;
+			      background:white;
+            position: absolute; left: 92px; top: 150px;
+            border-radius: 90px;
+            z-index: 1021;}
+      .ruffle3 {
+			      height:30px;
+			      width: 18px;
+			      background:red;
+            position: absolute; left: 105px; top: 132px;
+            border-radius: 90px;
+            z-index: 1022;}
+      .ruffle5 { 
+            border-left: 13px solid transparent;
+			      border-right: 20px solid transparent;
+			      border-bottom: 34px solid white;
+            position: absolute; left: 90px; top: 130px;
+            z-index: 1023;}
+      .lruffle6 {
+			      height:35px;
+			      width: 30px;
+			      background:white;
+            position: absolute; left: 214px; top: 150px;
+            border-radius: 90px;
+            z-index: 1021;}
+      .lruffle7 {
+			      height:30px;
+			      width: 18px;
+			      background:red;
+            position: absolute; left: 105px; top: 132px;
+            border-radius: 90px;
+            z-index: 1022;}
+      .lruffle8 { 
+            border-left: 20px solid transparent;
+			      border-right: 13px solid transparent;
+			      border-bottom: 34px solid white;
+            position: absolute; left: 214px; top: 126px;
+            z-index: 1023;}
+      .hairfringe { 
+            border-left: 8px solid transparent;
+			      border-right: 80px solid transparent;
+			      border-bottom: 15px solid white;
+            position: absolute; left: 126px; top: 97px;
+            z-index: 1023;}
+      .nosewrinkelpos { 
+            border-left: 16px solid transparent;
+			      border-right: 20px solid transparent;
+			      border-bottom: 20px solid red;
+            position: absolute; left: 145px; top: 147px;
+            border-radius: 90;
+            z-index: 1030;}
+      .nosewrinkelcover { 
+            border-left: 20px solid transparent;
+			      border-right: 20px solid transparent;
+			      border-bottom: 20px solid white;
+            position: absolute; left: 147px; top: 147px;
+            border-radius: 90;
+            z-index: 1031;}
+      .lefteyebrow3 { 
+            border-left: 20px solid transparent;
+			      border-right: 13px solid transparent;
+			      border-bottom: 6px solid red;
+            position: absolute; left: 120px; top: 123px;
+            border-radius: 90;
+            z-index: 1040;}
+      .lefteyebrowcover2 { 
+            border-left: 32px solid transparent;
+			      border-right: 10px solid transparent;
+			      border-bottom: 6px solid white;
+            position: absolute; left: 126px; top: 123px;
+            border-radius: 90;
+            z-index: 1040;}
+      .lefteyebrow1 { 
+            border-left: 3px solid transparent;
+			      border-right: 35px solid transparent;
+			      border-bottom: 8px solid red;
+            position: absolute; left: 138px; top: 123px;
+            border-radius: 90;
+            z-index: 1050;}
+      .lefteyebrowcover { 
+            border-left: 3px solid transparent;
+			      border-right: 35px solid transparent;
+			      border-bottom: 10px solid white;
+            position: absolute; left: 136px; top: 126px;
+            border-radius: 90;
+            z-index: 1051;}
+      .lefteyebrow2 { 
+            border-left: 5px solid transparent;
+			      border-right: 35px solid transparent;
+			      border-bottom: 8.5px solid red;
+            position: absolute; left: 158px; top: 122.5px;
+            border-radius: 90;
+            z-index: 1052;}
+      .lefteyebrow4 { 
+            border-left: 3px solid transparent;
+			      border-right: 35px solid transparent;
+			      border-bottom: 8.5px solid white;
+            position: absolute; left: 162px; top: 122.5px;
+            border-radius: 90;
+            z-index: 1053;}
+      .righteyebrow3 { 
+            border-left: 13px solid transparent;
+			      border-right: 20px solid transparent;
+			      border-bottom: 6px solid red;
+            position: absolute; left: 184px; top: 123px;
+            border-radius: 90;
+            z-index: 2000;}
+      .righteyebrow3cover2 { 
+            border-left: 10px solid transparent;
+			      border-right: 26px solid transparent;
+			      border-bottom: 6px solid white;
+            position: absolute; left: 180px; top: 125px;
+            border-radius: 90;
+            z-index: 2001;}
+      .righteyebrowcover1 { 
+            border-left: 35px solid transparent;
+			      border-right: 3px solid transparent;
+			      border-bottom: 8px solid red;
+            position: absolute; left: 161px; top: 123px;
+            border-radius: 90;
+            z-index: 2001;}
+      .righteyebrow2 { 
+            border-left: 35px solid transparent;
+			      border-right: 3px solid transparent;
+			      border-bottom: 8px solid white;
+            position: absolute; left: 163px; top: 127px;
+            border-radius: 90;
+            z-index: 2004;}
+      .righteyebrow4 { 
+            border-left: 19px solid transparent;
+			      border-right: 15px solid transparent;
+			      border-bottom: 17px solid white;
+            position: absolute; left: 152px; top: 123px;
+            border-radius: 90;
+            z-index: 2005;}
+      .shaper1 { 
+            height: 15px;
+            width: 5px;
+            position: absolute; left: 123px; top: 123px;
+            background: white;
+            border-radius: 100;
+            z-index: 3000;}
+      .shaper2 { 
+            height: 15px;
+            width: 3px;
+            position: absolute; left: 210px; top: 123px;
+            background: white;
+            border-radius: 100;
+            z-index: 3000;}
+      .jawshaper1 { 
+            border-left: 2px solid transparent;
+			      border-right: 30px solid transparent;
+			      border-bottom: 15px solid red;
+            position: absolute; left: 143px; top: 193px;
+            z-index: 4000;}
+      .jawhaper2{ 
+            border-left: 30px solid transparent;
+			      border-right: 2px solid transparent;
+			      border-bottom: 15px solid red;
+            position: absolute; left: 164px; top: 193px;
+            z-index: 4000;}
+      </style>
+  </head>
+<body>
+<div class="head"> </div>
+<div class="caption">
+  <h1> </h1>
+</div>
+<div class="head2"> </div>
+<div class="hairbase1"> </div>
+<div class="hairbase2"> </div>
+<div class="hair1"> </div>
+<div class="hair2"> </div>
+<div class="hair3"> </div>
+<div class="hair4"> </div>
+<div class="hair5"> </div>
+<div class="hair6"> </div>
+<div class="jaw1"> </div>
+<div class="jaw2"> </div>
+<div class="neck"> </div>
+<div class="shoulderpad1"> </div>
+<div class="shoulderpad2"> </div>
+<div class="coat"> </div>
+<div class="hairmodleft"> </div>
+<div class="hairmodright"> </div>
+<div class="shoulderpad3"> </div>
+<div class="shoulderpad4"> </div>
+<div class="bigruffle1"> </div>
+<div class="bigruffle2"> </div>
+<div class="ruffle1"> </div>
+<div class="ruffle2"> </div>
+<div class="ruffle3"> </div>
+<div class="ruffle4"> </div>
+<div class="ruffle5"> </div>
+<div class="ruffle6"> </div>
+<div class="ruffle7"> </div>
+<div class="ruffle8"> </div>
+<div class="ruffle9"> </div>
+<div class="ruffle10"> </div>
+<div class="ruffle11"> </div>
+<div class="lruffle1"> </div>
+<div class="lruffle2"> </div>
+<div class="lruffle3"> </div>
+<div class="lruffle4"> </div>
+<div class="lruffle5"> </div>
+<div class="lruffle6"> </div>
+<div class="lruffle7"> </div>
+<div class="lruffle8"> </div>
+<div class="lruffle9"> </div>
+<div class="lruffle10"> </div>
+<div class="lruffle11"> </div>
+<div class="mustachetri"> </div>
+<div class="mustachecoverbox"> </div>
+<div class="mustachecovertri"> </div>
+<div class="faceshape"> </div>
+<div class="haircoverforehead1"> </div>
+<div class="haircoverforehead2"> </div>
+<div class="forehead3"> </div>
+<div class="forehead4"> </div>
+<div class="forehead5"> </div>
+<div class="forehead6"> </div>
+<div class="forehead7"> </div>
+<div class="forehead8"> </div>
+<div class="forehead9"> </div>
+<div class="faceshaper1"> </div>
+<div class="faceshaper2"> </div>
+<div class="faceshaper3"> </div>
+<div class="beard"> </div>
+<div class="beardcover"> </div>
+<div class="chain"> </div>
+<div class="chaincover"> </div>
+<div class="chaincover2"> </div>
+<div class="cheekbone"> </div>
+<div class="cheekbone2"> </div>
+<div class="forehead6"> </div>
+<div class="wrinklepos"> </div>
+<div class="wrinklecover"> </div>
+<div class="hairfringe"> </div>
+<div class="nosewrinkelpos"> </div>
+<div class="nosewrinkelcover"> </div>
+<div class="lefteyebrow1"> </div>
+<div class="lefteyebrow2"> </div>
+<div class="lefteyebrowcover"> </div>
+<div class="lefteyebrow3"> </div>
+<div class="lefteyebrowcover2"> </div>
+<div class="lefteyebrow4"> </div>
+<div class="righteyebrow1"> </div>
+<div class="righteyebrow2"> </div>
+<div class="righteyebrowcover"> </div>
+<div class="righteyebrow3"> </div>
+<div class="righteyebrow3cover2"> </div>
+<div class="lefteyebrow4"> </div>
+<div class="righteyebrowcover1"> </div>
+<div class="righteyebrow4"> </div>
+<div class="shaper1"> </div>
+<div class="shaper2"> </div>
+<div class="jawshaper1"> </div>
+<div class="jawhaper2"> </div>
+
+
+
+
+
+</body>
+</html>

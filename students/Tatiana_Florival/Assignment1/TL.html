@@ -1,0 +1,302 @@
+<html>
+  <head>
+    <title> Tyrion Lannister </title>
+      <style>
+        .caption {
+            position: absolute; top: 300px; left: 100px;}
+        .head {
+			      height:125px;
+			      width:118px;
+			      background:red;
+            position: absolute; left: 110px; top: 50px;
+            border-radius: 70px;
+            z-index: 0}
+        .jaw1 {
+			      border-left: 17px solid transparent;
+			      border-right: 25px solid transparent;
+			      border-bottom: 54px solid red;
+			      position:absolute; top:146px; left:201px;
+            border-radius: 10px;
+            z-index: 28}
+        .jaw2 {
+			      border-left: 25px solid transparent;
+			      border-right: 17px solid transparent;
+			      border-bottom: 54px solid red;
+			      position:absolute; top:146px; left:93px;
+            border-radius: 10px;
+            z-index: 28}
+        .jaw3 {
+			      border-left: 25px solid transparent;
+			      border-right: 10px solid transparent;
+			      border-bottom: 25px solid red;
+			      position:absolute; top:179px; left:187px;
+            border-radius: 5px;
+            z-index: 28}
+        .jaw4 {
+			      border-left: 10px solid transparent;
+			      border-right: 25px solid transparent;
+			      border-bottom: 25px solid red;
+			      position:absolute; top:179px; left:110px;
+            border-radius: 5px;
+            z-index: 28}
+        .hairbase1 {
+            height: 82px;
+			      width:105px;
+			      background:red;
+            position: absolute; left: 105px; top: 30px;
+            border-radius: 90px;
+            z-index: 16}
+        .hairbase2 {
+            height:82px;
+			      width:80px;
+			      background:red;
+            position: absolute; left: 164px; top: 47px;
+            border-radius: 90px;
+            z-index: 15}
+        .hair1 {
+            height: 140px;
+			      width:130px;
+			      background:red;
+            position: absolute; left: 80px; top: 50px;
+            border-radius: 90px;
+            z-index: 0}
+        .hair2 {
+            height: 90px;
+			      width:90px;
+			      background:red;
+            position: absolute; left: 93px; top: 33px;
+            border-radius: 90px;
+            z-index: 16}
+        .hair3 {
+            height: 140px;
+			      width:130px;
+			      background:red;
+            position: absolute; left: 126px; top: 50px;
+            border-radius: 90px;
+            z-index: 0}
+        .neck {
+            height: 30px;
+            width: 60px;
+            border-radius: 10px;
+            position: absolute; top: 203px; left: 138px;
+            background: red}
+        .hairmodleft {
+            height: 50px;
+            width: 40px;
+            border-radius: 27px;
+            position: absolute; top: 152px; left: 97px;
+            background: red;
+            z-index: 1.5}
+        .hair4 {
+            height: 50px;
+            width: 60px;
+            border-radius: 23px;
+            position: absolute; top: 81px; left: 181px;
+            background: red}
+        .shoulderpad1 {
+			      height:60px;
+			      width:92px;
+			      background:red;
+            position: absolute; left: 83px; top: 221px;
+            border-radius: 20px;
+            z-index: 10}
+        .shoulderpad2 {
+			      height:60px;
+			      width:92px;
+			      background:red;
+            position: absolute; left: 152px; top: 221px;
+            border-radius: 20px;
+            z-index: 10}
+        .shoulderpad3 {
+			      height:40px;
+			      width:50px;
+			      background:red;
+            position: absolute; left: 128px; top: 211px;
+            border-radius: 90px}
+        .shoulderpad4 {
+			      height:40px;
+			      width:40px;
+			      background:red;
+            position: absolute; left: 172px; top: 211px;
+            border-radius: 90px}
+        .bigruffle1 {
+			      border-left: 60px solid transparent;
+			      border-right: 50px solid transparent;
+			      border-bottom: 50px solid red;
+			      position:absolute; top:231px; left:25px;
+            border-radius: 90px}
+        .bigruffle2 {
+			      border-left: 50px solid transparent;
+			      border-right: 60px solid transparent;
+			      border-bottom: 50px solid red;
+			      position:absolute; top:231px; left:191px;
+            border-radius: 90px}
+        .mustachetri {
+			      border-left: 40px solid transparent;
+			      border-right: 40px solid transparent;
+			      border-bottom: 35px solid red;
+			      position:absolute; top:148px; left:126px;
+            border-radius: 90px;
+            z-index: 4}
+        .mustachecovertri {
+			      border-left: 23px solid transparent;
+			      border-right: 23px solid transparent;
+			      border-bottom: 11px solid white;
+			      position:absolute; top:167px; left:145px;
+            border-radius: 90px;
+            z-index: 500}
+        .mustachecoverbox {
+            width: 14px;
+            height: 14px;
+            background: white;
+            position:absolute; top:139px; left:161px;
+            border-radius: 3px;
+            z-index: 5}
+        .faceshape {
+			      height:120px;
+			      width:100px;
+			      background:white;
+            position: absolute; left: 119px; top: 65px;
+            border-radius: 70px;
+            z-index: 1}
+        .haircoverforehead1 {
+            height: 77px; width: 64px;
+            background: white;
+            position: absolute; left: 0px; top: 221px;
+            border-radius: 10px;
+            z-index: 1000} 
+        .haircoverforehead2 {
+            height: 77px; width: 64px;
+            background: white;
+            position: absolute; left: 260px; top: 221px;
+            border-radius: 10px;
+            z-index: 1000} 
+        .faceshaper1
+       .faceshaper2 {
+			      height:60px;
+			      width:80px;
+			      background:white;
+            position: absolute; left: 140px; top: 126px;
+            border-radius: 80px;
+            z-index: 2}
+        .faceshaper3 {
+			      height:60px;
+			      width:80px;
+			      background:white;
+            position: absolute; left: 115px; top: 136px;
+            border-radius: 80px;
+            z-index: 2}
+        .beard {
+            height: 20.3px;
+            width: 42px;
+            position: absolute; top: 182; left: 147;
+            background: red;
+            border-radius: 5px;
+            z-index: 30}
+        .lowerbeardtri1 {
+			      border-left: 65px solid transparent;
+			      border-right: 20px solid transparent;
+			      border-bottom: 40px solid white;
+			      position:absolute; top:156px; left:57px;
+            border-radius: 2px;
+            z-index: 3}
+        .lowerbeardtri1positive {
+			      border-left: 70px solid transparent;
+			      border-right: 20px solid transparent;
+			      border-bottom: 40px solid red;
+			      position:absolute; top:158px; left:65px;
+            border-radius: 2px;
+            z-index: 2}
+        .lowerbeardtri2 {
+			      border-left: 20px solid transparent;
+			      border-right: 65px solid transparent;
+			      border-bottom: 40px solid white;
+			      position:absolute; top:156px; left:191px;
+            border-radius: 2px;
+            z-index: 3}
+        .lowerbeardtri2positive {
+			      border-left: 20px solid transparent;
+			      border-right: 70px solid transparent;
+			      border-bottom: 40px solid red;
+			      position:absolute; top:156px; left:175px;
+            border-radius: 2px;
+            z-index: 2}
+       .lowerhaircoverleft 
+        .lowerhaircoverright
+      .coverup {
+            height: 20.3px;
+            width: 42px;
+            position: absolute; top: 182; left: 107;
+            background: green;
+            border-radius: 5px;
+            z-index: 30}
+      .whitecover {
+            height: 30px;
+            width: 50px;
+            position: absolute; top: 180; left: 50px;
+            background: white;
+            z-index: 10000}
+      </style>
+  </head>
+<body>
+<div class="head"> </div>
+<div class="caption">
+  <h1> </h1>
+</div>
+<div class="head2"> </div>
+<div class="hairbase1"> </div>
+<div class="hairbase2"> </div>
+<div class="hair1"> </div>
+<div class="hair2"> </div>
+<div class="hair3"> </div>
+<div class="hair4"> </div>
+<div class="hair5"> </div>
+<div class="hair6"> </div>
+<div class="jaw1"> </div>
+<div class="jaw2"> </div>
+<div class="neck"> </div>
+<div class="shoulderpad1"> </div>
+<div class="shoulderpad2"> </div>
+<div class="coat"> </div>
+<div class="hairmodleft"> </div>
+<div class="hairmodright"> </div>
+<div class="shoulderpad3"> </div>
+<div class="shoulderpad4"> </div>
+<div class="bigruffle1"> </div>
+<div class="bigruffle2"> </div>
+<div class="mustachetri"> </div>
+<div class="mustachecoverbox"> </div>
+<div class="mustachecovertri"> </div>
+<div class="faceshape"> </div>
+<div class="haircoverforehead1"> </div>
+<div class="haircoverforehead2"> </div>
+<div class="forehead3"> </div>
+<div class="forehead4"> </div>
+<div class="forehead5"> </div>
+<div class="forehead6"> </div>
+<div class="forehead7"> </div>
+<div class="forehead8"> </div>
+<div class="forehead9"> </div>
+<div class="faceshaper1"> </div>
+<div class="faceshaper2"> </div>
+<div class="faceshaper3"> </div>
+<div class="beard"> </div>
+<div class="beardcover"> </div>
+<div class="jaw3"> </div>
+<div class="jaw4"> </div>
+<div class="lowerbeardtri1"> </div><div 
+<div class="lowerbeardtri1positive"> </div><div 
+class="lowerbeardtri2"> </div>
+<div class="lowerbeardtri2positive"> </div>
+<div class="shoulder1"> </div>
+<div class="shoulder2"> </div>
+<div class="cover"> </div>
+<div class="lowerhaircoverleft"> </div>
+<div class="lowerhaircoverright"> </div>
+<div class="coverup"> </div>
+<div class="whitecover"> </div>
+
+
+
+</body>
+</html>
