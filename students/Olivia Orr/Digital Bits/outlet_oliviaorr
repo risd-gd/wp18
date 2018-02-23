@@ -1,0 +1,207 @@
+<html>
+<title>
+  Week 1 Homework
+</title>
+  <head>
+  <style>
+  .circle1 {
+			height:100px;
+			width:100px;
+			background:magenta;
+
+			position:absolute;
+			top:50px;
+			left:50px;
+			border-radius:50px;
+
+		}
+    .circle2 {
+  			height:100px;
+  			width:100px;
+  			background:magenta;
+
+  			position:absolute;
+  			top:50px;
+  			left:90px;
+  			border-radius:50px;
+
+  		}
+
+                .rect1 {
+			               height:100px;
+			               width:90px;
+			               background:magenta;
+
+
+			               position:absolute;
+			               top:50px;
+			               left:75px;
+		                        }
+          .rect2 {
+                                 height:20px;
+                                 width:10px;
+                                 background:white;
+
+
+                                 position:absolute;
+                                 top:80px;
+                                 left:90px;
+                                        }
+                                        .rect3 {
+                                                               height:20px;
+                                                               width:10px;
+                                                               background:white;
+
+
+                                                               position:absolute;
+                                                               top:80px;
+                                                               left:130px;
+  }
+  .circle3 {
+      height:20px;
+      width:20px;
+      background:white;
+
+      position:absolute;
+      top:115px;
+      left:105px;
+      border-radius:50px;
+
+    }
+    .rect4 {
+         height:15px;
+         width:20px;
+         background:magenta;
+
+
+         position:absolute;
+         top:130px;
+         left:105px;
+                }
+
+/** next row**/
+                .circle1a {
+                    height:100px;
+                    width:100px;
+                    background:magenta;
+
+                    position:absolute;
+                    top:200px;
+                    left:50px;
+                    border-radius:50px;
+
+                  }
+                  .circle2a {
+                      height:100px;
+                      width:100px;
+                      background:magenta;
+
+                      position:absolute;
+                      top:200px;
+                      left:90px;
+                      border-radius:50px;
+
+                    }
+
+                              .rect1a {
+                                   height:100px;
+                                   width:90px;
+                                   background:magenta;
+
+
+                                   position:absolute;
+                                   top:200px;
+                                   left:75px;
+                                          }
+                        .rect2a {
+                                               height:20px;
+                                               width:10px;
+                                               background:white;
+
+
+                                               position:absolute;
+                                               top:230px;
+                                               left:90px;
+                                                      }
+                                                      .rect3a {
+                                                                             height:20px;
+                                                                             width:10px;
+                                                                             background:white;
+
+
+                                                                             position:absolute;
+                                                                             top:230px;
+                                                                             left:130px;
+                }
+                .circle3a {
+                    height:20px;
+                    width:20px;
+                    background:white;
+
+                    position:absolute;
+                    top:265px;
+                    left:105px;
+                    border-radius:50px;
+
+                  }
+                  .rect4a {
+                       height:15px;
+                       width:20px;
+                       background:magenta;
+
+
+                       position:absolute;
+                       top:280px;
+                       left:105px;
+}
+.rect5a {
+     height:350px;
+     width:240px;
+     background:magenta;
+
+
+     position:absolute;
+     top:0px;
+     left:0px;
+            }
+            .rect6a {
+                 height:300px;
+                 width:190px;
+                 background:white;
+
+
+                 position:absolute;
+                 top:25px;
+                 left:25px;
+                        }
+
+
+  </style>
+
+  </head>
+
+  <body>
+    <div class="rect5a"></div>
+    <div class="rect6a"></div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="circle3"></div>
+    <div class="rect4"></div>
+
+    <div class="circle1a"></div>
+    <div class="circle2a"></div>
+    <div class="rect1a"></div>
+    <div class="rect2a"></div>
+    <div class="rect3a"></div>
+    <div class="circle3a"></div>
+    <div class="rect4a"></div>
+
+
+  </body>
+
+
+
+</html>
