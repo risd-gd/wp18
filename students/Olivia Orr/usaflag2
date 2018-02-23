@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Nauru Flag</title>
+    <style>
+    nav { display: grid; grid-template-rows: repeat (13, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 100%; width: 100%border: 1px; grid-gap: 0px;
+    }
+      .blue { background-color: red;
+
+      }
+      .info { background-color: navy;
+        ;
+
+      }
+      /** img {height: 50%; width: 50%;**/
+
+      }
+
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="info"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></div>
+      <div></div><div></div>
+      <div class="info"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="info"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></div>
+      <div></div><div></div>
+      <div class="info"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="info"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></div>
+      <div></div><div></div>
+      <div class="info"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div><img src="img/star.svg"></div><div></div><div></div>
+      <div class="blue"><img src="img/redstar.svg"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div><img src="img/star.svg"></div><div></div><div></div>
+      <div class="blue"><img src="img/redstar.svg"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div><img src="img/star.svg"></div><div></div><div></div>
+      <div class="blue"><img src="img/redstar.svg"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div><img src="img/star.svg"></div><div></div><div></div>
+
+
+
+    </nav>
+  </body>
+</html>
