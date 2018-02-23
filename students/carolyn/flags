@@ -1,0 +1,17 @@
+<html>
+<head>
+
+    <style>
+        div {background: #3498DB;
+        width: 1000px;
+        margin: 50px;
+        height: 100px;
+        border: 20px solid yellow;
+
+        float: left;
+      }  </style>
+
+      <body>
+
+
+    <div>
