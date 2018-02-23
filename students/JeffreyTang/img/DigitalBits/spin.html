@@ -1,0 +1,43 @@
+<html>
+<head>
+  <lang="en">
+  <title="headphone">
+  <style>
+    body{background-color: black}
+    div{background-color: white;}
+    #center{background-color:black;position: absolute; top: 40%;left: 40%;width:200px;height:200px;}
+    .centered{position: absolute;}
+    .fan{width: 150px;height: 150px;top:7%;left:8%;border-radius:5px;}
+    #A{transform: rotate(45deg)}
+    #B{background-color: black;width:100px;height: 100px;border-radius: 100px;top: 10%;left: 25%}
+    #C{background-color: white;width:70px;height: 70px;border-radius: 100px;top: 10%;left: 10%}
+    .rotate { animation: 0.6s linear infinite boom; transform-origin:50% 50%;
+    }
+
+    @keyframes boom {
+      from {
+        transform: rotate(0deg)
+      }
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="rotate" id="center">
+    <div class="centered fan" id="A">
+      <div class="centered" id="B">
+        <div class="centered" id="C">
+
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>
