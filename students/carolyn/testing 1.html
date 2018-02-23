@@ -1,0 +1,28 @@
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;">
+</canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var center_x = 200;
+    var center_y = 300;
+    var width = 100;
+    var height = 200;
+    drawOvalShape(context, 200, 100, 100, 200);
+    drawOvalShape(context, 200, 100, 80, 180);
+    drawOvalShape(context, 200, 100, 60, 160);
+    drawOvalShape(context, 200, 100, 40, 40);
+    drawOvalShape(context, 200, 100, 100, 120);
+
+    function drawOvalShape(context, center_x, center_y, width, height){
+        context.ellipse(center_x, center_y, width, height,  90 * Math.PI/180, 0, 2 * Math.PI);
+
+        context.stroke();
+    }
+</script>
+
+<style>
+     div {background: #3498DB; float: left;
+     width: 200px;
+     margin: 0px;
+     height: 150px;
+     border-bottom: 20px solid #F7DC6F;}
