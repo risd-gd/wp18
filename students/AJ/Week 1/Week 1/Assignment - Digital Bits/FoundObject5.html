@@ -1,0 +1,64 @@
+<html>
+<head>
+  <title>Clock</title>
+  <style>
+
+    h3 {color: grey;
+      position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+
+    div {}
+
+      .head { background-color: transparent;
+        height: 280px;
+        width: 280px;
+        border-radius:280px;
+        border: 40px solid gold;
+
+        position:absolute;
+          top:180px;
+          left:170px;
+          z-index: 1;
+      }
+
+      .hand1 {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 150px solid gold;
+
+        position:absolute;
+          top:0px;
+          left:130px;
+        }
+
+      .hand2 {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 120px solid gold;
+
+        position:absolute;
+          top:80px;
+          left:180px;
+          -webkit-transform:rotate(90deg);
+          }
+
+    body { background: snow;
+      }
+  </style>
+</head>
+
+<body>
+
+<h3>Clock</h3>
+
+  <div></div>
+  <div class="head">
+    <div class="hand1"></div>
+    <div class="hand2"></div>
+  </div>
+
+
+</body>
+</html>
