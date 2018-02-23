@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <title>Grid Base</title>
+
+    <style>
+
+		img { width: 100%; height: auto;  }
+		body { margin: 0 ; box-sizing: border-box; }
+
+/* First section */
+		section, footer  {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			align-content: space-around;
+			justify-content: space-between;
+			grid-gap: 10px;
+			margin: 5vh 0;
+		/*	max-width: 1000px;
+			margin: 0 auto; /* there is no float center */
+		}
+		footer { grid-template-columns: 1fr 200px 200px 1fr;
+			grid-template-rows: 1fr 20px;
+		background: grey; }
+
+		.stripe {
+				grid-column: 2 / 3;
+        grid-row: 1 / 3;
+				background: blue;
+		}
+
+			div { width: 100%; background: green; }
+
+
+    </style>
+    </head>
+    <body>
+
+
+
+					<section>
+						<div><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+					</section>
+
+					<footer>
+						<div class="stripe">Stripe is here and what happens if there is a bunch of content. </div>
+					</footer>
+
+    </body>
+</html>
