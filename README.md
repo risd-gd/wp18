@@ -42,9 +42,8 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 ## Week 2 Lessons
 
 * [Part 5: CSS Grid](https://github.com/risd-gd/wpsp18/wiki/Part-5:-CSS-Grid-Basics)
-* [Part 6: CSS Grid box adjustments](https://github.com/risd-gd/wpsp18/wiki/Part-6:-CSS-Grid-box-adjustments)
-* Part 7: CSS Flexbox
-* Assignment 2: Grid/Flexbox drawing
+
+## [Assignment 2: Grid  drawing](https://github.com/risd-gd/wp18/wiki/Assignment-2:-Draw-two-abstract-compositions)
 
 
 # Week 3
@@ -53,9 +52,9 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 
 ## Week 3 Lessons
 
+* Part 7: CSS Flexbox
 * Part 8: Media queries
 * [Part 9: Interacting with the page](https://github.com/risd-gd/wpsp18/wiki/Part-9:-Interacting-with-the-page)
-* Part 10: Working with SVG
 
 ## Assignment 3: Build an abstract model for a website
 
@@ -65,6 +64,7 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 ## Review assignment 3
 
 ## Week 4 Lessons
+* Part 10: Working with SVG
 * Webtype and Type overview
 * Making a 'real' website
 
