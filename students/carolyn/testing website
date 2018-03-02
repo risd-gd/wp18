@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <style>
+    * { border: 1px solid red;}
+    nav { background: green; }
+    div { display: block;
+        position: absolute;
+        left: 100px;
+
+      / * span, strong, img,
+      display: inline;
+      */
+      / * display: table */
+      / * display: grid */
+      / * display: flex */
+      / * displayy: inline-block
+
+    </style>
+    </head>
+
+    <body>
+    <nav>
+    <div> I'm <em>n</em>av</div>
