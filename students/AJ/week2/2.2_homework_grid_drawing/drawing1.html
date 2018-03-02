@@ -1,0 +1,89 @@
+<head>
+  <title>Drawing 1</title>
+  <style>
+    body {background: linear-gradient(gold, lightsalmon);
+      margin: 0px;
+    }
+    h3 {
+      background: greenyellow;
+      color: white;
+    }
+    p {
+      background: greenyellow;
+      color: white;
+    }
+    div {
+      margin: 0px;
+      background-color: cyan;
+      mix-blend-mode: overlay;
+    }
+    .grid {
+      background-color: transparent;
+      display: grid;
+        grid-template-columns: repeat( 10, 1fr);
+        grid-template-rows: repeat(30, 1fr);
+        grid-gap: 10px;
+    }
+    .circle1 {
+      width: 500px;
+      height: 500px;
+      border-radius: 500px;
+      border: 10px solid magenta;
+      grid-row: 7/12;
+      grid-column: 1/11;
+    }
+    .circle2 {
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      border: 10px solid yellow;
+      grid-row: 20/30;
+      grid-column: 5/11;
+    }
+    .rect1 {
+      background: pink;
+      mix-blend-mode: lighten;
+      width: 75%;
+      height: 60%;
+      position: fixed;
+        top: 20%;
+        left: 20%;
+    }
+    .rect_2 {
+      background-color:rgba(255,0,255,0.3);
+      grid-row: 10/28;
+      grid-column: 1/8;
+    }
+    .fixed-position {
+      position: fixed;
+        top: 5%;
+        left: 90%;
+    }
+    .salmon {
+      background: salmon;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <div class="rect1"></div>
+    <div class="rect_2"></div>
+    <div class="circle1"><img src="img/magenta.svg"></div>
+    <div class="circle1 fixed-position"><img src="img/yellow.svg"></div>
+    <div class="circle1"></div>
+    <div><h3>Hello<h3></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div><p>My name is AJ.<p></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div class="salmon"></div><div class="salmon"></div><div class="salmon"></div><div class="salmon"></div><div class="salmon"></div><div class="salmon"></div><div class="salmon"></div><div class="salmon"></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div><p>This is my random collage.<p></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div><p>I hope you like it.<p></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div class="circle2"><img src="img/yellow.svg"></div>
+  </div>
+  <div></div>
+</body>
