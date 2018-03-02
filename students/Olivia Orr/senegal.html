@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <style>
+      /* units: 10%, 10vw, 10px, 1fr, 10em, 10rem */
+
+      .ross { display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 	/* center space-around */
+
+    }
+      .ross div {
+        flex: 200px;
+        height: 900px;
+       }
+      .ross div:nth-child(2) { flex-grow: 2}
+      .green {
+        background-color: green; height: 900px;
+      }
+      .yellow {
+        background-color: yellow; height: 900px;
+      }
+      .red {
+        background-color: red; height: 900px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+      <div class="ross">
+        <div class="green"></div>
+        <div class="yellow"><img src="img/greenstar.svg"></div>
+        <div class="red"></div>
+      </div>
+  </body>
+
+</html>
