@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <style>
+
+      html {
+        background: #5B6FE7;
+        height: 6000px;
+      }
+
+      nav div:nth-child(even) {background: white;}
+
+      #paper {
+        background: blue;
+        mix-blend-mode: : multiply;
+        border: 2px solid black;
+        width: 450px; height: 600px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: repeat(13,1fr);
+        position: relative;
+      }
+
+      .stripe {
+        background: #FFC72C;
+        width: 480px;
+        height: 20px;
+        position: absolute;
+        top: 120px;
+      }
+
+      #overlay {
+        background: red;
+        border: 2px solid black;
+        mix-blend-mode: : multiply;
+        width: 450px; height: 600px;
+        margin: 0 auto;
+        margin-top: -500px;
+        display: grid;
+        grid-template-rows: repeat(13,1fr);
+        position: fixed;
+      }
+
+      .circle1 {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 300px;
+        top: 150px;
+        background: green;
+        mix-blend-mode: multiply;
+        border-radius: 300px;
+      }
+
+      .circletwo {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 100px;
+        top: 400px;
+        background: yellow;
+        mix-blend-mode: multiply;
+        border-radius: 300px;
+        z-index: 5;
+      }
+
+      .circlethree {
+        width: 100px;
+        height: 400px;
+        position: fixed;
+        left: 150px;
+        top: 100px;
+        background: magenta;
+        mix-blend-mode: multiply;
+        border-radius: 300px;
+        z-index: 5;
+      }
+
+      .circlefour {
+        width: 100px;
+        height: 400px;
+        position: fixed;
+        left: 800px;
+        top: 400px;
+        background: cyan;
+        mix-blend-mode: multiply;
+        border-radius: 300px;
+        z-index: 5;
+      }
+
+      .circlefive {
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        left: 300px;
+        top: 250px;
+        background: orange;
+        mix-blend-mode: multiply;
+        border-radius: 300px;
+        z-index: 5;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav id="paper">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </nav>
+
+      <div class="circletwo"></div>
+      <div class="circlethree"></div>
+      <div class="circlefour"></div>
+      <div class="circlefive"></div>
+
+    <nav id="overlay">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </nav>
+      <div class="circle1"></div>
+
+
+  </body>
+
+
+
+</html>
