@@ -2,16 +2,18 @@
   <head>
     <style>
       /* units: 10%, 10vw, 10px, 1fr, 10em, 10rem */
-      body {  }
+
       .ross { display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; 	/* center space-around */
-
+        justify-content: space-around; 	/* center space-around */
+        align-items: center;
+        height: 200px;
+        background: blue;
     }
       .ross div {
         border: 1px solid green;
-        flex: 200px;
-        height: 100px;
+        background: tan;
+        flex: 100px;
 
         /*
         flex-basis: 100px;
@@ -19,6 +21,7 @@
         flex-shrink: 1;
         */
        }
+       .ross div * { background: red;}
       .ross div:nth-child(2) { flex-grow: 2}
 
     </style>
@@ -27,7 +30,7 @@
   <body>
 
       <div class="ross">
-        <div>Bob</div>
+        <div><span>Bob</span></div>
         <div>Thaddeus</div>
         <div>Josephine</div>
         <div>Suzanne</div>
