@@ -1,0 +1,45 @@
+<head>
+  <title>Mobile Swedish Flag</title>
+  <style>
+    body {background: gold;
+      margin: 0px;
+    }
+    .flag {
+      height: 100%;
+      background: gold;
+      display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+    .flag div:nth-child(1) {
+      grid-column: 1/5;
+      grid-row: 1/5;
+      background: dodgerblue;
+    }
+    .flag div:nth-child(2) {
+      grid-column: 7/17;
+      grid-row: 1/5;
+      background: dodgerblue;
+    }
+    .flag div:nth-child(3) {
+      grid-column: 1/5;
+      grid-row: 6/11;
+      background: dodgerblue;
+    }
+    .flag div:nth-child(4) {
+      grid-column: 7/17;
+      grid-row: 6/11;
+      background: dodgerblue;
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="flag">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+</body>
