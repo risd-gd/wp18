@@ -1,0 +1,125 @@
+<html>
+<style>
+
+body {
+  margin: 10px;
+  background-color: #d6f5f5;
+  color: #ffb3b3;
+}
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
+/* no grid support? */
+.sidebar {
+  background-color: #d6f5f5;
+  float: left;
+  width: 100%;
+  height:30%;
+}
+
+.content {
+  float: right;
+  width: 79.7872%;
+}
+
+/* make a grid */
+.wrapper {
+  background-color: #d6f5f5;
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-gap: 10px;
+}
+
+.wrapper > * {
+  background-color: #ffb3b3;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+
+}
+.row {
+    display: flex;
+}
+.column {
+    float: left;
+    width: 50%;
+
+    }
+.column2 {
+    float:; left;
+    width: 80%;
+}
+
+.row:after {
+grid-template-rows: 200px 200px 300px;
+    clear: both;}
+
+.header, .footer {
+  grid-column: 100px 100px 100px;
+  grid-row: 100px 100px;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+.box{
+  background-color:white;
+  float:left;
+  height: 500px;
+  width:600px;
+}
+
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.circle {
+background-color: #ff8080;
+border-radius:50%;
+height:500px;
+width:500px;
+text-align: center;
+}
+
+.circle2{
+  float:right;
+background-color:pink;
+border-radius:50%;
+height:20%;
+width:20%;
+}
+
+</style>
+<div class="wrapper"><div class = "circle2">
+ <div class="row">
+
+  <div class="column circle"></div>
+  <div>
+  <div class="column2"></div>
+    <aside class="sidebar">"The future came and went in the mildly discouraging way that futures do."</aside>
+</div>
+  <header class="header"></header>
+  <article class="content">
+    <div class = "circle2 box"></div>
+    <p></p>
+     <div class ="circle box"></div>
+  </article>
+<div class = "sidebar"></div>
+  <footer class="footer">GAHHHHHHHHHHHH</footer>
+</div>
+<div class = "circle2 ">
+
+
+</html>
