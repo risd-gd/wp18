@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <title>jquery</title>
+
+    <style>
+
+		img { width: 100%; height: auto;  }
+		body { margin: 0 ; box-sizing: border-box; }
+
+/* First section */
+		section, footer  {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			align-content: space-around;
+			justify-content: space-between;
+			grid-gap: 10px;
+			margin: 5vh 0;
+		/*	max-width: 1000px;
+			margin: 0 auto; /* there is no float center */
+		}
+
+			div { width: 100%; background: green; transition: 1s all; }
+
+			.grow { transform: scale(.8);
+			background: blue; }
+
+    </style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+
+					<section>
+						<div><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+						<div><img src="../img/record.svg"></div>
+					</section>
+
+					<script>
+						$("div").click(function() {
+							$(this).toggleClass("grow");
+							$(this).find('img').toggle();
+						});
+
+					</script>
+
+
+    </body>
+</html>
