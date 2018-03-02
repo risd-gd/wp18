@@ -1,0 +1,29 @@
+<html>
+<head>
+
+    <style>
+        div {background: #3498DB; float: left;
+        width: 200px;
+        margin: 0px;
+        height: 150px;
+        border-bottom: 21px solid #F7DC6F;}
+
+        </style>
+      </head>
+      <body>
+      </body>
+      </head>
+
+        <style>
+             div {background: #3498DB; float: left;
+             width: 100px;
+             margin: 0px;
+             height: 150px;
+             border-left: 20px solid #F7DC6F;}
+
+             </style>
+           </head>
+           <body>
+              <div></div>
+
+              <div class="hi"

@@ -1,0 +1,42 @@
+<body>
+  {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+.center
+{
+  position: absolute;
+  top: 50%
+  Left: 50%
+  transform: translate(-50%, -50%);
+}
+.pencil
+{
+  width: 400px;
+  height: 15px;
+  background: #ffc334
+  border-top: 10px solid #ffd268;
+  border-bottom: 10px solid #e2af38
+}
+.pencil
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 8px;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d09200
+}
+.pencil::before
+{
+    content: '';
+    position: absolute;
+    left: -80px;
+    top: 0;
+    border-style: solid;
+    border-color: transparent #e29663 transparent transparent;
+    border-width: 20px 40px 20px;
+}
