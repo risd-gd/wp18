@@ -3,41 +3,75 @@
     <style>
 
 
-      .flex { display: flex;
-        justify-content: space-between;
-        border: 10px solid black;
+      .grid { display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr
 
     }
+
       .green  {
         background:  green;
-        width: 33.3%;
-        height: 80vh;}
+        grid-column: 1;
+        grid-row: 1/2;}
+        .green img {visibility: hidden;}
+
+         @media (max-width: 600px)
+         {
+           div:nth-child(1) {
+          background: blue;
+           grid-row: 1;
+           grid-column: 1/2;}
+            nav {
+            flex-direction: column;}
+          .green img {visibility: visible;}
+        }
 
 
        .yellow  {
         background: yellow;
-        width: 33.3%;
-         height: 80vh;
-        display: flex;}
+        grid-column: 2/3;
+        grid-row: 1/2;}
+        @media (max-width: 600px)
+        {
+          div:nth-child(2){
+          background: white;
+          }
+
+        img {visibility: hidden;}
+       }
+
+
+
 
 
         .red  {
-        background:  red;
-          width: 33.3%;
-          height: 80vh;}
+        background: red;
+        grid-column: 3;
+        grid-row: 1/2;}
+
+        @media (max-width: 600px)
+        {
+          div:nth-child(3){
+          background: white;}
+           nav {
+           flex-direction: column;}
+       }
 
           img {
               align-self: center;
               width: 100%;
               transform:scale(1.6)
               }
+
     </style>
   </head>
 
 <body>
 
-      <div class="flex">
-        <div class="green"> </div>
+      <div class="grid">
+        <div class="green">
+            <img src="star.svg">
+        </div>
           <div class="yellow">
 
            <img src="star.svg">
