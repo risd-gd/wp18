@@ -1,28 +1,38 @@
-<canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;">
-</canvas>
-<script type="text/javascript">
-    var canvas = document.getElementById("myCanvas");
-    var context = canvas.getContext("2d");
-    var center_x = 200;
-    var center_y = 300;
-    var width = 100;
-    var height = 200;
-    drawOvalShape(context, 200, 100, 100, 200);
-    drawOvalShape(context, 200, 100, 80, 180);
-    drawOvalShape(context, 200, 100, 60, 160);
-    drawOvalShape(context, 200, 100, 40, 40);
-    drawOvalShape(context, 200, 100, 100, 120);
+<html>
+<head>
+  <title> Positioning </title>
+  <style>
 
-    function drawOvalShape(context, center_x, center_y, width, height){
-        context.ellipse(center_x, center_y, width, height,  90 * Math.PI/180, 0, 2 * Math.PI);
+		.squareOne {
+			height:100px;
+			width:100px;
+			background:red;
 
-        context.stroke();
-    }
-</script>
+			position:absolute;
+			top:225px;
+			left:225px;
 
-<style>
-     div {background: #3498DB; float: left;
-     width: 200px;
-     margin: 0px;
-     height: 150px;
-     border-bottom: 20px solid #F7DC6F;}
+			-webkit-transform:rotate(45deg);
+		}
+
+		.squareTwo {
+			height:100px;
+			width:100px;
+			background:red;
+
+			position:absolute;
+			top:225px;
+			left:225px;
+
+		}
+    .info{grid-column: 2/3}
+    grid-row: 2/3; }
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="info">1</div>
+        
+
+</body>
+</html>
