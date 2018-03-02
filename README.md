@@ -52,9 +52,9 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 
 ## Week 3 Lessons
 
-* Part 7: CSS Flexbox
-* Part 8: Media queries
-* [Part 9: Interacting with the page](https://github.com/risd-gd/wpsp18/wiki/Part-9:-Interacting-with-the-page)
+* Part 6: CSS Flexbox
+* Part 7: Media queries
+* [Part 8: Interacting with the page](https://github.com/risd-gd/wpsp18/wiki/Part-9:-Interacting-with-the-page)
 
 ## Assignment 3: Build an abstract model for a website
 
