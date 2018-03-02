@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Keyframe</title>
+		<style>
+			body { font-size: 4em;
+			}
+			::selection { background: none; }
+			.g:hover { cursor: pointer; }
+			span { word-wrap: break-word;; }
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+	<body>
+
+		G<span class="g">oo</span>gle
+
+		<script>
+			$(".g").click(function() {
+				$(this).append("o");
+			});
+		</script>
+
+
+
+	</body>
+
+</html>

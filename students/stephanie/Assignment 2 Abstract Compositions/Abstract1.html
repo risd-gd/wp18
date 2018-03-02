@@ -1,0 +1,209 @@
+<html>
+      <head>
+            <style>
+                  body { width: 100%;
+                         height: 200%;
+                         display: grid;
+                         grid-template-columns: repeat(6, 1fr);
+                         grid-template-rows: repeat(14, 1fr));
+                         background:linear-gradient(orange, yellow);
+                         grid-gap: 10px;
+                  }
+
+                  .b { width: 300px;
+                        height: 600px;
+                        background:turquoise;
+                        grid-row: 6 / 10;
+                        grid-column: 3 / 5;
+                        mix-blend-mode: multiply;
+                        z-index: 1;
+
+                  }
+
+                  .b:nth-child(1) { width: 250px;
+                        height: 550px;
+                        background:turquoise;
+                        mix-blend-mode: multiply;
+                        z-index: 1;
+
+                  }
+
+                  .b:nth-child(2) { width: 200px;
+                        height: 500px;
+                        background:turquoise;
+
+                        mix-blend-mode: multiply;
+                        z-index: 1;
+
+                  }
+
+                  .b:nth-child(3) { width: 150px;
+                        height: 450px;
+                        background:turquoise;
+
+                        mix-blend-mode: multiply;
+                        z-index: 1;
+
+                  }
+
+                  .b:nth-child(4) { width: 100px;
+                        height: 400px;
+                        background:turquoise;
+
+                        mix-blend-mode: multiply;
+                        z-index: 1;
+
+                  }
+
+                  .o { background: gold;
+                       mix-blend-mode: overlay;
+                       align-items: center;
+                       width: 500px;
+                       height: 500px;
+                       grid-row: 1 / 6;
+                       grid-column: 1 / 6;
+                       border-radius: 250px;
+                       z-index: 3;
+
+                  }
+
+                  .o2 { border-radius: 50%;
+                  }
+
+                  .o2:nth-child(2) {grid-row: 2 / 3;
+                       grid-column: 3/6;
+                       background: orange;
+                       mix-blend-mode: overlay;
+                       width: 400px;
+                       height: 400px;
+                       position: absolute;
+                       top: 55px;
+                       left: 55px;
+                  }
+
+                  .o2:nth-child(1) {grid-row: 2 / 3;
+                       grid-column: 3/6;
+                       background: pink;
+                       mix-blend-mode: overlay;
+                       width: 300px;
+                       height: 300px;
+                       position: absolute;
+                       top: 105px;
+                       left: 105px;
+                  }
+
+                  .o2:nth-child(3) {grid-row: 2 / 3;
+                       grid-column: 3/6;
+                       background: pink;
+                       mix-blend-mode: overlay;
+                       width: 200px;
+                       height: 200px;
+                       position: absolute;
+                       top: 155px;
+                       left: 155px;
+                  }
+
+                  .o2:nth-child(4) {  grid-row: 2 / 3;
+                       grid-column: 3/6;
+                       background: pink;
+                       mix-blend-mode: overlay;
+                       width: 100px;
+                       height: 100px;
+                       position: absolute;
+                       top: 205px;
+                       left: 205px;
+                  }
+
+                  .c { display: grid;
+                       grid-template-columns: repeat(6, 1fr);
+                       grid-template-rows: repeat(14, 1fr));
+                       background: orange;
+                       float:left;
+
+                  }
+                  .d{   width: 20px;
+                        height: 20px;
+                        background: turquoise;
+                        mix-blend-mode: overlay;
+
+                  }
+                  .d:nth-child(even){
+                       border-bottom-right-radius: 400px;
+                       border-top-left-radius: 400px;
+                       background: turquoise;
+                       mix-blend-mode: multiply;
+                  }
+
+                  .tri { width: 600px;
+                       height: 600px;
+                       grid-column: 3/6;
+                       grid-row: 5/6;
+                       border-bottom-right-radius: 400px;
+                       border-top-left-radius: 400px;
+                        mix-blend-mode: multiply;
+                       background: yellow;
+                       float: left;
+
+                  }
+                  }
+
+
+
+
+            </style>
+
+      </head>
+
+      <body>
+<div class = "b"></div>
+            <div class = "b" ></div>
+            <div class = "b"></div>
+            <div class = "b" ></div>
+            <div class = "b" ></div>
+
+            <div class = "o">
+                  <div class = "o2"></div>
+                  <div class = "o2"></div>
+                  <div class = "o2"></div>
+                  <div class = "o2"></div>
+            </div>
+
+            <div class = "c">
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+                  <div class = "d"> </div>
+                  <div class = "d"> </div>
+                  <div class = "d"></div>
+            </div>
+
+            <div class = "tri"></div>
+
+
+      </body>
+
+
+
+</html>
