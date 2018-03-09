@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	  <title>Lottie</title>
+
+    <style>
+div { width: 300px; height: 300px; border: 1px solid red; }
+
+    </style>
+		<script src="lottie-web-master/player/js/jquery.min.js"></script>
+		<script src="lottie-web-master/build/player/lottie.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+<div id="lottie"></div>
+
+
+<script>
+	$(document).ready(function(){
+		var animData = {
+			  container: document.getElementById('lottie'), // the dom element that will contain the animation
+			  renderer: 'svg',
+			  loop: true,
+			  autoplay: true,
+				name: "lock",
+			  path: 'Padlock_LockIt.json'
+			};
+			var anim = bodymovin.loadAnimation(animData);
+			//console.log(animData);
+		});
+	</script>
+
+    </body>
+</html>
