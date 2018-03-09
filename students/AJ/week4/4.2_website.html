@@ -2,8 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto|Roboto+Condensed" rel="stylesheet">
 	  <title>AJ Hansen Web Programming</title>
 
     <style>
@@ -24,19 +23,14 @@
 					grid-template-rows: 1fr;
 	    }
 
-			footer {
-				margin-left: 37%;
-				margin-top: 15px;
-				margin-bottom: 30px;
-	      display: grid;
-	        grid-template-columns: repeat(6, 1fr);
-					grid-template-rows: 1fr;
-			}
-
 			div {
 		    margin: 0px;
 		    background: white;
+				transition: 1s all;
 		  }
+
+			.grow { transform: scale(.8);
+			background: blue; }
 
 			.weekGrid {
 				background: white;
@@ -83,7 +77,7 @@
 			/* Type Styles */
 			h1 {
 				margin: 0px;
-				font-family: 'Roboto', sans-serif;
+				font-family: 'Roboto Mono', sans-serif;
 				font-size: 34px;
 				line-height: 38px;
 				letter-spacing: 1.8px;
@@ -104,7 +98,7 @@
 			h3 {
 				margin: 0px;
 				margin-bottom: 15px;
-				font-family: 'Roboto Condensed', sans-serif;
+				font-family: 'Roboto Mono', sans-serif;
 				font-size: 22px;
 				line-height: 26px;
 				letter-spacing: .5px;
@@ -114,18 +108,9 @@
 
 			p {
 				margin-top: 0px;
-				font-family: 'Roboto', sans-serif;
+				font-family: 'Roboto Condensed', sans-serif;
 				font-size: 12px;
 				line-height: 16px;
-				font-weight: normal;
-				font-variant: normal;
-			}
-
-			ul {
-				margin: 0px;
-				font-family: 'Roboto', sans-serif;
-				font-size: 12px;
-				line-height: 15px;
 				font-weight: normal;
 				font-variant: normal;
 			}
@@ -143,19 +128,29 @@
 		  }
 
 			strong:hover {
-		    color: blue;
+				text-decoration: line-through;
 				cursor: pointer;
 		  }
 
 			img:hover {
-		    transform: scale(1.02);
+		    transform: scale(1.01);
 				cursor: pointer;
 		  }
 
 
 /*HTML*/
     </style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
     <body>
+				<script>
+					$("div").click(function() {
+						$(this).toggleClass("grow");
+						$(this).find('img').toggle();
+					});
+				</script>
+
 			<nav>
 				<div>
 					<h1>web programming . <em>aj hansen<em></h1>
@@ -171,61 +166,29 @@
 						<img src="img/candy.png">
 						<p><strong>Basic HTML</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>CSS Basics</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Basic Layout</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Positioning</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Digital Bits</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 				</div>
 
@@ -239,25 +202,13 @@
 						<img src="img/candy.png">
 						<p><strong>CSS Grid</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Grid Drawing</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 				</div>
 
@@ -271,49 +222,25 @@
 						<img src="img/candy.png">
 						<p><strong>CSS Flexbox</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Media Queries</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Interactive Pages</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Web Animation</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 				</div>
 
@@ -327,39 +254,15 @@
 						<img src="img/candy.png">
 						<p><strong>SVG Candy Cane</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Personal Site</strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+
 					</div>
 				</div>
 			</main>
-
-			<footer>
-				<div>
-					<h2>about</h2>
-				</div>
-				<div>
-					<h2>contact</h2>
-				</div>
-				<div>
-					<h2>social</h2>
-				</div>
-			</footer>
     </body>
 </html>
