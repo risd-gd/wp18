@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background: red;
+    justify-content: left;
+    padding: 15%;
+  }
+
+  h1 {
+    color: white;
+    font-family: monospace;
+    position: relative;
+    left: 50%;
+  }
+
+  img:hover {
+    transform: scale(2);
+  }
+
+  h1:hover {
+    color: yellow;
+  }
+
+
+  .typewriter h2 {
+    color: blue;
+    font-family: monospace;
+    margin: 0 auto;
+    white-space: nowrap;
+    letter-spacing: .13em;
+    animation:
+      typing 2.5s steps(40, end)
+  }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+  .chickenMove img {
+      width: 300px;
+      height: 300px;
+      position: fixed;
+      animation:
+        chicken 7s infinite;
+  }
+    @keyframes chicken {
+        from {right: 0;}
+        to {right: 100%;}
+    }
+
+  .wheelbarrowMove img {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    animation:
+      wheelbarrow 20s infinite;
+  }
+
+    @keyframes wheelbarrow {
+      from {left: 0;}
+      to {left: 100%;
+    }
+}
+
+.waterMove img {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    animation:
+      water 7s infinite;
+}
+
+@keyframes water {
+    from {top: 0;}
+    to {top: 100%;}
+}
+
+</style>
+
+</head>
+<body>
+  <div class="typewriter">
+    <h2>so much depends upon</h2>
+    <h1>a red wheel barrow</h1>
+  <div/>
+    <div class="wheelbarrowMove">
+      <img src="img/wheelbarrow.svg">
+    </div>
+
+  <div class="typewriter">
+    <h2>glazed with</h2>
+  </div>
+    <h1>rain water</h1>
+
+
+    <div class="waterMove">
+      <img src="img/water.svg">
+    </div>
+
+    <div class="typewriter">
+    <h2>beside</h2>
+    <h1>the white chickens.</h1>
+    <div class="chickenMove">
+      <img src="img/chicken.svg">
+  </div>
+</body>
+</html>
