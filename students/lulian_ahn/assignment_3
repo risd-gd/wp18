@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>3rd Homework</title>
+  <style>
+
+   div{width: 250px; height: 250px;
+      background: black;
+      }
+
+    }
+</head>
+<body>
+    <div>1</div>
+
+</body>
+</html>

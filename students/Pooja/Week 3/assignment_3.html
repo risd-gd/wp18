@@ -1,0 +1,261 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment 3</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+
+    <style>
+      div { width: 100px; height: 100px;
+      background: pink; margin: 1px;
+      transition: .7s all; float: left;
+
+    }
+
+
+      div:hover { background: #75d9cc;
+      transform:rotate(270deg);
+      mix-blend-mode: multiplys;
+      }
+
+      .wrapper div  {
+        background: blue;
+      }
+      .rotate { transform:rotate(45deg);
+        transform: scale(2);
+        border-radius:100px;
+        mix-blend-mode: multiply;
+        background: #e9be00;
+          cursor: url ('https://www.shareicon.net/download/2015/11/17/673355_hot_512x512.png'), auto;
+        margin-top: -10px;}
+
+      }
+      .rotate2 { transform:rotate(45deg);
+        transform: scale(2);
+        border-radius:100px;
+        mix-blend-mode: lighten;
+        background: #75d9cc;
+          cursor: url ('https://www.shareicon.net/download/2015/11/17/673355_hot_512x512.png'), auto;
+        margin-top: -10px;}
+
+
+        .grid { display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr
+
+      }
+
+        .purple  {
+          background:  #8d2fd6;
+          grid-column: 1;
+          grid-row: 1/2;}
+          .green img {visibility: hidden;}
+
+           @media (max-width: 600px)
+           {
+             div:nth-child(1) {
+            background: #ff9079;
+             grid-row: 1;
+             grid-column: 1/2;}
+              nav {
+              flex-direction: column;}
+            .green img {visibility: visible;}
+          }
+
+
+         .yellow  {
+          background: #75d9cc;
+          grid-column: 2/3;
+          grid-row: 1/2;}
+          @media (max-width: 600px)
+          {
+            div:nth-child(2){
+            background: white;
+            }
+
+          img {visibility: hidden;}
+         }
+
+
+          .orange  {
+          background: orange;
+          grid-column: 3;
+          grid-row: 1/2;}
+
+          @media (max-width: 600px)
+          {
+            div:nth-child(3){
+            background: white;}
+             nav {
+             flex-direction: column;}
+         }
+
+            img {
+                align-self: center;
+                width: 100%;
+                transform:scale(1.6)
+                }
+
+                #blue{
+            background: #75d9cc;
+            opacity: 0.8;}
+
+            #draggable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+            background: #75d9cc}
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $( function() {
+    $( "#draggable" ).draggable();
+  } );
+    </script>
+
+  </head>
+
+  <body>
+
+      <div class="purple">
+          <img src="star.svg"> </div>
+      <div class="yellow">
+        <img src="star.svg"> </div>
+      <div class="orange"> </div>
+
+      <div></div>
+      <div>
+      <img src="star.svg"> </div>
+      <div id="blue">
+      <img src="moon.svg"> </div>
+      <div></div>
+      <div></div>
+
+
+      <div id="blue">
+      <img src="star.svg"> </div>
+
+      <div></div>
+
+      <div class="purple">
+          <img src="star.svg"> </div>
+      <div class="yellow">
+        <img src="star.svg"> </div>
+      <div class="orange"> </div>
+
+      <div></div>
+      <div class="rotate2">
+      <img src="moon.svg"> </div>
+      <div></div>
+
+      <div class="purple">
+          <img src="star.svg"> </div>
+      <div class="yellow">
+        <img src="star.svg"> </div>
+      <div class="orange"> </div>
+
+      <div></div>
+      <div></div>
+      <div></div>
+
+      <div class="purple">
+          <img src="star.svg"> </div>
+
+
+      <div class="purple">
+          <img src="star.svg"> </div>
+
+          <div></div>
+          <div></div>
+          <div class="purple">
+              <img src="star.svg"> </div>
+          <div class="yellow">
+            <img src="star.svg"> </div>
+          <div class="orange"> </div>
+          <div id="draggable" class="ui-widget-content">
+            <p> asdfghjkl; <p>
+        </div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div class="purple">
+            <img src="star.svg"> </div>
+
+
+        <div class="purple">
+            <img src="star.svg"> </div>
+
+            <div></div>
+            <div></div>
+            <div class="purple">
+                <img src="star.svg"> </div>
+            <div class="yellow">
+              <img src="star.svg"> </div>
+            <div class="orange"> </div>
+            <div id="draggable" class="ui-widget-content">
+              <p> asdfghjkl; <p>
+          </div>
+          <div class="purple">
+              <img src="star.svg"> </div>
+          <div class="yellow">
+            <img src="star.svg"> </div>
+          <div class="orange"> </div>
+
+          <div></div>
+          <div>
+          <img src="star.svg"> </div>
+          <div id="blue">
+          <img src="moon.svg"> </div>
+          <div></div>
+          <div></div>
+
+
+          <div id="blue">
+          <img src="star.svg"> </div>
+
+          <div></div>
+
+          <div class="purple">
+              <img src="star.svg"> </div>
+          <div class="yellow">
+            <img src="star.svg"> </div>
+          <div class="orange"> </div>
+
+          <div></div>
+          <div class="rotate2">
+          <img src="moon.svg"> </div>
+          <div></div>
+
+          <div class="purple">
+              <img src="star.svg"> </div>
+          <div class="yellow">
+            <img src="star.svg"> </div>
+          <div class="orange"> </div>
+
+          <div></div>
+          <div></div>
+          <div></div>
+
+          <div class="purple">
+              <img src="star.svg"> </div>
+
+
+          <div class="purple">
+              <img src="star.svg"> </div>
+
+      <script>
+        $("div").click(function() {
+          $(this).toggleClass("rotate");
+        });
+      </script>
+
+
+
+  </body>
+</html>

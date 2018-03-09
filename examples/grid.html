@@ -20,6 +20,10 @@
 		/*	max-width: 1000px;
 			margin: 0 auto; /* there is no float center */
 		}
+		section:nth-child(2) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 200px 200px;
+		}
 		footer { grid-template-columns: 1fr 200px 200px 1fr;
 			grid-template-rows: 1fr 20px;
 		background: grey; }
@@ -30,7 +34,7 @@
 				background: blue;
 		}
 
-			div { width: 100%; background: green; }
+			div {  background: green; }
 
 
     </style>
@@ -46,7 +50,16 @@
 						<div><img src="../img/record.svg"></div>
 					</section>
 
-					<footer>
+					<section>
+						<div></div>
+						<div class="stripe"></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</section>
+
+				<footer>
 						<div class="stripe">Stripe is here and what happens if there is a bunch of content. </div>
 					</footer>
 
