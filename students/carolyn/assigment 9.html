@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      div { width: 200px; height: 100px;
+      background: pink; margin: 1px;
+      transition: 1s all; float: left;
+    }
+      /* div:hover { background: green;
+      } */
+      .wrapper div  {
+        background: blue;
+      }
+      .rotate { transform:rotate(180deg);
+    cursor: crosshair;
+    margin-top: -10px;}
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <table><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+        <tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+        <tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+        <tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+        <tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+        <tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+        <tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+        <tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+      </table>
+
+      <script>
+
+        var colors = ["D93250", "0468BF", "04B2D9", "04BF20", "D9CB04"];
+
+        $(document).ready(function() {
+          $("div").each(function(i) {
+            $(this).css("background-color", colors[Math.floor(Math.random() * 5)]);
+          })
+        })
+
+        $("div").click(function() {
+          $("div").each(function(i) {
+            $(this).toggleClass("rotate");
+            $(this).css("background-color", colors[Math.floor(Math.random() * 5)]);
+          })
+        })
+      </script>
+
+  </body>
+</html>
