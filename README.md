@@ -56,7 +56,7 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 * [Part 7: Media queries](https://github.com/risd-gd/wp18/wiki/Part-7:-Media-Queries)
 * [Part 8: Interacting with the page](https://github.com/risd-gd/wpsp18/wiki/Part-9:-Interacting-with-the-page)
 
-## Assignment 3: Build an abstract model for a website
+## [Assignment 3: Animated composition](https://github.com/risd-gd/wp18/wiki/Assignment-3:-Animated-composition)
 
 
 # Week 4
@@ -66,12 +66,14 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 ## Week 4 Lessons
 
 * Part 9: Working with SVG
-* Webtype and Type overview
-* Making a 'real' website
 
-## Assignment 4
+## Demos
 
-Collect your work into a single page website. Use grid, a screenshot of your work and a link to the actual html. Due in one week.
+* [Webtype and Type overview](examples/webfonts.html)
+* Sketch, wireframming
+* [CMSes](https://www.are.na/daniel-baer/lightweight-cms) (Jekyll) and "real" websites
+
+## [Assignment 4: Single serve website](https://github.com/risd-gd/wp18/wiki/Assignment-4:-Single-serve-site)
 
 
 # Course Overview
