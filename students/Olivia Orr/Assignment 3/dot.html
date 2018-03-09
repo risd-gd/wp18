@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    background-color: red;
+  }
+  .circle1 {
+			height:100px;
+			width:100px;
+			background:white;
+
+			position:absolute;
+			top:50px;
+			left:50%;
+			border-radius:50px;
+
+		}
+    .circle2 {
+        height:100px;
+        width:100px;
+        background:white;
+
+        position:absolute;
+        top:400px;
+        left:20%;
+        border-radius:50px;
+
+      }
+      .circle3 {
+          height:100px;
+          width:100px;
+          background:white;
+
+          position:absolute;
+          top:0px;
+          left:80%;
+          border-radius:50px;
+
+        }
+        .circle4 {
+            height:100px;
+            width:100px;
+            background:white;
+
+            position:absolute;
+            top:600px;
+            left:9%;
+            border-radius:50px;
+
+          }
+          .circle5 {
+              height:100px;
+              width:100px;
+              background:white;
+
+              position:absolute;
+              top:150px;
+              left:60%;
+              border-radius:50px;
+
+            }
+            .circle6 {
+                height:100px;
+                width:100px;
+                background:white;
+
+                position:absolute;
+                top:500px;
+                left:90%;
+                border-radius:50px;
+
+              }
+    p {
+      font-family: monospace;
+      font-size: 50px;
+      color: white;
+      margin-left: 25px;
+    }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".circle2").hide();
+    $(".circle1").hover(function(){
+
+      $(".circle1").fadeOut();
+    $(".circle1").fadeOut("slow");
+    $(".circle1").fadeOut(3000);
+      $(".circle2").fadeIn();
+    $(".circle2").fadeIn("slow");
+    $(".circle2").fadeIn(3000);
+
+
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+    $(".circle3").hide();
+      $(".circle2").hover(function(){
+        $(".circle2").fadeOut();
+      $(".circle2").fadeOut("slow");
+      $(".circle2").fadeOut(3000);
+        $(".circle3").fadeIn();
+      $(".circle3").fadeIn("slow");
+      $(".circle3").fadeIn(3000);
+      });
+
+      $(".circle4").hide();
+        $(".circle3").hover(function(){
+          $(".circle3").fadeOut();
+        $(".circle3").fadeOut("slow");
+        $(".circle3").fadeOut(3000);
+          $(".circle4").fadeIn();
+        $(".circle4").fadeIn("slow");
+        $(".circle4").fadeIn(3000);
+        });
+        $(".circle5").hide();
+          $(".circle4").hover(function(){
+            $(".circle4").fadeOut();
+          $(".circle4").fadeOut("slow");
+          $(".circle4").fadeOut(3000);
+            $(".circle5").fadeIn();
+          $(".circle5").fadeIn("slow");
+          $(".circle5").fadeIn(3000);
+          });
+          $(".circle6").hide();
+            $(".circle5").hover(function(){
+              $(".circle5").fadeOut();
+            $(".circle5").fadeOut("slow");
+            $(".circle5").fadeOut(3000);
+              $(".circle6").fadeIn();
+            $(".circle6").fadeIn("slow");
+            $(".circle6").fadeIn(3000);
+            });
+            $("p").hover(function(){
+    var div = $("p");
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+});
+$("p").click(function(){
+var div = $("p");
+div.animate({left: '200px'}, "slow");
+div.animate({fontSize: '6em'}, "slow");
+});
+
+});
+</script>
+</head>
+<body>
+
+<p>Catch the Dot</p>
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+<div class="circle4"></div>
+<div class="circle5"></div>
+<div class="circle6"></div>
+
+
+
+
+</body>
+</html>

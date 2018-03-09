@@ -69,14 +69,11 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 
 ## Demos
 
-* [Lottie and svg animation](https://airbnb.design/modern-pictograms-for-lottie/)
 * [Webtype and Type overview](examples/webfonts.html)
 * Sketch, wireframming
-* CMSes and "real" websites
+* [CMSes](https://www.are.na/daniel-baer/lightweight-cms) (Jekyll) and "real" websites
 
-## Assignment 4
-
-Make a single page website collecting what you've done/learned. Embed images, link to experiments or references.
+## [Assignment 4: Single serve website](https://github.com/risd-gd/wp18/wiki/Assignment-4:-Single-serve-site)
 
 
 # Course Overview
