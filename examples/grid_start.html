@@ -1,24 +1,27 @@
 <html>
   <head>
-    <title>Simple grid</title>
     <style>
-    body { display: grid; height: 100vh; grid-template-rows: 1fr 60px; }
-    nav { grid-row: 2/3; background: pink; }
-      nav ul { display: grid;
-       grid-template-columns: 2fr 1fr 4fr 1fr;
-      /* grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
-    }
-      li { border: 1px solid red; list-style-type: none;}
+      nav {
+      display: flex;
+      }
+      div { flex: 200px; margin: 20px;
+      height: 100px;
+      background: blue; }
+      @media (max-width: 600px)
+      /* min-width: 300px */
+      {
+        div:nth-child(2) {
+        display: none; }
+         nav {
+         flex-direction: column;}
+     }
     </style>
   </head>
   <body>
     <nav>
-        <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+      <div></div>
+      <div></div>
+      <div></div>
     </nav>
   </body>
 </html>
