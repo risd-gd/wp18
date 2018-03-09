@@ -65,7 +65,7 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 
 ## Week 4 Lessons
 
-* Part 9: Working with SVG
+* [Part 9: Working with SVG](https://github.com/risd-gd/wp18/wiki/Part-9:-SVG)
 
 ## Demos
 
