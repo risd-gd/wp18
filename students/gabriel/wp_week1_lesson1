@@ -1,0 +1,35 @@
+<html>
+
+  <head>
+    <title>This is the title of my page</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        Home
+        Projects
+      </nav>
+      
+      <img width="100" src="https://www.astoriasoundworks.com/wp-content/uploads/2015/02/DV019_Jpg_Regular_424922_single_V1.jpg">
+    </header>
+
+      <h1>I love batteries</h1>
+        <ol>
+          <li>Look at my website</li>
+          <li>Maybe make your own later</li>
+      <h2>Do you love them too?</h2>
+        <p>Hey hope you <strong>really</strong> like batteries like <em>I</em> do.
+        Please let me know which brand is your favorite.
+        </p>
+      <h3>Favorite batteries</h3>
+        <ul>
+            <li>Duracell</li>
+            <li>9V</li>
+            <li><a href="http://www.energizer.com/">Energizer</a></li>
+        </ul>
+
+
+  </body>
+
+</html>
