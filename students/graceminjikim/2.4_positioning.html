@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>CSS Positioning, Session 2</title>
+    <style>
+      * { margin: 0; }
+     /* selector { property: value; } */
+        div {
+          position:absolute;
+          top:30%;
+        margin: 0px;
+        width: 500px;
+        height: 300px;
+        background: blue;
+        ;
+      }
+      /* .clear { clear: both; } */
+
+      .vertical{position:absolute;
+      top:0px; right:280px;
+    z-index:1; height:300px;
+  width:40px}
+      .horizontal { position:absolute;
+      top: 130px; right: 0px;
+      z-index: 1; height: 40px;
+      }
+      .yellow { background: yellow; }
+      .background{position:absolute;
+        top:0px; right:0px;
+        background:pink;
+        width:1200; height:900;
+        z-index: -1;
+
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="horizontal yellow"></div>
+      <div class="vertical yellow"></div>
+    </div>
+
+<div class="background"></div>
+  </body>
+
+</html>
