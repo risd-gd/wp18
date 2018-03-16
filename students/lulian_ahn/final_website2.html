@@ -1,0 +1,109 @@
+<html>
+
+<head>
+<title>Lulian WP18</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+body {background: #18B2A5;}
+.main {display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 1fr; }
+
+body {font-family: "Raleway", sans-serif; color: white;}
+h1.title {font-size: 70pt; padding-left: 20px; padding-right: 15px; padding-top: 10px; margin: 0;}
+h2 {font-size: 20pt; }
+
+.week > .preview {
+  display: none;
+}
+
+.week {
+  width: 100%;
+}
+
+.week > * {
+  display: inline-block;
+  width: 45%;
+}
+
+.week-item {
+  vertical-align: top;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="main">
+  <div>
+    <h1 class="Title">Lulian Ahn (WP18)</h1>
+  </div>
+
+
+
+  <div>
+    <div class="week">
+      <div class="week-item">
+            <h2 class="Firstweek"><a href="weekone.html">1st Week</a></h2>
+            <h5 class="inclass_1">As an introductory class, we were just to understand the basics of HTML. As a take home assigment, we were assigned to design 5 different shapes applying the basic knowledge learned from our first class.</h5>
+      </div>
+      <div class="preview" id="preview1">
+          <iframe src="drawing_2.html"></iframe>
+      </div>
+    </div>
+    <div class="week">
+      <div class="week-item">
+            <h2 class="Secondweek"><a href="weektwo.html">2nd Week</a></h2>
+            <h5 class="inclass_2">After covering the foundation of HTML, we learned CSS and using grids.  As a take home assigment, we were assigned to create collage designs using the grid system we have learnt.</h5>
+      </div>
+      <div class="preview" id="preview2">
+          <iframe src="assignment2_1.html"></iframe>
+      </div>
+    </div>
+    <div class="week">
+      <div class="week-item">
+          <h2 class="Thirdweek"><a href="weekthree.html">3rd Week</a></h2>
+          <h5 class="inclass_3">We started to explore the usage of flexbox and interacting with the page using jquery and such. As a take home assignment, we were assigned to make a interactive page. </h5>
+      </div>
+      <div class="preview" id="preview3">
+          <iframe src="assignment_3.html"></iframe>
+      </div>
+    </div>
+    <div class="week">
+        <div class="week-item">
+            <h2 class="Fourthweek"><a href="weekfour.html">4th Week</a></h2>
+            <h5 class="inclass_4">Incorporating web fonts and editing svg files through coding was introduced. As a take home assigment, we were assigned to make a website.   </h5>
+        </div>
+        <div class="preview" id="preview4">
+            <iframe src="candycane.html"></iframe>
+        </div>
+    </div>
+  </div>
+
+</div>
+<script>
+  $(".Firstweek").hover(function() {
+    $("#preview1").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview1").stop(true, true).hide(50);
+  });
+  $(".Secondweek").hover(function() {
+    $("#preview2").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview2").stop(true, true).hide(50);
+  });
+  $(".Thirdweek").hover(function() {
+    $("#preview3").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview3").stop(true, true).hide(50);
+  });
+  $(".Fourthweek").hover(function() {
+    $("#preview4").stop(true, true).show(400).css("display", "inline-block");
+  }, function() {
+    $("#preview4").stop(true, true).hide(50);
+  });
+</script>
+
+</body>
+</html>
