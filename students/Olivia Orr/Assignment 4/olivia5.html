@@ -1,0 +1,240 @@
+<html>
+  <head>
+    <title>Ampersand</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script>
+  /**  $(document).ready(function(){
+      $(".img1").hide();
+        $(".nav1").hover(function(){
+
+         $(".img").fadeOut();
+        $(".circle1").fadeOut("slow");
+        $(".circle1").fadeOut(3000);
+          $(".circle2").fadeIn();
+        $(".circle2").fadeIn("slow");
+        $(".circle2").fadeIn(3000);
+
+
+        });});**/
+
+        $(document).ready(function() {
+
+    $(".img1").css("opacity", 0.0);
+
+    $(".nav1").hover(function() {
+
+        $(this).animate({opacity: 1.0}, 500);
+
+    }, function() {
+
+        $(this).animate({opacity: 0.5}, 500);
+
+    });
+
+});​
+
+        </script>
+
+<style>
+
+
+    nav { display: grid; grid-template-rows: repeat (10, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      height: 100%; border: 1px; grid-gap: 0px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+      .blue {background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+      }
+      .green {background-color: rgba(0, 0, 0, 0);
+        z-index: 3;
+      }
+      .pink {background-color: rgba(0, 0, 0, 0);
+        z-index: 5;
+
+    }
+    .yellow {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .nav1:hover {
+    background: transparent;
+    z-index: 4;
+}
+    img {width: 70%; height: auto;  margin: 0px; position: absolute;
+z-index: -12; opacity: 0;
+    }
+    .img1:hover {
+    opacity: 1;
+}
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      position: fixed;
+      top: 10px;
+      left: 30px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  /**  .nav1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      color: rgba(0, 0, 0, 0.7);
+    } **/
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      position: relative;
+      left: 0%;
+
+      right: 30px;
+      color: rgba(0, 0, 0, 0.7);
+      list-style: none;
+        text-decoration: none;
+    }
+    ul {
+      list-style: none;
+      width: 100px;
+      position: fixed;
+      top: 2%;
+      right: 2%;
+      text-decoration: none;
+      z-index: 70;
+    }
+    a:hover {
+    content: url(img/1.gif); /* no need for qoutes */
+     float: right; width: 100%; height: auto;  margin: 0px; position: absolute;
+
+}
+
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <nav>
+
+
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+
+      <div class="green"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="green"></div>
+      <div class="pink"></div>
+
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="green"></div>
+      <div class="img1"><img src="img/1.gif"></div>
+
+      <h1>Olivia Orr</h1>
+
+                  <ul>
+                  <li><div class="nav1"><a href="olivia5.html">Describe Yourself</a></div></li>
+                  <li><div class="nav2"><a href="olivia5.html">Swedish Flag</a></div></li>
+                  <li><a href="olivia5.html">gallery</a></li>
+                  <li><a href="olivia5.html">contact</a></li>
+                  </ul>
+
+
+
+
+
+
+
+
+    </nav>
+  </body>
+</html>
