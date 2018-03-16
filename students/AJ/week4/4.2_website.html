@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto|Roboto+Condensed" rel="stylesheet">
+	  <title>AJ Hansen Web Programming</title>
+
+    <style>
+/* CSS */
+		/* Template */
+			body { background: white;
+				margin-top: 20px;
+				margin-left: 70px;
+				margin-right: 70px;
+			}
+
+			nav {
+				background: white;
+	      height: 100%;
+				border: 20px solid transparent;
+	      display: grid;
+	        grid-template-columns: 2fr;
+					grid-template-rows: 1fr;
+	    }
+
+			div {
+		    margin: 0px;
+		    background: white;
+				transition: 1s all;
+		  }
+
+			.grow { transform: scale(.8);
+			background: blue; }
+
+			.weekGrid {
+				background: white;
+				height: 100%;
+				border: 20px solid transparent;
+				display: grid;
+	        grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+					grid-template-rows: 1fr;
+					grid-gap: 5%;
+					grid-row-gap: 30px;
+			}
+
+			.weekGrid div:nth-child(6) {
+				grid-column: 2;
+			}
+
+			img {
+				height: 20vw;
+			}
+
+			.space {
+				height: 40px;
+				width: 100%;
+			}
+
+			/* Media Queries */
+			@media (max-width: 800px) {
+				.weekGrid {
+					height: 100%;
+					border: 20px solid transparent;
+					display: grid;
+						grid-template-columns: 1fr;
+						grid-template-rows: 1fr;
+						grid-gap: 10px;
+				}
+				img {
+					height: 80vw;
+				}
+				.weekGrid div:nth-child(6) {
+					grid-column: 1;
+				}
+			}
+
+			/* Type Styles */
+			h1 {
+				margin: 0px;
+				font-family: 'Roboto Mono', sans-serif;
+				font-size: 34px;
+				line-height: 38px;
+				letter-spacing: 1.8px;
+				font-weight: bold;
+				font-variant: small-caps;
+			}
+
+			h2 {
+				margin: 0px;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 16px;
+				line-height: 20px;
+				font-weight: lighter;
+				font-variant: normal;
+				color: blue;
+			}
+
+			h3 {
+				margin: 0px;
+				margin-bottom: 15px;
+				font-family: 'Roboto Mono', sans-serif;
+				font-size: 22px;
+				line-height: 26px;
+				letter-spacing: .5px;
+				font-weight: lighter;
+				font-variant: small-caps;
+			}
+
+			p {
+				margin-top: 0px;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 12px;
+				line-height: 16px;
+				font-weight: normal;
+				font-variant: normal;
+			}
+
+			em {
+				font-weight: lighter;
+				font-style: normal;
+			}
+
+/* Animation */
+			/* Hovers */
+			h2:hover {
+		    color: blue;
+				cursor: not-allowed;
+		  }
+
+			strong:hover {
+				text-decoration: line-through;
+				cursor: pointer;
+		  }
+
+			img:hover {
+		    transform: scale(1.01);
+				cursor: pointer;
+		  }
+
+
+/*HTML*/
+    </style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+				<script>
+					$("div").click(function() {
+						$(this).toggleClass("grow");
+						$(this).find('img').toggle();
+					});
+				</script>
+
+			<nav>
+				<div>
+					<h1>web programming . <em>aj hansen<em></h1>
+				</div>
+
+				<div class="space"></div>
+
+			</nav>
+			<main>
+				<div class="weekGrid">
+					<h3>week one</h3>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Basic HTML</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>CSS Basics</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Basic Layout</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Positioning</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Digital Bits</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+				</div>
+
+				<div class="space"></div>
+
+				<div class="weekGrid">
+					<div>
+						<h3>week two<h3>
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>CSS Grid</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Grid Drawing</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+				</div>
+
+				<div class="space"></div>
+
+				<div class="weekGrid">
+					<div>
+						<h3>week three<h3>
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>CSS Flexbox</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Media Queries</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Interactive Pages</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Web Animation</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+				</div>
+
+				<div class="space"></div>
+
+				<div class="weekGrid">
+					<div>
+						<h3>week four<h3>
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>SVG Candy Cane</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+					<div>
+						<img src="img/candy.png">
+						<p><strong>Personal Site</strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+
+					</div>
+				</div>
+			</main>
+    </body>
+</html>
