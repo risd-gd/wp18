@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://iamasq.ca/temp/windex.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>css shape properties</title>
+	<style>
+	body {
+		background:#333;
+
+	}
+
+	body style {
+		display: block;
+		float:left;
+		width:40%;
+		background: #fff;
+		color: #666;
+		font: 12px/1.5 Monaco, Mono-Space;
+		padding: 20px;
+		white-space: pre;
+		border:4px solid #000;
+		margin:10px;
+
+	}
+
+	.ourObject {
+		width:50%;
+		height:500px;
+		float:left;
+		background:#ddd;
+		border:4px solid #FFF;
+		margin:10px;
+		overflow:hidden;
+		position:relative;
+
+	}
+
+	.lesson {
+		background:#555;
+		padding:20px;
+		padding-top:40px;
+		min-height:540px;
+		min-width:960px;
+		margin-bottom:40px;
+
+	}
+
+	.menu {
+	position:fixed;
+	z-index:100;
+	width:240px;
+	background:#333;
+	text-align:center;
+	padding:10px 25px;
+	margin-left:-145px;
+	left:50%;
+	top:0px;
+
+	}
+
+	a:link,
+	a:visited {
+
+		color:#cc0;
+		font-size:1.1em;
+		text-decoration:none;
+		font-family:arial;
+
+	}
+
+	a:hover {
+		background:#c00;
+		color:#333;
+	}
+
+
+	</style>
+<style type="text/css"></style></head>
+<body>
+	<div class="menu">
+		<a href="http://iamasq.ca/temp/windex.html#lesson1">1</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+		<a href="http://iamasq.ca/temp/windex.html#lesson2">2</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+		<a href="http://iamasq.ca/temp/windex.html#lesson3">3</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+		<a href="http://iamasq.ca/temp/windex.html#lesson4">4</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+		<a href="http://iamasq.ca/temp/windex.html#lesson5">5</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+		<a href="http://iamasq.ca/temp/windex.html#lesson6">6</a>
+
+		<!--&nbsp;&nbsp;|&nbsp;&nbsp;
+
+		<a href="#lesson7">7</a>-->
+
+	</div>
+
+	<a name="lesson1"></a>
+	<div class="lesson">
+		<div class="ourObject">
+			<div class="rect"></div>
+		</div>
+
+		<style contenteditable="">
+		.rect {
+			height:100px;
+			width:100px;
+			background:red;
+
+			/* border:2px dotted black; */
+			position:absolute;
+			top:50px;
+			left:50%;
+		}
+		</style>
+	</div>
+
+	<a name="lesson2"></a>
+	<div class="lesson">
+		<div class="ourObject">
+			<div class="circle"></div>
+		</div>
+
+		<style contenteditable="">
+		.circle {
+			height:100px;
+			width:100px;
+			background:red;
+
+			position:absolute;
+			top:50px;
+			left:50%;
+			border-radius:50px;
+
+		}
+		</style>
+	</div>
+
+
+
+	<a name="lesson3"></a>
+	<div class="lesson">
+		<div class="ourObject">
+			<div class="rotatedSquare"></div>
+		</div>
+
+		<style contenteditable="">
+		.rotatedSquare {
+			height:100px;
+			width:100px;
+			background:red;
+
+			position:absolute;
+			top:50px;
+			left:50%;
+
+			transform:rotate(45deg);
+		}
+		</style>
+	</div>
+
+
+
+
+	<a name="lesson4"></a>
+	<div class="lesson">
+		<div class="ourObject">
+			<div class="squareOne"></div>
+			<div class="squareTwo"></div>
+
+		</div>
+
+		<style contenteditable="">
+		.squareOne {
+			height:100px;
+			width:100px;
+			background:red;
+
+			position:absolute;
+			top:225px;
+			left:225px;
+
+			transform:rotate(45deg);
+		}
+
+		.squareTwo {
+			height:100px;
+			width:100px;
+			background:red;
+
+			position:absolute;
+			top:225px;
+			left:225px;
+
+		}
+
+		</style>
+	</div>
+
+
+
+
+	<a name="lesson5"></a>
+	<div class="lesson">
+		<div class="ourObject">
+			<div class="circleOne"></div>
+			<div class="circleTwo"></div>
+
+		</div>
+
+		<style contenteditable="">
+		.circleOne {
+			height:200px;
+			width:200px;
+			background:red;
+
+			position:absolute;
+			top:150px;
+			left:150px;
+			border-radius:100px;
+		}
+
+		.circleTwo {
+			height:200px;
+			width:80px;
+			background:#ddd;
+
+			position:absolute;
+			top:220px;
+			left:210px;
+			border-radius:10px;
+
+		}
+
+		</style>
+	</div>
+
+
+
+	<a name="lesson6"></a>
+	<div class="lesson">
+		<div class="ourObject">
+			<div class="triangle"></div>
+
+		</div>
+
+		<style contenteditable="">
+
+		.triangle {
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-bottom: 100px solid red;
+
+			position:absolute;
+			top:220px;
+			left:210px;
+		}
+
+		</style>
+	</div>
+<!--
+	<a name="lesson7"></a>
+	<div class="lesson" class="lessonSeven">
+		<div class="ourObject">
+			<div class="blueSquare"></div>
+			<div class="greenSquare"></div>
+
+		</div>
+
+<style contenteditable>
+
+.blueSquare {
+height:100px;
+width:100px;
+background:blue;
+
+position:absolute;
+top:200px;
+left:200px;
+}
+
+.greenSquare {
+height:100px;
+width:100px;
+background:green;
+opacity:0.5;
+
+
+position:absolute;
+top:232px;
+left:240px;
+transform:rotate(30deg);
+}
+
+</style>
+	</div>
+
+
+-->
+
+</body></html>
