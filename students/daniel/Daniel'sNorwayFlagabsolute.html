@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Absolute Norwegian</title>
+      <style>
+        * {margin: 0; }
+          div {
+          width: 10px;
+          height: 10px;
+          background: red;
+
+        }
+        .red { position: absolute; width: 2200px; height: 1600px; }
+        .whitevert { background: white; position: absolute; width: 400px; height: 1600px; left: 600px; z-index: 1;}
+        .whitehor { background: white; position: absolute; width: 2200px; height: 400px; top: 600px; z-index: 1;}
+        .bluevert { background: blue; position: absolute; width: 200px; height: 1600px; left: 700px; z-index: 2;}
+        .bluehor  { background: blue; position: absolute; width: 2200px; height: 200px; top: 700px; z-index: 2;}
+
+        body { width: 220px}
+      </style>
+    </head>
+
+    <body>
+      <div class="red"></div>
+      <div class="whitevert"></div>
+      <div class="whitehor"></div>
+      <div class="bluevert"></div>
+      <div class="bluehor"></div>
+
+    </body>
+
+</html>
