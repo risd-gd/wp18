@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <style>
+
+      html { background: #7080B9 }
+
+      .flexcontainer {
+        margin: auto;
+        display: flex;
+        width: 1200px;
+      }
+
+      nav {
+        margin: 50px;
+        width: 300px;
+        height: 200px;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+      }
+
+      .red { background: #CF0922; }
+      .navy { background: #002368; }
+      .circle {
+        background: white;
+        width: 80px; height: 80px;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 100%;
+      }
+      .circletwo {
+        background: white;
+        width: 20px; height: 20px;
+        border-radius: 100%;
+      }
+
+      @media (max-width: 1000px)
+      {
+        html { background: green; }
+        .flexcontainer {
+          flex-direction: column;
+          width: 400px;
+         }
+         nav {
+           margin: 50px;
+           width: 300px;
+           height: 200px;
+           display: grid;
+           grid-template-rows: 1fr 1.5fr 1fr;
+         }
+         .circle {
+           background: #F6B507;
+           width: 40px; height: 40px;
+           margin: auto;
+           margin-top: 23px;
+          }
+         .red { background: #75ABDD; }
+         .navy { background: white; }
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="flexcontainer">
+      <nav>
+        <div class="red"></div>
+        <div class="navy">
+          <div class="circle"></div>
+        </div>
+        <div class="red"></div>
+      </nav>
+
+      <nav>
+        <div class="red"></div>
+        <div class="navy">
+          <div class="circle">
+          </div>
+        </div>
+        <div class="red"></div>
+      </nav>
+
+      <nav>
+        <div class="red"></div>
+        <div class="navy">
+          <div class="circle"></div>
+        </div>
+        <div class="red"></div>
+      </nav>
+    </div>
+
+  </body>
+
+</html>
