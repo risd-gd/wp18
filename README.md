@@ -96,7 +96,9 @@ This workshop combines the tactical skills needed to structure web pages with a 
 
 # Method of Instruction
 
-This course is a hands-on workshop. Students will watch short demonstrations on a projector, then be asked to apply what was seen on their own. Homework will be given from week to week.
+This course is a hands-on workshop. Students will watch short demonstrations on a projector, then be asked to practice the concepts and code introduced. Homework will be given each week and due the following week.
+
+Students are to sign up for one 4-week intensive session. Students are welcome to continue working after their session is over and/or visit in office hours or other sessions (as space allows). Grades will be give at the end of the semester.
 
 # Course Policies and Expectations
 
@@ -105,7 +107,7 @@ Please show up to class on time with your homework already committed to the clas
 
 # Readings / Resources
 
-Articles and code help is being placed contextually within the [Github course repository](https://github.com/risd-gd/wpsp18) and on an open [Arena channel](https://www.are.na/john-caserta/web-teaching).
+Articles and code help is being placed contextually within the [Github course repository](https://github.com/risd-gd/wpsp18) and on an open [Arena channel](https://www.are.na/john-caserta/web-teaching). Please add to these resources as it may help others in the course.
 
 # Disability Statement
 
@@ -126,4 +128,4 @@ This workshop will not require you to pay for software or printing or server fee
 
 # Grading
 
-Course is graded pass fail. One unexcused absence fails the course. Check in with instructor if a planned absence is known. It is possible to make up a missed day in another session. Failing grades will be given for a notable amount of missing work or notable errors in the work provided. Passing means you have a working knowledge of the concepts covered in the curriculum.
+Course is graded pass/fail. One unexcused absence fails the course. Check in with instructor if a planned absence is known. It is possible to make up a missed day in another session. Failing grades will be given for a notable amount of missing work or notable errors in the work provided. Passing means you have a working knowledge of the concepts covered in the curriculum.
