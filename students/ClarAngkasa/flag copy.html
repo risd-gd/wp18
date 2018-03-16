@@ -3,34 +3,36 @@
     <style>
       div {margin: 20px; width: 160px; height: 100px; background: blue;}
 
-      .yellow1 {width: 20px;
+      .yellow1 {position: absolute;
+                left:70px;
+                top:20px;
+                width: 20px;
                 height: 100px;
                 background: yellow;
                 margin: 0px;}
-      .blue2 {width: 160px;
-              height: 40px;
-              background: blue;
-              margin: 0px;}
-      .yellow2 {height: 20px;
+
+      .yellow2 {position: absolute;
+                top: 60px;
+                height: 20px;
                 background: yellow;
                 margin: 0px; }
-      .blue1 {width: 50px;
-              height: 100px;
-              background: blue;
-              margin: 0px;}
 
       .red {background: red;}
-      .white1 {width: 20px;
+
+      .white1 {position: absolute;
+                left:70px;
+                top:140px;
+                width: 20px;
                 height: 100px;
                 background: white;
-                margin-top: 0px;
-                margin-left: 50px;
-                float: left;}
-      .white2 {height: 20px;
-              background: white;
-              margin-top: 40px;
-              margin-left: 0px;
-              float: left;}
+                margin: 0px;}
+
+      .white2 {position: absolute;
+                top: 180px;
+                height: 20px;
+                background: white;
+                margin: 0px; }
+
       /*classes to override div property*/
 
 
@@ -43,7 +45,14 @@
         <div class="yellow2"></div>
         <div class="yellow1"></div>
       </div>
+
+      <div class="red">
+        <div class="white1"></div>
+        <div class="white2"></div>
+      </div>
+
     </header>
+
 
   </body>
 
