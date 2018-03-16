@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Absolute absolutes</title>
+    <style>
+      body { margin: 0; }
+      div {
+      width: 400px; height: 400px;
+      position: absolute; top: 20px; left: 20px;
+      border: 1px solid red;
+      z-index: 1;
+      /* z-index layers. 1 is the base, 2 is up */
+      }
+      .green { z-index: 2;
+      background: rgba(0,255,0,.2); }
+    </style>
+  </head>
+  <body>
+    <div>1
+      <div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- HTML Comment -->
+    <div class="green">_2</div>
+
+  </body>
+</html>
