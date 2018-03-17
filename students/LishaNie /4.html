@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>CSS Positioning, Session 2</title>
+    <style>
+      * { margin: 0; }
+
+        div {
+        margin: 2px;
+        width: 200px;
+        height: 100px;
+        background: blue;
+        float: left;
+      }
+
+      .logo { position: absolute;
+      top: 40%; right: 0;
+
+      }
+      .search { position:absolute;
+      top: 10px; right: 20px;
+      z-index: 0; height: 10px;
+      z-index 2;  }
+      .yellow { background: yellow; }
+      .container { width: 800px;}
+    </style>
+  </head>
+
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="logo yellow"></div>
+    <div class="search yellow"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+
+</html>

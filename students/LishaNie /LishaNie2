@@ -1,0 +1,14 @@
+<html>
+
+  <head>
+    <title>
+    <style>
+        h1 { background: red;}
+        h2 { width: 50%; background: orange: }
+    </style>
+  </head>
+
+  <body>
+  </body>
+
+</html>
