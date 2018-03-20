@@ -1,0 +1,374 @@
+<html>
+  <head>
+    <title>Ampersand</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script>
+  /**  $(document).ready(function(){
+      $(".img1").hide();
+        $(".nav1").hover(function(){
+
+         $(".img").fadeOut();
+        $(".circle1").fadeOut("slow");
+        $(".circle1").fadeOut(3000);
+          $(".circle2").fadeIn();
+        $(".circle2").fadeIn("slow");
+        $(".circle2").fadeIn(3000);
+
+
+        });});
+
+        $(document).ready(function() {
+
+    $(".img1").css("opacity", 0.0);
+
+    $(".nav1").hover(function() {
+
+        $(this).animate({opacity: 1.0}, 500);
+
+    }, function() {
+
+        $(this).animate({opacity: 0.5}, 500);
+
+    });
+
+});​
+
+
+
+$(document).ready(function() {
+
+    //Preload
+    $('<img/>').hide().attr('src', 'https://4.bp.blogspot.com/-3YtwFdb01YI/TnCNSc1c93I/AAAAAAAAA5c/V6g_3ghlw30/s1600/Background+13.jpg').load(function(){
+        $('body').append($(this));
+    });
+
+    $('#fb').hover(function() {
+        $('body').css('background-image', 'url("https://4.bp.blogspot.com/-3YtwFdb01YI/TnCNSc1c93I/AAAAAAAAA5c/V6g_3ghlw30/s1600/Background+13.jpg")');
+    }, function() {
+        $('body').css('background', '');
+    });
+});**/
+
+
+        </script>
+
+<style>
+
+body {
+    background-repeat: repeat;
+}
+
+
+    nav { display: grid; grid-template-rows: repeat (10, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      height: 100%; border: 1px; grid-gap: 0px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+      .blue {background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+      }
+      .green {background-color: rgba(0, 0, 0, 0);
+        z-index: 3;
+      }
+
+    .yellow {
+      background-color: rgba(255, 255, 255, 0.9);
+    } /**
+    .nav1:hover {
+    background: transparent;
+    z-index: 4;
+}
+    img {width: 70%; height: auto;  margin: 0px; position: absolute;
+z-index: -12; opacity: 0;
+    }
+    .img1:hover {
+    opacity: 1;
+} **/
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      position: fixed;
+      top: 10px;
+      left: 30px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  /**  .nav1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      color: rgba(0, 0, 0, 0.7);
+
+   <div class="img1"><img src="img/1.gif"></div>
+
+    } **/
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      position: relative;
+      left: 0%;
+
+      right: 30px;
+      color: rgba(0, 0, 0, 0.7);
+      list-style: none;
+        text-decoration: none;
+    }
+    ul {
+      list-style: none;
+      width: 100px;
+      position: fixed;
+      top: 2%;
+      right: 2%;
+      text-decoration: none;
+      z-index: 70;
+    }
+    #fb:hover {
+    color: red;
+  /*  content: url(img/1.gif); z-index: 50;
+
+      position: absolute; top: -400px; left: -900px; z-index: -30;
+*/
+}
+.pink {background-color: rgba(0, 0, 0, 0);
+  z-index: 60;
+
+}
+.p1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  position: absolute;
+  left: 20%;
+
+  top: 50%;
+  width: 200px;
+  color: red;
+}
+.p2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  position: absolute;
+  left: 30%;
+
+  top: 37%;
+  width: 200px;
+  color: orange;
+}
+
+div.nav1 a span {display:none;}
+div.nav1 a:hover {position:relative; cursor:default;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    color: red;}
+div.nav1 a:hover span {font-family: 'Roboto', sans-serif;
+font-size: 10px;
+position: absolute;
+left: 20%;
+color: red;
+
+top: 50%;
+width: 200px;
+color: red; white-space:nowrap;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+div.nav2 a span {display:none;}
+div.nav2 a:hover {position:relative; cursor:default;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    color: orange;}
+div.nav2 a:hover span {font-family: 'Roboto', sans-serif;
+font-size: 10px;
+position: absolute;
+left: 20%;
+color: orange;
+
+top: 30%;
+width: 200px;
+color: orange; white-space:nowrap;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+div.nav3 a span {display:none;}
+div.nav3 a:hover {position:relative; cursor:default;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    color: yellow;}
+div.nav3 a:hover span {font-family: 'Roboto', sans-serif;
+font-size: 10px;
+position: absolute;
+left: 20%;
+color: yellow;
+
+top: 30%;
+width: 200px;
+color: orange; white-space:nowrap;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+div.nav4 a span {display:none;}
+div.nav4 a:hover {position:relative; cursor:default;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    color: green;}
+div.nav4 a:hover span {font-family: 'Roboto', sans-serif;
+font-size: 10px;
+position: absolute;
+left: 20%;
+color: green;
+
+top: 30%;
+width: 200px;
+color: green; white-space:nowrap;-webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+    </style>
+
+
+  </head>
+  <body>
+    <nav>
+
+
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+
+      <div class="green"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="green"></div>
+      <div class="pink"></div>
+
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+      <div class="yellow"></div>
+      <div class="yellow"></div>
+      <div class="pink"></div>
+
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="pink"></div>
+      <div class="green"></div>
+      <div class="p1">Designing websites starts with structural thinking -- blocking in shapes in the browser. It's the exact same thinking required needed to establish blocks needed to form these drawings. This process demands that you both plan your shapes in advance (by sketching) and adapt them to the reality of what you are able to code and what you see while you are coding.You will also become intimately familiar with units, css classes, positioning and floating as well.
+      </div>
+      <div class="p2">Start a new html file. Choose one of the Scandinavian flags and code it using divs, classes and floats. The size of the flag is up to you.
+      </div>
+
+      <h1>Olivia Orr</h1>
+
+                  <ul>
+                    <li><div class="nav1"><a href="Describe_yourself css.html">Describe Yourself<span>Designing websites starts with structural thinking -- blocking in shapes in the browser. It's the exact same thinking required needed to establish blocks needed to form these drawings. This process demands that you both plan your shapes in advance (by sketching) and adapt them to the reality of what you are able to code and what you see while you are coding.You will also become intimately familiar with units, css classes, positioning and floating as well.</span></a></div>
+            <li><div class="nav2"><a href="Swedish_Flagabsolute.html">Swedish Flag<span>Start a new html file. Choose one of the Scandinavian flags and code it using divs, classes and floats. The size of the flag is up to you.</span></a></div>
+<li><div class="nav3"><a href="senegal.html">Senegal Flag<span>Start a new html file and make a Scandinavian flag using divs, classes and absolute positioning</span></a></div>
+<li><div class="nav4"><a href="nauru.html">Nauru Flag<span></span></a></div>
+
+                  </ul>
+
+
+
+
+
+
+
+
+    </nav>
+  </body>
+</html>
