@@ -8,32 +8,28 @@
     <style>
 /* CSS */
 		/* Template */
-			body { background: white;
+			body { background: mistyrose;
 				margin-top: 20px;
 				margin-left: 70px;
 				margin-right: 70px;
 			}
 
 			nav {
-				background: white;
+				background: transparent;
 	      height: 100%;
 				border: 20px solid transparent;
-	      display: grid;
+				display: grid;
 	        grid-template-columns: 2fr;
 					grid-template-rows: 1fr;
 	    }
 
 			div {
 		    margin: 0px;
-		    background: white;
-				transition: 1s all;
+		    background: transparent;
 		  }
 
-			.grow { transform: scale(.8);
-			background: blue; }
-
 			.weekGrid {
-				background: white;
+				background: transparent;
 				height: 100%;
 				border: 20px solid transparent;
 				display: grid;
@@ -64,14 +60,11 @@
 					display: grid;
 						grid-template-columns: 1fr;
 						grid-template-rows: 1fr;
-						grid-gap: 10px;
-				}
-				img {
-					height: 80vw;
-				}
+						grid-gap: 10px;}
 				.weekGrid div:nth-child(6) {
-					grid-column: 1;
-				}
+					grid-column: 1;}
+				img {
+					height: 80vw;}
 			}
 
 			/* Type Styles */
@@ -115,6 +108,12 @@
 				font-variant: normal;
 			}
 
+			a {
+				font-variant: normal;
+				text-decoration: none;
+				color: black;
+			}
+
 			em {
 				font-weight: lighter;
 				font-style: normal;
@@ -132,10 +131,16 @@
 				cursor: pointer;
 		  }
 
-			img:hover {
-		    transform: scale(1.01);
+			/* JQuery Classes */
+			.grow {
+				width: auto;
+				height: 40vw;
+			}
+
+			.zoom-in {
 				cursor: pointer;
-		  }
+				transition: .4s all;
+			}
 
 
 /*HTML*/
@@ -144,50 +149,43 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-				<script>
-					$("div").click(function() {
-						$(this).toggleClass("grow");
-						$(this).find('img').toggle();
-					});
-				</script>
-
 			<nav>
 				<div>
 					<h1>web programming . <em>aj hansen<em></h1>
 				</div>
+			</nav>
 
 				<div class="space"></div>
 
-			</nav>
 			<main>
 				<div class="weekGrid">
 					<h3>week one</h3>
 					<div>
 						<img src="img/candy.png">
-						<p><strong>Basic HTML</strong></p>
+						<p><strong><a href="file:///Users/andreahansen/Desktop/GitHub/wp18/students/AJ/week1/1.1_html_basics/Describe.html">Basic HTML</a></strong></p>
 						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>CSS Basics</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Duplicate your first exercise and add internal styles to it. How might you call out certain content? Commit and sync to the repository.</p>
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Basic Layout</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Start a new html file. Choose one of the Scandinavian flags and code it using divs, classes and floats. The size of the flag is up to you.</p>
 
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Positioning</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Start a new html file and make a Scandinavian flag using divs, classes and absolute positioning.</p>
 
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Digital Bits</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Make five drawings using div tags and css classes. Create an html file for each digital bit, and put them into a folder called "Digital Bits" in your github repo.</p>
 
 					</div>
 				</div>
@@ -201,13 +199,13 @@
 					<div>
 						<img src="img/candy.png">
 						<p><strong>CSS Grid</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Make two flags using CSS grid. Use an implicit grid for the Nairu flag. Use an explicit one for the United States flag.</p>
 
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Grid Drawing</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Assignment two asks that you play with the new css layout properties (grid and flexbox) to come up with abstract compositions. The webpages should change when the browser changes viewport widths.</p>
 
 					</div>
 				</div>
@@ -221,25 +219,25 @@
 					<div>
 						<img src="img/candy.png">
 						<p><strong>CSS Flexbox</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Code up the following flags in separate html files using flexbox and external svgs provided. Commit and sync your work.</p>
 
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Media Queries</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Using flex or grid, create a simple flag (your own country?). Change that flag to two other designs at two breakpoints (720px width and 360px width).</p>
 
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Interactive Pages</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Code up the flag of Burkina Faso. On click, change it to the flag of Senegal.</p>
 
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Web Animation</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Create a single animation that goes as far as you can go with motion. You do not need to use only abstract shapes; the look of the site is up to you.</p>
 
 					</div>
 				</div>
@@ -253,16 +251,29 @@
 					<div>
 						<img src="img/candy.png">
 						<p><strong>SVG Candy Cane</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>Copy the candy cane svg from the example file and paste into a new file. Color the candy cane the same as the candy cane you were given.</p>
 
 					</div>
 					<div>
 						<img src="img/candy.png">
 						<p><strong>Personal Site</strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
+						<p>This final assignment asks you to create a single page website that collects your exercises and previous assignments. You should use CSS Grid and Flexbox for the overall structure of the webpage. Floats and positioning may also be needed.</p>
 
 					</div>
 				</div>
 			</main>
+
+			<script>
+			/* Zoom in to Pictures */
+				$("img").click(function() {
+					$(this).toggleClass("grow");
+				});
+
+			/* Mouse Over Cursor Changes */
+				$("img").mouseover(function() {
+					$(this).toggleClass("zoom-in");
+				});
+			</script>
+
     </body>
 </html>
