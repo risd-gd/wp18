@@ -1,0 +1,68 @@
+<html>
+
+  <head>
+    <style>
+      body {font-size: 9px;}
+      html {background: lightblue;}
+      div {background: red;}
+      nav div:nth-child(even) { background: white;}
+
+      .bg {
+        position: absolute;
+        display: grid;
+        grid-template-rows: repeat(13,1fr);
+        background: white;
+        width: 247px;
+        height: 130px;
+      }
+
+      .smallbox {
+        position: relative;
+        background: navy;
+        height: 70px;
+        width: 100px;
+      }
+
+      img {
+        position: relative;
+        margin-top: 0px;
+        margin-right: -10px;
+        margin-left: -10px;
+        align-items: left;
+        float: left;
+        width: 30%;
+        height: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="bg">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </nav>
+
+    <div class="smallbox">
+      <img src="star.svg">
+      <img src="star.svg">
+      <img src="star.svg">
+      <img src="star.svg">
+      <img src="star.svg">
+      <img src="star.svg">
+    </div>
+
+
+  </body>
+
+</html>

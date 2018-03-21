@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <style>
+      html {
+        height: 1500px;
+      }
+      body {
+        background: linear-gradient(#0265B5,#01C8C9);
+        transition: all 1s;
+      }
+      p {
+        font-family: sans-serif;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50px;
+      }
+
+      nav {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      .circle {
+        background: white;
+        opacity: 0.5;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        transition: 1s all;
+        margin: 30px;
+      }
+
+      .circle2 {
+        background: white;
+        opacity: 0.5;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        transition: 1s all;
+        margin: 30px;
+        display: none;
+      }
+
+      .circle:hover {
+        opacity: 1;
+        transform: translate(10px,10px);
+        cursor: pointer;
+      }
+
+      .circle2:hover {
+        opacity: 1;
+        transform: translate(10px,10px);
+        cursor: pointer;
+      }
+
+      .rect:hover {
+        transform: rotate(30deg);
+        transition: 5s;
+      }
+
+      .colorchange {
+        transform: scale(2) rotate(90deg);
+        background-color: yellow;
+      }
+
+      .rect {
+        margin-top: 20px;
+        width: 300px;
+        height: 100px;
+        background: salmon;
+        opacity: 0.7;
+      }
+
+      .rectclick {
+        opacity: 0.7;
+        background-color: green;
+      }
+
+      @media (max-width: 1000px)
+      {
+        body {
+          background: linear-gradient(#10377C,#3D77EE);
+          transition: all 1s;
+        }
+        nav {
+          width: auto;
+          height: auto;
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .circle2 {
+          background: white;
+          opacity: 0.5;
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          transition: 1s all;
+          margin: 30px;
+          display: inline;
+        }
+
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle">
+        <div class="rect"></div>
+      </div>
+      <div class="circle2">
+        <div class="rect"></div>
+      </div>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $("nav div").click(function() {
+          $(this).toggleClass("colorchange");
+        });
+      </script>
+      <script>
+          $("nav div div").click(function() {
+            $(this).toggleClass("rectclick");
+          });
+        </script>
+    <script>
+			hljs.initHighlightingOnLoad();
+			$('.hero__scroll').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 1200);
+			});
+		</script>
+    <embed src="song.mp3" autostart="true" loop="true"
+        width="2" height="0">
+    </embed>
+  </body>
+</html>

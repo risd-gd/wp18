@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+  <title>JeffreyTangSigngleServerSite</title>
+  <style>
+  @@font-face {
+    font-family: FrutigerLTStd-Light;
+    src: url(FrutigerLTStd-Light.otf);
+    font-weight:light;
+
+  }
+  div{font-family: FrutigerLTStd-Light;transition: 1s}
+  h2{padding: 3px;font-size: 150;color:#CA201B;}
+  h1{padding-left: 4px;padding-top: 3px;color: red;font-size: 8px;}
+  nav{grid-row: 1/20;grid-column: 1/2}
+   body{background-color: #CA201B;transition: 1s;}
+  .dark{background-color:#34201B;transition: 1s;}
+  .grid{width: 100%;height: 100%;display:grid;
+    grid-template-columns:repeat(20,1fr);
+    grid-template-rows:repeat(20,1fr);
+    border-radius: 10px}
+  .motionA{
+    position: absolute;
+    animation: move 5s;
+    background: black;
+    width: 100px;
+    height: 100px;
+    animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+animation-timing-function: linear;}
+  @keyframes move
+      {
+    from{top:64%}
+    to{top:84%}
+        }
+  .name{grid-row:1/5;grid-column: 1/10;}
+  .name1{grid-row:6/9;grid-column: 4/10;}
+  .name2{grid-row:11/15;grid-column:8/10;}
+  .motionA:hover{cursor:pointer;}
+  .block0{transition: 1s;background-color:black;width: 100%;height: 50%}
+  .block01{transition: 1s;background-color:black;width: 100%;height: 5%;margin-top: 10px}
+  .block02{transition: 1s;background-color:black;width: 100%;height: 5%;margin-top: 10px}
+  .block01:hover{width: 150%;}
+  .block02:hover{width: 150%;}
+  .opa30{opacity:0.3;}
+  .opa100{opacity:1;position: absolute;transition:1s}
+  .opa0{opacity:0;transition:1s}
+  .resize{width: 260px;height:260px;transition: 1s}
+  .resize2{width: 140px;height:575px;transition: 1s}
+
+  .pic01{grid-row:6/16;grid-column:5/20;width: 100%;height: 100%}
+  .pic02{grid-row:12/16;grid-column:7/20;width: 100%;height: 100%}
+  .pic03{grid-row:6/16;grid-column:12/20;width: 100%;height: 100%}
+  .pic04{grid-row:12/16;grid-column:10/20;width: 100%;height: 100%}
+  .pic05{grid-row:6/16;grid-column:9/20;width: 100%;height: 100%}
+  .ab01{grid-row:3/16;grid-column:10/20;width: 100%;height: 100%}
+  .ab02{grid-row:3/16;grid-column:7/20;width: 100%;height: 100%}
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+  <div class="grid">
+
+    <div class="motionA">
+      <h1>PROJECT3</h1>
+    </div>
+  <nav>
+    <div class="block0">
+
+    </div>
+    <div class="block01">
+      <h1>PROJECT1</h1>
+    </div>
+    <div class="block02">
+      <h1>PROJECT2</h1>
+    </div>
+  </nav>
+  <div class="name">
+    <h2>JeffreyTang</h2>
+  </div>
+  <div class="name1">
+    <h2>JeffreyTang</h2>
+  </div>
+  <div class="name2">
+    <h2>JeffreyTang</h2>
+  </div>
+    <div class="pic01">
+      <img src="Db01.jpg" width=160px height=150px alt="" class="opa30" >
+    </div>
+    <div class="pic02">
+      <img src="Db02.jpg" width=240px height=240px alt="" class="opa30">
+    </div>
+    <div class="pic03">
+      <img src="Db03.jpg" width=150px height=150px alt="" class="opa30">
+    </div>
+    <div class="pic04">
+      <img src="Db04.jpg" width=170px height=170px alt="" class="opa30">
+    </div>
+    <div class="pic05">
+      <img src="Db05.jpg" width=190px height=190px alt="" class="opa30">
+    </div>
+    <div class="ab01">
+      <img src="ab01.jpg" width=130px height=550px alt="" class="opa30">
+    </div>
+    <div class="ab02">
+      <img src="ab02.jpg" width=120 px height=400px alt="" class="opa30">
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+  $("div.block01").mouseover(function(){
+      $("div.pic01").find('img').addClass("opa100 resize");
+      $("div.pic02").find('img').addClass("opa100 resize");
+      $("div.pic03").find('img').addClass("opa100 resize");
+      $("div.pic04").find('img').addClass("opa100 resize");
+      $("div.pic05").find('img').addClass("opa100 resize");
+      $("div.ab01").find('img').addClass("opa0");
+      $("div.ab02").find('img').addClass("opa0");
+  });
+});
+$(document).ready(function(){
+  $("div.block01").mouseleave(function(){
+      $("div.pic01").find('img').removeClass("opa100 resize");
+      $("div.pic02").find('img').removeClass("opa100 resize");
+      $("div.pic03").find('img').removeClass("opa100 resize");
+      $("div.pic04").find('img').removeClass("opa100 resize");
+      $("div.pic05").find('img').removeClass("opa100 resize");
+      $("div.ab01").find('img').removeClass("opa0");
+      $("div.ab02").find('img').removeClass("opa0");
+  });
+});
+$(document).ready(function(){
+  $("div.block02").mouseover(function(){
+      $("div.ab01").find('img').addClass("opa100 resize2");
+      $("div.ab02").find('img').addClass("opa100 resize2");
+      $("div.pic01").find('img').addClass("opa0");
+      $("div.pic02").find('img').addClass("opa0");
+      $("div.pic03").find('img').addClass("opa0");
+      $("div.pic04").find('img').addClass("opa0");
+      $("div.pic05").find('img').addClass("opa0");
+
+  });
+});
+$(document).ready(function(){
+  $("div.block02").mouseleave(function(){
+      $("div.ab01").find('img').removeClass("opa100 resize2");
+      $("div.ab02").find('img').removeClass("opa100 resize2");
+      $("div.pic01").find('img').removeClass("opa0");
+      $("div.pic02").find('img').removeClass("opa0");
+      $("div.pic03").find('img').removeClass("opa0");
+      $("div.pic04").find('img').removeClass("opa0");
+      $("div.pic05").find('img').removeClass("opa0");
+
+  });
+});
+$(document).ready(function(){
+  var sw = true;
+  $("div.motionA").click(function(){
+    if (sw == true)
+    {$("body").addClass("dark")
+        sw = false;
+    }
+    else {
+    $("body").removeClass("dark")
+    sw = true;
+    ;
+  }
+
+
+
+  });
+});
+</script>
+
+</body >
+</html>
