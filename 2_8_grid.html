@@ -23,8 +23,10 @@
 
        div {     background: pink;  }
       .egg { grid-column: 4/25;
-      grid-row: 2/4;
+      grid-row: 2/4; z-index: 100;
       }
+      .sandwich { grid-column: 3/8;
+      grid-row: 1/5; background: blue;}
 
 }
     </style>
@@ -34,6 +36,7 @@
 
     <section class="first">
       <div class="egg">Egg</div>
+      <div class="sandwich">Sanwich</div>
     </section>
 
     <section class="minmax">
