@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+
+<heading>
+
+<title>mug</title>
+
+  <style>
+    .mug{
+      height:300px;
+      width: 200px;
+      background: white;
+      border:10px solid black;
+
+      border-bottom-left-radius: 10%;
+      border-bottom-right-radius: 10%;
+
+      position: absolute;
+      top:50px;
+      left:500px;
+    }
+
+    .handle{
+      height:200px;
+      width:100px;
+      background: white;
+      border: 8px solid black;
+
+      border-bottom-left-radius: 100%;
+      border-top-left-radius: 100%;
+      border-bottom-right-radius: 50%;
+      border-top-right-radius: 90%;
+
+      position:absolute;
+      top:80px;
+      left:400px;
+    }
+
+    .inhandle{
+      height:150px;
+      width:75px;
+      background: white;
+      border: 8px solid black;
+
+      border-bottom-left-radius: 100%;
+      border-top-left-radius: 100%;
+      border-bottom-right-radius: 50%;
+      border-top-right-radius: 90%;
+      position:absolute;
+      top:110px;
+      left:420px;
+    }
+
+</style>
+
+</heading>
+
+  <body>
+    <div class="handle"></div>
+    <div class="inhandle"></div>
+    <div class="mug"></div>
+
+</body>
+
+</html>
