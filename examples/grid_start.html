@@ -2,26 +2,21 @@
   <head>
     <style>
       nav {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 10px;
       }
-      div { flex: 200px; margin: 20px;
-      height: 100px;
-      background: blue; }
-      @media (max-width: 600px)
-      /* min-width: 300px */
-      {
-        div:nth-child(2) {
-        display: none; }
-         nav {
-         flex-direction: column;}
-     }
+      div { background: grey; height: 100px; }
+
     </style>
   </head>
   <body>
     <nav>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
     </nav>
   </body>
 </html>
