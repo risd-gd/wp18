@@ -1,0 +1,55 @@
+<html>
+
+  <head>
+    <title>Elevator Up and Down</title>
+      <style>
+      body {
+      background-color: mediumblue;
+    }
+    .mainshape {
+			height:350px;
+			width:250px;
+			background:#2C2C2B;
+
+			position:absolute;
+			top:200px;
+			left:400px;
+			border-radius:4px;
+    }
+
+    .up {
+    			border-left: 50px solid transparent;
+    			border-right: 50px solid transparent;
+    			border-bottom: 100px solid white;
+
+    			position:absolute;
+    			top:50px;
+    			left:70px;
+    		}
+
+      .down {
+        			border-left: 50px solid transparent;
+        			border-right: 50px solid transparent;
+        			border-bottom: 100px solid white;
+
+        			position:absolute;
+        			top:150;
+        			left:-50;
+              transform: rotate(180deg);
+        		}
+
+
+
+      </style>
+  </head>
+  <body>
+
+<div class="mainshape">
+  <div class="up">
+    <div class="down">
+  </div>
+
+
+  </body>
+
+</html>
