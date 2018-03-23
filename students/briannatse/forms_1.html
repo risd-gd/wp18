@@ -1,0 +1,55 @@
+
+<html>
+<head>
+    <title>shape 1</title>
+</head>
+    <style>
+        * { margin: 0px; }
+        .rectangle {
+        width: 100px;
+        height: 150px;
+        background: black;
+        position: relative;
+        top: 100px;
+        left: 10px;
+        }
+
+        .circle {
+        width: 100px;
+        height: 100px;
+        background: black;
+        -moz-border-radius: 50px;
+	      -webkit-border-radius: 50px;
+	      border-radius: 50px;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        }
+
+        .cap {
+        width: 30px;
+        height: 40px;
+        background: black;
+        position: absolute;
+        top: 20px;
+        left: 45px;
+        }
+
+        .label {
+        width: 90px;
+        height: 60px;
+        background: white;
+        position: fixed;
+        top: 130px;
+        left: 15px;
+        z-index: 1;
+        }
+    </style>
+<body>
+    <div class="label"></div>
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+    <div class="cap"></div>
+</body>
+
+</html>
