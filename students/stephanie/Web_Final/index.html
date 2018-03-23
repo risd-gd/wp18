@@ -1,0 +1,473 @@
+<html>
+      <head>
+            <style>
+
+                  @font-face { font-family: suisse;
+                               src:url("fonts/SuisseIntl-Light.otf");
+                 }
+                  body { margin: 0px;
+
+                  }
+                  header { font-family:suisse;
+                           font-size: 24pt;
+                           color:black;
+                           text-align: left;
+                  }
+
+                  header:hover span{ text-decoration: underline;
+                                     font-style: italic;
+
+
+                  }
+
+
+                 .wrapper { width:100%;
+                            height: 100%;
+                            display: flex;}
+
+                 .main { width: 100%;
+
+                 }
+
+
+                  .header_div { background: white;
+                                width: 100%;
+                                height: 40px;
+                                padding: 10px;
+                                display: grid;
+                                grid-template-columns:1fr 40px;
+                  }
+
+                  .projects {   background: white;
+                                width: 100%;
+                                height: auto;
+                                transition: 1s all;
+                                cursor: url("mouse-01.png"), auto;
+                  }
+
+
+
+                  .head_row {       grid-column:1/4;
+                                    display: grid;
+                                    grid-template-columns: 150px 5fr;
+                                    font-family:suisse;
+                                    font-size: 12pt;
+                                    color:black;
+                                    border-top-style: solid;
+                                    border-top-width: thin;
+                                    border-bottom-style: solid;
+                                    border-bottom-width: thin;
+
+                  }
+
+                  .head_row p:nth-child(2) { border-left-style: solid;
+                                          border-left-width: thin;
+                  }
+
+                  .head_row p {   display: block;
+                                  -webkit-margin-before: 0px;
+                                  -webkit-margin-after: 0px;
+                                  -webkit-margin-start: 0px;
+                                  -webkit-margin-end: 0px;
+                                  display:inline;
+                                  align-items: center;
+                                  padding-left: 10px;
+
+                  }
+
+
+
+                  .items {       grid-column:1/4;
+                                 display: grid;
+                                 grid-template-columns: 150px 5fr;
+                                 grid-template-rows: 1fr;
+                                 background: white;
+                                 width: 100%;
+                                 height:40px;
+                                 font-family:suisse;
+                                 font-size: 12pt;
+                                 color:black;
+                                 border-bottom-style: solid;
+                                 border-bottom-width: thin;
+                                 z-index: 1;
+                                 overflow: hidden;
+                                 transition: 0.5s all;
+
+                  }
+
+                  .items:hover { background: #2222;
+                          }
+
+                  .date { grid-column: 1/2;
+
+                          }
+
+                  .name { grid-column: 2/3}
+
+                  .items p {     display: block;
+                          -webkit-margin-before: 0px;
+                          -webkit-margin-after: 0px;
+                          -webkit-margin-start: 0px;
+                          -webkit-margin-end: 0px;
+                          display:inline;
+                          align-items: center;
+                          padding: 10px;
+
+                  }
+
+
+                  img { display: none;
+                        z-index: 0;
+                        padding: 0.5em;
+                        width:300px;
+                        }
+
+                  .draggable {  position: absolute;
+                                top: 300px;
+                                left: 300px;
+
+                  }
+
+
+              .collophon {      display:grid;
+                                grid-template-rows: 1fr 1fr 1fr 1fr;
+                                grid-template-columns: 1fr 2fr;
+                                width: 0px;
+                                height: auto;
+                                background: white;
+                                z-index: 999;
+                                border-left-style: solid;
+                                border-left-width: thin;
+                                border-left-color: black;
+                                overflow: hidden;
+                                transition: 0.5s all;
+
+                         }
+               .collophon p:nth-child(odd) {    grid-column: 1/2;
+                                                font-family:suisse;
+                                                margin:0px;
+                                                padding: 10px;
+                                                font-size: 12pt;
+                                                color:black;
+               }
+
+               .collophon p:nth-child(even) {   grid-column: 2/3;
+                                                font-family:suisse;
+                                                margin:0px;
+                                                padding: 10px;
+                                                font-size: 12pt;
+                                                color:black;}
+
+               .collophon_open {  width: 500px;
+                                  transition: 1s all;
+                                  box-shadow: 15px 0px 60px black}
+
+               .title   { grid:1/2; }
+
+               .info   { grid:2/3;
+                         display: flex;
+                         align-items: center;
+                       }
+
+               .info p  { font-family:Suisse;
+                          font-size: 18pt;
+                          color:black;
+                          text-align: right;
+                          cursor: default;
+                          -webkit-margin-before: 0px;
+                          -webkit-margin-after: 0px; }
+
+                .tool { width: 90px;
+                        height: 40px;
+                        background: white;
+                        border-style: solid;
+                        border-width: thin;
+                        position: fixed;
+                        left: 20px;
+                        bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                        padding-left:10px;
+                        padding-right: 10px;
+                        justify-content: space-around;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+                }
+
+                .tool p{ font-size: 15pt;
+                }
+
+                .trash { cursor: alias;
+                }
+
+                .reload { cursor: pointer;
+                }
+
+
+                .items_open { height: 200px;
+                              transition: 0.5s all;
+
+                }
+
+                .desc { display:grid;
+                        grid-template-rows: 50px 1fr;
+                        grid-template-columns: 1fr;
+
+                }
+
+                .desc p { grid-column: 1/2;
+                          border-left-style: solid;
+                          border-left-width: thin;
+
+
+                }
+
+
+
+            </style>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      </head>
+
+
+      <body>
+            <div class="wrapper">
+
+              <div class="main">
+                  <div class="header_div">
+                    <div class="title"> <header> DEPARTMENT OF MISCELLANEOUS <span> FILES </span> </header> </div>
+                    <div class="info"> <p>?</p> </div>
+                    </div>
+
+                    <div class="projects">
+                      <div class='head_row'>
+                          <p> DATE </p>
+                          <p> FILE NAME </p> </div>
+
+                          <div class='items'>
+                                <p class="date"> 27-11-2017 </p>
+                                <div class="desc">
+                                  <p class="name"> A HOUSE OF DUST </p>
+                                  <p class="project_about"> A digital, "born-again" rendition of Alison Knowles' <i>A House of Dust</i>.<br /> <br /> Made with P5.js. <br /> Digital Poetics with Mairead Byrne <br /> RISD Spring 2018.  </p>
+                                </div>
+                                <div class="draggable">
+                                  <img src="gifs/house.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 15-10-2017 </p>
+                                <div class="desc">
+                                  <p class="name"> SNAKE GAME </p>
+                                  <p class="project_about"> Re-imagining the snake game into something more relevant to me...and my upbringing. <br /><br /> Made with P5.js. <br /> Intro To Computation with Chris Novello <br /> RISD Spring 2017.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/snake.gif">
+                                </div>
+
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> STICKS & STONES </p>
+                                  <p class="project_about"> Exploring CSS animations and transitions with SVGs.<br /> <br /> Web Programming with John Caserta<br /> RISD Spring 2018.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/sticks.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> THE HANDOVER </p>
+                                  <p class="project_about"> July 1st 1997, at the strike of midnight, Hong Kong was "handed back" to China. This is a digital experience using archived videos of this monumental ceremony I was too young to experience. <br /> <br /> Made with P5.js <br /> Design Studio 4 with Lucinda Hitchcock<br /> RISD Fall 2018.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/hand.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> RESPONSIVE MOBILE CHILE</p>
+                                  <p class="project_about"> The flag of Chile made with HMTL/CSS and mediasqueries <br /> <br /> Web Programming with John Caserta<br /> RISD Spring 2018.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/chile.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> FLAG PROJECT </p>
+                                  <p class="project_about"> RISD GD needs a flag! This one constanly changes.<br /> <br /> Design Studio 1 <br /> RISD Fall 2016.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/flag.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> BLUE MONDAY</p>
+                                  <p class="project_about"> Joy Division's Blue Monday album made into a keyboard language. <br /> <br /> Design Studio 1<br /> RISD Fall 2016.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/blue.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> KOMODO NATIONAL PARK</p>
+                                  <p class="project_about"> Concept for a website for the Komodo National Park. As part of an identity project for a World Heritage Site.<br /> <br /> Typography III with Doug Scott<br /> RISD Fall 2018.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="komodo.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> NEWS FEED</p>
+                                  <p class="project_about"> A sketch that takes real time news headlines from the New York Times API. <br /> <br /> Intro to Computation with Chris Novello <br /> RISD Spring 2017.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/feed.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> HTML Color Studies </p>
+                                  <p class="project_about"> An abstract sketch using colors and HTML/CSS div tags etc. <br /> <br /> Web Programming with John Caserta <br /> RISD Spring 2018.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/color.gif">
+                                </div>
+                          </div>
+                          <div class='items'>
+                                <p class="date"> 05-20-2014 </p>
+                                <div class="desc">
+                                  <p class="name"> HTML Color Studies 2.0 </p>
+                                  <p class="project_about"> An abstract sketch using colors and HTML/CSS div tags etc. <br /> <br /> Web Programming with John Caserta <br /> RISD Spring 2018.  </p>
+                                </div>
+
+                                <div class="draggable">
+                                  <img src="gifs/color2.gif">
+                                </div>
+                          </div>
+
+                          <div class='items'>
+                            <p class="date"></p>
+                            <p class="name"></p>
+                          </div>
+
+                          <div class='items'>
+                            <p class="date"></p>
+                            <p class="name"></p>
+                          </div>
+
+                          <div class='items'>
+                            <p class="date"></p>
+                            <p class="name"></p>
+                          </div>
+                          <div class='items'>
+                            <p class="date"></p>
+                            <p class="name"></p>
+                          </div>
+
+                          <div class='items'>
+                            <p class="date"></p>
+                            <p class="name"></p>
+                          </div>
+                          <div class='items'>
+                            <p class="date"></p>
+                            <p class="name"></p>
+                          </div>
+                          <div class='items'>
+                            <p class="date"></p>
+                            <p class="name"></p>
+                          </div>
+                    </div>
+
+
+                </div>
+              <div class="collophon">
+                        <p>GENERAL</p>
+                        <p>This is where Stephanie keeps all her uncategorized,
+                        unfinished, unrealized, unseen, unpolished computational sketches.</p>
+
+                        <p>TYPEFACES </p>
+                        <p>Suisse Works / Suisse Int'l</p>
+
+                        <p>+ INFO.</p>
+                        <p>Stephanie is Junior in Graphic Design at RISD. This is her first ever website, please don't judge too hard.</p>
+
+                        <p></p>
+                        <p>Made as part of the Web Programming WorkShop By John Caserta. RISD Spring 2018.</p>
+                </div>
+
+                <div class="tool">  <p class="trash"> 🗑 </p> <p class='reload'> ↺ </p></div>
+            </div>
+
+
+
+
+  </body>
+
+
+      <script>
+            $(".items").click(function() {
+                  $(this).find("img").css('display', 'flex');
+                  $(this).toggleClass('items_open');
+                  $( function() {
+                    $( "img" ).draggable();
+                  } );
+            })
+      </script>
+
+
+      <script>
+            $(".info").click(function() {
+                  $(".collophon").toggleClass("collophon_open");
+            })
+      </script>
+
+      <script>
+            $(".trash").click(function() {
+                  $("img").css('display', 'none');
+            })
+      </script>
+
+      <script>
+            $(".reload").click(function() {
+                   location.reload();
+            })
+      </script>
+
+
+
+
+      <!-- <script>
+        $( ".head_row" ).hover(
+          function() {
+            $( ".projects" ).css("height","100%");
+          }, function() {
+            $( ".projects" ).css("height","14px");
+          }
+);
+      </script> -->
+
+
+
+</html>
