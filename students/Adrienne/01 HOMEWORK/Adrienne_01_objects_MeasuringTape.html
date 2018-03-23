@@ -1,0 +1,82 @@
+<html>
+
+  <head>
+    <title>Measuring Tape</title>
+    <style>
+    *{background:rgba(0,0,0,0)}
+
+        .circle{
+          height:500px;
+          width:500px;
+          background:rgb(255,239,25);
+
+          position:absolute;
+          top:200px;
+          left:200px;
+          border-radius:500px;
+
+          }
+        .base{
+          height:300px;
+          width:500px;
+          background:rgb(255,239,25);
+
+          position:absolute;
+          top:400px;
+          left:200px;
+          border-radius:30px;
+
+          }
+
+        .innercircle{
+          height:280px;
+          width:280px;
+          background:rgb(200,200,200);
+          border:20px solid black;
+
+          position:absolute;
+          top:290px;
+          left:290px;
+          border-radius:300px;
+        }
+
+        .tape{
+          height:80px;
+          width:10px;
+          background:rgb(200,200,200);
+          border-radius:10%;
+
+          position:absolute;
+          top:640px;
+          left:695px;
+          z-index:1;
+        }
+
+        .button{
+          height:100px;
+          width:50px;
+          background:black;
+          border-radius:40%;
+
+          position:absolute;
+          transform:rotate(-25deg);
+          z-index:-3;
+          top:300px;
+          left:650px;
+        }
+
+
+    </style>
+  </head>
+
+  <body>
+      <div>
+        <div class="circle"></div>
+        <div class="base"></div>
+        <div class="innercircle"></div>
+        <div class="tape"></div>
+        <div class="button"></div>
+      </div>
+  </body>
+
+</html>
