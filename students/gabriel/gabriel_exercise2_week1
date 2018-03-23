@@ -1,0 +1,48 @@
+<html>
+
+  <head>
+    <title>Hey, this is Gabriel.</title>
+    <style>
+        h1 { background: blue; }
+        h2 { width: 50%; background: yellow;
+        clear: both; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+      Welcome
+      </nav>
+      <img src="https://vignette.wikia.nocookie.net/icarly/images/f/fc/Smiley_Face.jpg/revision/latest/scale-to-width-down/180?cb=20121018211215">
+    </header>
+
+    <h1>Hey, this is Gabriel</h1>
+
+    <h1>Countries I've visited recently</h1>
+      <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png">
+      <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Iceland.png">
+      <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Spain.png">
+
+      <h2>Even though I am from</h2>
+        <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Venezuela.png">
+
+    <h1><a href="http://bajastaqueria.com/wp-content/uploads/2017/04/BajasTaq-Exterior-e1492017688839.jpg">I really like this restaurant</a></h1>
+
+    <h1>I really enjoy this movie</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JLFn_wD2B8I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+
+    <h1>Some of my favorite typefaces are</h1>
+      <ul>
+          <li>Akzidenz-Grotesk</li>
+          <li>Antique Olive</li>
+          <li>Nocturne Serif</li>
+      </ul>
+
+    <h4>THANK YOU FOR VISITING!!!!</h4>
+
+
+    </body>
+
+</html>

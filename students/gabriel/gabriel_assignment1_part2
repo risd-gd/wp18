@@ -1,0 +1,99 @@
+<html>
+
+  <head>
+    <title>Laptop Charger</title>
+      <style>
+      body {
+      background-color: mediumblue;
+    }
+    .mainshape {
+			height:200px;
+			width:200px;
+			background: white;
+
+			position:absolute;
+			top:220px;
+			left:210px;
+			border-radius:20px;
+    }
+
+    .cablehead {
+			height:20px;
+			width:50px;
+			background: white;
+
+			position:relative;
+			top:240px;
+			left:402px;
+			border-radius:5px;
+    }
+
+    .frontdetail {
+			height:40px;
+			width:10px;
+			background: white;
+
+			position:absolute;
+			top:240px;
+			left:200px;
+			border-radius:10px;
+    }
+
+    .outlet {
+			height:25px;
+			width:50px;
+			background:white;
+
+			position:absolute;
+			top:245px;
+			left:150px;
+			border-radius:5px;
+    }
+
+    .bluecircle {
+      height:15px;
+  		width:15px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:5px;
+  		left:10px;
+  		border-radius:50px;
+
+    }
+
+    .cable {
+      height:10px;
+  		width:1500px;
+  		background: white;
+
+  		position:absolute;
+  		top:8px;
+  		left:310px;
+
+    }
+
+      </style>
+  </head>
+  <body>
+
+  <div class="mainshape">
+  </div>
+
+  <div class="cablehead">
+  </div>
+
+  <div class="frontdetail">
+  </div>
+
+  <div class="outlet">
+    <div class="bluecircle">
+  </div>
+
+  <div class="cable">
+  </div>
+
+
+  </body>
+
+</html>
