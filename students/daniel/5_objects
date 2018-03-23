@@ -1,0 +1,17 @@
+<html>
+
+  <style>
+    .triangle {
+    			border-left: 50px solid transparent;
+    			border-right: 50px solid transparent;
+    			border-bottom: 100px solid red;
+
+    			position:absolute;
+    			top:220px;
+    			left:210px;
+    		}
+
+  </style>
+
+
+</html>

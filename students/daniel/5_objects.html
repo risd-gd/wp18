@@ -1,0 +1,387 @@
+<html>
+  <head>
+    <style>
+      * {margin: 0; }
+        div {
+        width: 10px;
+        height: 10px;
+        background: white;
+
+
+      }
+        .triangle {
+          	  position:relative  ;
+              background: white;
+              width:0;
+        			border-left: 100px solid transparent;
+        			border-right: 100px solid transparent;
+        			border-bottom: 200px solid black;
+              border-radius: 20px;
+        			top:220px;
+        			left:210px;
+        		}
+          .triangle .empty {
+            position: absolute;
+            top:220px;
+            left:210px;
+            width:0;
+            border-bottom:solid 90px white;
+            border-right:solid 90px transparent;
+            border-left:solid 190px transparent;
+            z-index: 1;}
+    		.circle {
+    			height:30px;
+    			width:30px;
+    			background:white;
+
+    			position:absolute;
+    			top:205px;
+    			left:270px;
+          border: 5px solid black;
+    			border-radius:30px;}
+        .circle2 {
+          height:30px;
+          width:30px;
+          background:white;
+
+          position:absolute;
+          top:205;
+          left:310px;
+          border: 5px solid black;
+          border-radius:30px;
+          z-index: 1;}
+        .rect1 {
+          height:300px;
+          width:10px;
+          background:black;
+
+          position:absolute;
+          top:190px;
+          left:439px;
+
+          transform:rotate(135deg);}
+        .rect2 {
+           height:300px;
+           width:10px;
+           background:black;
+
+           position:absolute;
+           top:190px;
+           left:166px;
+
+           transform:rotate(45deg);
+         }
+
+        .triangle3 {
+          	  position:relative  ;
+              background: white;
+              width:0;
+        			border-left: 30px solid transparent;
+        			border-right: 30px solid transparent;
+        			border-bottom: 60px solid black;
+        			top:0px;
+        			left:700px;
+              transform:rotate(180deg);
+        		}
+        .rect3 {
+          height:200px;
+          width:25px;
+          background:black;
+
+          position:absolute;
+          top:245px;
+          left:717.75px;}
+        .triangle4 {
+          	  position:absolute  ;
+              background: white;
+              width:0;
+        			border-left: 12.5px solid transparent;
+        			border-right: 13px solid transparent;
+        			border-bottom: 25px solid black;
+        			top:445px;
+        			left:718px;
+              transform:rotate(180deg);
+
+        		}
+        .rect4 {
+          height:50px;
+          width:5px;
+          background:white;
+
+          position:absolute;
+          top:400px;
+          left:730px;
+          z-index: 1;
+          transform:rotate(75deg)
+          }
+        .rect5 {
+          height:50px;
+          width:5px;
+          background:white;
+          position:absolute;
+          top:380px;
+          left:730px;
+          z-index: 1;
+          transform:rotate(75deg)
+          }
+        .rect6 {
+          height:50px;
+          width:5px;
+          background:white;
+
+          position:absolute;
+          top:360px;
+          left:730px;
+          z-index: 1;
+          transform:rotate(75deg)
+          }
+        .rect7 {
+          height:50px;
+          width:5px;
+          background:white;
+
+          position:absolute;
+          top:340px;
+          left:730px;
+          z-index: 1;
+          transform:rotate(75deg)
+          }
+        .rect8 {
+          height:50px;
+          width:5px;
+          background:white;
+
+          position:absolute;
+          top:320px;
+          left:730px;
+          z-index: 1;
+          transform:rotate(75deg)
+          }
+        .rect9 {
+            height:50px;
+            width:5px;
+            background:white;
+            position:absolute;
+            top:300px;
+            left:730px;
+            z-index: 1;
+            transform:rotate(75deg)
+            }
+        .rect10 {
+            height:50px;
+            width:5px;
+            background:white;
+            position:absolute;
+            top:280px;
+            left:730px;
+            z-index: 1;
+            transform:rotate(75deg)
+            }
+        .rect11 {
+            height:50px;
+            width:5px;
+            background:white;
+            position:absolute;
+            top:260px;
+            left:730px;
+            z-index: 1;
+            transform:rotate(90deg)
+            }
+
+        .circle3 {
+          height:100px;
+          width:100px;
+          background:white;
+          position:relative;
+          top:-100px;
+          left:950px;
+          border: 15px solid black;
+          border-radius:100px;}
+        .circle4 {
+          height:100px;
+          width:100px;
+          background:white;
+          position:relative;
+          top:-65px;
+          left:950px;
+          border: 15px solid black;
+          border-radius:100px;}
+        .whitebox {
+          height:100px;
+          width:300px;
+          background:white;
+          position:absolute;
+          top:290px;
+          left:900px;
+          z-index: 1;}
+        .rect12 {
+          height:160px;
+          width:15px;
+          background:black;
+          position:absolute;
+          top:260px;
+          left:1009px;
+          border-radius:100px;
+          z-index: 2;
+          transform:rotate(137deg)
+          }
+        .rect13 {
+          height:60px;
+          width:15px;
+          background:black;
+          position:absolute;
+          top:275px;
+          left:1040px;
+          border-radius:100px;
+          z-index: 2;
+          transform:rotate(40deg)
+          }
+        .rect14 {
+          height:70px;
+          width:15px;
+          background:black;
+          position:absolute;
+          top:336px;
+          left:975px;
+          border-radius:100px;
+          z-index: 2;
+          transform:rotate(40deg)
+          }
+
+        .circle5 {
+          height:150px;
+          width:150px;
+          background:black;
+          position:absolute;
+          top:270px;
+          left:1200px;
+          border: 30px solid grey;
+          border-radius:150px;
+          }
+        .circle6 {
+          height:50px;
+          width:50px;
+          background:white;
+          position:absolute;
+          top:342px;
+          left:1275px;
+          border: 5px solid grey;
+          border-radius:50px;
+        }
+
+        .rect15 {
+          height:250px;
+          width:200px;
+          background:black;
+          position:absolute;
+          top:230px;
+          left:1550px;
+          border-radius:5px;
+        }
+        .rect16 {
+          height:180px;
+          width:50px;
+          background:grey;
+          position:absolute;
+          top:250px;
+          left:1650px;
+          border-radius:0px;
+        }
+        .circle7 {
+          height:50px;
+          width:50px;
+          background:grey;
+          position:absolute;
+          top:400px;
+          left:1650px;
+          border: 0px solid grey;
+          border-radius:50px;
+          z-index: 1;
+        }
+        .circle8 {
+          height:30px;
+          width: 30px;
+          background:white;
+          position:absolute;
+          top:340px;
+          left:1660px;
+          border: 0px solid black;
+          border-radius:30px;
+          z-index: 2;
+        }
+        .rect17 {
+          height:20px;
+          width:5px;
+          background:black;
+          position:absolute;
+          top:345px;
+          left:1672px;
+          border-radius:20px;
+          transform:rotate(90deg);
+          z-index: 3;
+        }
+        .rect18 {
+          height:20px;
+          width:5px;
+          background:black;
+          position:absolute;
+          top:345px;
+          left:1672px;
+          border-radius:20px;
+          transform:rotate(0deg);
+          z-index: 3;
+        }
+
+    body {width:2000px;}
+    </style>
+  </head>
+
+
+    <body>
+      <div class="triangle"></div>
+          <div class="empty"></div>
+      <div class="circle"></div>
+      <div class="circle2"></div>
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+
+      <div class="triangle3"></div>
+      <div class="rect3"></div>
+      <div class="triangle4"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+      <div class="rect6"></div>
+      <div class="rect7"></div>
+      <div class="rect8"></div>
+      <div class="rect9"></div>
+      <div class="rect10"></div>
+      <div class="rect11"></div>
+
+      <div class="circle3"></div>
+      <div class="circle4"></div>
+      <div class="whitebox"></div>
+      <div class="rect12"></div>
+      <div class="rect13"></div>
+      <div class="rect14"></div>
+
+      <div class="circle5"></div>
+      <div class="circle6"></div>
+
+      <div class="rect15"></div>
+      <div class="rect16"></div>
+      <div class="circle7"></div>
+      <div class="circle8"></div>
+      <div class="rect17"></div>
+      <div class="rect18"></div>
+
+
+
+
+
+
+
+
+
+
+
+</html>

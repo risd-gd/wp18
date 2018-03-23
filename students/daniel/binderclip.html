@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <style>
+      div {
+      width: 1px;
+      height: 1px;
+      background: white;}
+
+
+    .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid black;
+    position: relative;
+  }
+
+  .triangle-left:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 99px solid transparent;
+    border-bottom: 99px solid transparent;
+    border-right: 99px solid white;
+    position: absolute;
+    top: -99px;
+    left: 1px;
+  }
+
+  </style>
+</head>
+
+
+    <body>
+      <div class="triangle-left"></div>
+    </body>
+
+</html>
