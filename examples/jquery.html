@@ -6,6 +6,7 @@
 
     <style>
 
+		.bodybackgroundblue { background: blue; }
 		img { width: 100%; height: auto;  }
 		body { margin: 0 ; box-sizing: border-box; }
 
@@ -41,9 +42,9 @@
 					<script>
 						$("div").click(function() {
 							$(this).toggleClass("grow");
+							$(this).toggleClass("bodybackgroundblue");
 							$(this).find('img').toggle();
 						});
-
 					</script>
 
 
