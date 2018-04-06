@@ -1,0 +1,42 @@
+<html>
+  <head>
+      <title>Flex demo</title>
+    <style>
+     body {  font-size: 24px;
+     }
+     section {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       height: 100vh;
+     }
+
+      div {  flex: 200px;
+         margin: 1px;
+      background: red;
+
+}
+  .moon {
+    align-self: center;
+  }
+
+      .wide {   flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 400px;
+        /* above same as flex: 2 1 400px; */
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+
+        <div>1</div>
+        <div class="wide">2</div>
+        <div>What about flex in flex?</div>
+        <div class="moon"><img src="../img/moon.svg"></div>
+
+    </section>
+
+  </body>
+</html>
