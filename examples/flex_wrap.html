@@ -19,6 +19,11 @@
   .moon {
     align-self: center;
   }
+  .record { background: green;
+     display: flex; }
+  .record nav { background: blue;
+     align-self: center; flex: auto; }
+
 
       .wide {   flex-grow: 2;
         flex-shrink: 1;
@@ -31,10 +36,17 @@
 
     <section>
 
-        <div>1</div>
-        <div class="wide">2</div>
-        <div>What about flex in flex?</div>
-        <div class="moon"><img src="../img/moon.svg"></div>
+      <div class="record">
+
+        <nav>
+          <img src="../img/record.svg">
+        </nav>
+
+      </div>
+
+      <div class="wide">2</div>
+      <div>What about flex in flex?</div>
+      <div class="moon"><img src="../img/moon.svg"></div>
 
     </section>
 
