@@ -1,0 +1,35 @@
+body {
+  /* border: 10px solid red;
+  padding: 50px; */
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+section {
+  background: blue;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 5vw;
+  color: rgb(119, 173, 143);
+}
+
+header {
+  font-family: Georgia, serif;
+  border: 5px solid yellow;
+  border-width: 5px 10px 20px 30px;
+  background: green;
+  width: 500px;
+  padding: 15px;
+  box-sizing: border-box;
+}
