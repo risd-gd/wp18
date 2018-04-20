@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
 body {
-  /* border: 10px solid red;
-  padding: 50px; */
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Archivo Black', serif;
 }
 
 section {
@@ -12,6 +12,8 @@ section {
 }
 
 main {
+  border: 10px solid red;
+  padding: 50px;
   font-size: 2rem;
 }
 
@@ -25,7 +27,6 @@ h1 {
 }
 
 header {
-  font-family: Georgia, serif;
   border: 5px solid yellow;
   border-width: 5px 10px 20px 30px;
   background: green;
