@@ -34,3 +34,15 @@ header {
   padding: 15px;
   box-sizing: border-box;
 }
+
+.fullwidth{
+  width: 100vw;
+}
+
+#special{
+  background: yellow;
+}
+
+.text{
+  color: red;
+}
