@@ -54,7 +54,7 @@ Sync your work, pull up each other's drawings in browser. Let's airplay a few an
 
 * [Part 6: CSS Flexbox](https://github.com/risd-gd/wp18/wiki/Part-6:-CSS-Flexbox-basics)
 * [Part 7: Media queries](https://github.com/risd-gd/wp18/wiki/Part-7:-Media-Queries)
-* [Part 8: Interacting with the page](https://github.com/risd-gd/wpsp18/wiki/Part-9:-Interacting-with-the-page)
+* [Part 8: Interacting with the page](https://github.com/risd-gd/wp18/wiki/Part-8:-Interacting-with-the-page)
 
 ## [Assignment 3: Animated composition](https://github.com/risd-gd/wp18/wiki/Assignment-3:-Animated-composition)
 

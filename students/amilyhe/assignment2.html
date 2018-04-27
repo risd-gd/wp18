@@ -1,0 +1,159 @@
+<html>
+  <head>
+    <style>
+.grid{
+display:grid;
+grid-template-columns:
+repeat(5,1fr);
+grid-auto-rows:
+    90px mimax(200px, auto);
+grid-gap:20px;
+}
+
+.grid > div {
+ width: 100px;
+height: 100px;
+background: linear-gradient(to top, #b3ffab, #12fff7);
+opacity: 0.5;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+}
+
+.grid2{
+display:grid2;
+grid-template-columns:
+repeat(6,1fr);
+grid-auto-rows:
+    90px mimax(200px, auto);
+grid-gap:2px;
+}
+
+.grid2 > div {
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid red;
+}
+
+.grid-container {
+display: grid;
+grid-template: repeat(3, [row] minmax(120px, 1fr)) / repeat(4, [col] 1fr);
+  grid-gap: 20px;
+}
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
+align-items: center;
+justify-items: center;
+font-family: 'Overpass', sans-serif;
+font-size: 40em;
+line-height: 1;
+color: white;
+}
+.item-1 {
+grid-column: col 1 / span 4;
+grid-row: row 1;
+background: linear-gradient(to left, #6441a5, #2a0845);
+}
+
+.item-2 {
+grid-column: col 4;
+grid-row: row 1 / span 3;
+background: linear-gradient(to right, #ffb347, #ffcc33);
+opacity: 0.8;
+}
+
+.item-3 {
+grid-column: col 1;
+grid-row: row 2 / span 2;
+background: linear-gradient(to top, #d38312, #a83279);
+z-index: 1;
+opacity: 0.8;
+}
+
+.item-4 {
+grid-column: col 2 / span 2;
+grid-row: row 2;
+background: linear-gradient(to left, #b3ffab, #12fff7);
+}
+
+.item-5 {
+grid-column: col 1;
+grid-row: row 3;
+background: linear-gradient(to top, #485563, #29323c);
+}
+
+.item-6 {
+grid-column: col 2 / span 3;
+grid-row: row 3;
+background: linear-gradient(to right, #fe8c00, #f83600);
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+<div class="item-1">
+  <div class="grid">
+  <div><h2>></h2></div>
+  <div><h2>*</h2></div>
+  <div><h2><</h2></div>
+  <div><h2>></h2></div>
+  <div><h2>/</h2></div>
+  <div><h2>/</h2></div>
+  <div><h2>+</h2></div>
+  <div><h2>=</h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  <div><h2></h2></div>
+  </div>
+ </div>
+<div class="item-2">+
+  <div class="grid2">
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+    <div><h2></h2></div>
+  </div>
+  </div>
+<div class="item-3">></div>
+<div class="item-4">></div>
+<div class="item-5">/</div>
+<div class="item-6">*</div>
+</div>
+  </body>
+
+</html>

@@ -1,0 +1,35 @@
+<html>
+  <head>
+      <title>Flex demo</title>
+    <style>
+     body {  font-size: 24px;
+     }
+     section {
+       display: flex;
+       flex-direction: row;
+     }
+
+      div {  flex: 200px;
+         margin: 1px;
+      background: red;
+}
+
+      .wide {   flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 400px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+
+        <div>1</div>
+        <div class="wide">2</div>
+        <div>dfdf</div>
+        <div>asdfsdff</div>
+
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>apartment key </title>
+
+    <style>
+    body {margin: 0;}
+
+    		.largecircle {
+    			height:200px;
+    			width:200px;
+    			background:red;
+
+    			position:absolute;
+          top:200px;
+          left:300px;
+    			border-radius:100px;
+
+    		}
+
+        .smallcircle{
+          height:120px;
+          width:120px;
+          background:white;
+          position:absolute;
+          top:230px;
+          left:340px;
+          border-radius:100px;
+        }
+
+      	.triangle {
+        	border-left: 90px solid white;
+        	border-right: 90px solid white;
+        	border-bottom: 120px solid red;
+
+        	position:absolute;
+        	top:345px;
+        	left:310px;
+          transform:rotate(180deg);
+    		}
+
+        .triangleradius{
+          height:36px;
+          width:36px;
+          background:red;
+          position:absolute;
+          top:418px;
+          left:382px;
+          border-bottom-left-radius:18px;
+          border-bottom-right-radius:18px;
+        }
+
+
+        .transparentrect{
+          height:40px;
+          width:40px;
+          background:white;
+          position:absolute;
+          top:445px;
+          left:390px;
+        }
+
+
+    </style>
+
+  </head>
+
+  <body>
+<div>
+  <div class="largecircle"></div>
+  <div class="triangle"></div>
+</div>
+<div class="smallcircle"></div>
+<div class="transparentrect"></div>
+<div class="triangleradius"></div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,43 @@
+<html>
+
+  <head>
+    <title>Scandinavian flags</title>
+      <style>
+        .blue {
+        width: 14%;
+        height: 100px;
+        background: blue;
+        position: absolute;
+        margin: 0px;
+      }
+        .yellow {
+        width: 100%;
+        height: 20px;
+        background: yellow;
+        float:none;
+        padding: 0px;
+        margin-top: 40px;
+        margin-left: 0px;
+      }
+      .yellow2 {
+      width: 12%;
+      height: 100px;
+      background: yellow;
+      padding: 0px;
+      position: absolute;
+      top: 0px;
+      left: 20%;
+    }
+    </style>
+  </head>
+  <body>
+
+  <div class="blue">
+      <div class="yellow">
+  </div>
+
+  <div class="yellow2"></div>
+
+  </body>
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+
+  <head>
+    <title>CSS basics, Session 2</title>
+    <style>
+    /* hello this is a comment */
+      * { margin: 0; }
+      div { border: 20px solid red;}
+        h1 { background: blue; }
+        h2 { width: 40%; background: pink;
+        clear: both; }
+        h3 { border: 2px solid red;
+        margin: 40px; padding: 20px;
+        background: yellow;
+        float: left; }
+
+      .little { height: 100px; }
+    </style>
+  </head>
+
+  <body>
+  <div>
+    <div class="little"></div>
+    <div class="little"></div>
+  </div>
+    <div></div>
+    <div></div>
+      <h1>hello</h2>
+      <p>please have a seat</p>
+      <h2>ok thanks</h2>
+      <h3>haha</h3>
+      <h3>haha</h3>
+
+
+  </body>
+
+</html>

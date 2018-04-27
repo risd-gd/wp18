@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Selectors</title>
+    <style>
+      div {
+      width: 50%; height: 50px;
+      background: rgba(255,0,0,.4); padding: 2px; margin: 5px;
+      }
+      .descendant div div { background: rgba(0,255,0,.4)}
+      .child .onedeep>div { background: rgba(0,0,255,.4)}
+      .adjacent h2 + div { background: rgba(0,0,255,.4)}
+      .general div ~ div { background: rgba(0,0,255,.4)}
+      .nth div:nth-child(2) { background: rgba(255,0,255,.4) }
+      .even div:nth-child(even) { background: rgba(0,0,255,.4) }
+      .nth2 div:nth-child(2n+6) { background: rgba(0,0,255,.4) }
+      section { border: 1px solid red; margin-bottom: 30px; }
+    </style>
+  </head>
+  <body>
+
+    <h1>Selectors</h1>
+
+    <section class="descendant">
+      <h2>descendant</h2>
+      <div>div
+        <div>div
+          <div>div</div>
+        </div>
+      </div>
+      <div>div</div>
+    </section>
+
+    <section class="child">
+      <h2> child only</h2>
+      <div class="onedeep">div
+        <div>div
+          <div>div</div>
+        </div>
+      </div>
+      <div>div</div>
+    </section>
+
+    <section class="adjacent">
+      <h2>adjacent sibling</h2>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+    </section>
+
+    <section class="general">
+      <h2>general sibling</h2>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      </div>
+
+    </section>
+
+    <section class="nth">
+      <h2>first</h2>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+    </section>
+
+    <section class="even">
+      <h2>even</h2>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+    </section>
+
+    <section class="nth2">
+      <h2>nth + 6</h2>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+      <div>div</div>
+    </section>
+
+
+
+  </body>
+</html>
