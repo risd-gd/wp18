@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Grid 1 Demo</title>
+    <style>
+        body * {  border: 1px solid red; }
+        section>div { font-size: 3rem;
+         }
+
+        section { display: grid; height: 100vh;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+        grid-gap: 8px;
+          justify-items: center;
+        }
+        div:nth-child(1) { align-items: flex-start;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <section>
+      <div>
+        <div>V</div>
+      </div>
+
+
+      <div>o</div><div>t</div><div>e</div>
+    </section>
+
+  </body>
+
+</html>
