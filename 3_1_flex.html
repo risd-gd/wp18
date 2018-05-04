@@ -5,23 +5,24 @@
 
         section { display: flex;
           flex-wrap:wrap;
-           width: 100vw;
+           width: 100vw; height: 100px;
         align-items: center;
-        border: 1px solid red;}
+        background: yellow;}
 
         section div { background: green;
           flex: 1 1 100px;
+          text-align: center;
            }
         .red { background: red;
-          justify-content: center;
           flex-shrink: 1;
-          flex-grow: 2;
-          flex-basis: 600px;
+          flex-grow: 3;
+          flex-basis: 300px;
  }
 
       </style>
   </head>
   <body>
+      <h1>Flex: it just works</h1>
       <section>
         <div>Home</div>
         <div class="">News</div>
