@@ -1,0 +1,45 @@
+<html>
+  <head>
+      <style>
+
+        section { display: flex;
+           width: 100vw;
+        align-items: center;
+        flex-direction: row;
+        background: yellow;}
+
+        section div { background: green;
+          flex: 1 1 200px;
+          height: 300px;
+          text-align: center;
+           }
+        .ylw { background: yellow;
+          display: flex;
+          align-items: center;
+          flex-shrink: 1;
+          flex-grow: 3;
+          flex-basis: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .ylw {  background: pink;}
+            section { flex-direction: column; }
+            section { display: grid; }
+            div { width: 100%; }
+
+        }
+        @media (min-width: 1124px) {
+            .ylw {  background: blue;}
+        }
+
+      </style>
+  </head>
+  <body>
+      <h1>Senegal Responsive Flag</h1>
+      <section>
+        <div>1</div>
+        <div class="ylw"><h2>2</h2></div>
+        <div></div>
+      </section>
+  </body>
+<html>
