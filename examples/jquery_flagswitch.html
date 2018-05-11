@@ -6,13 +6,16 @@
 }
     .faso {
         display: grid;
-      grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
+      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  transition: 1s all;  }
 
     .senegal {
         display: grid;
       grid-template-columns: 3fr;
-    grid-template-rows: 1fr; }
+    grid-template-rows: 1fr;
+  transition: 1s all; }
 
       .red { background: red; width: 100%; height: 200px; }
 
@@ -36,8 +39,7 @@
 
     <script>
       $("section").click(function() {
-        $("section").removeClass("faso");
-        $("section").addClass("senegal");
+        $("section").toggleClass("senegal");
     });
     </script>
 
