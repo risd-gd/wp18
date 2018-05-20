@@ -13,6 +13,7 @@
 				margin-top: 20px;
 				margin-left: 70px;
 				margin-right: 70px;
+				cursor: url("img/mouse-02.png"), auto;
 			}
 
 			nav {
@@ -35,11 +36,7 @@
 
 			div {
 		    margin: 0px;
-<<<<<<< HEAD
 		    background: transparent;
-=======
-		    background: white;
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 		  }
 
 			.weekGrid {
@@ -47,10 +44,14 @@
 				height: 100%;
 				border: 20px solid transparent;
 				display: grid;
-	        grid-template-columns: 100px 1fr 1fr 1fr 1fr;
+	        grid-template-columns: 100px 1fr 1fr;
 					grid-template-rows: 1fr;
 					grid-gap: 5%;
 					grid-row-gap: 30px;
+			}
+
+			.weekGrid div:nth-child(4) {
+				grid-column: 2;
 			}
 
 			.weekGrid div:nth-child(6) {
@@ -58,7 +59,7 @@
 			}
 
 			img {
-				height: 20vw;
+				width: 30vw;
 			}
 
 			.space {
@@ -78,7 +79,9 @@
 				.weekGrid div:nth-child(6) {
 					grid-column: 1;}
 				img {
-					height: 80vw;}
+					width: 70vw;
+					height: 100%;
+				}
 			}
 
 			/* Type Styles */
@@ -122,20 +125,9 @@
 				font-variant: normal;
 			}
 
-<<<<<<< HEAD
 			a {
-				font-variant: normal;
 				text-decoration: none;
 				color: black;
-=======
-			ul {
-				margin: 0px;
-				font-family: 'Roboto', sans-serif;
-				font-size: 12px;
-				line-height: 15px;
-				font-weight: normal;
-				font-variant: normal;
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 			}
 
 			em {
@@ -145,30 +137,19 @@
 
 /* Animation */
 			/* Hovers */
-			h2:hover {
-		    color: blue;
-				cursor: not-allowed;
+			a:hover {
+		    background-color: white;
 		  }
 
-			strong:hover {
-		    color: blue;
-				cursor: pointer;
-		  }
+			img:hover {
+		    transform: scale(1.02);
+				transition: .4s all;
+			}
 
-<<<<<<< HEAD
 			/* JQuery Classes */
 			.grow {
 				width: auto;
 				height: 40vw;
-			}
-
-			.zoom-in {
-=======
-			img:hover {
-		    transform: scale(1.02);
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
-				cursor: pointer;
-				transition: .4s all;
 			}
 
 
@@ -177,7 +158,7 @@
     <body>
 			<nav>
 				<div>
-					<h1>web programming . <em>aj hansen<em></h1>
+					<h1><a href="https://andreajanehansen.com">aj hansen programming</a></h1>
 				</div>
 			</nav>
 
@@ -187,83 +168,29 @@
 				<div class="weekGrid">
 					<h3>week one</h3>
 					<div>
-						<img src="img/candy.png">
-						<p><strong><a href="file:///Users/andreahansen/Desktop/GitHub/wp18/students/AJ/week1/1.1_html_basics/Describe.html">Basic HTML</a></strong></p>
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
+						<img src="img/basichtml.gif">
+						<p><strong><a href="">Basic HTML</a></strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers. Only use your first name and you may change or delete this page later.</p>
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/basiccss.gif">
 						<p><strong>CSS Basics</strong></p>
-<<<<<<< HEAD
 						<p>Duplicate your first exercise and add internal styles to it. How might you call out certain content? Commit and sync to the repository.</p>
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/basiclayout.gif">
 						<p><strong>Basic Layout</strong></p>
-<<<<<<< HEAD
 						<p>Start a new html file. Choose one of the Scandinavian flags and code it using divs, classes and floats. The size of the flag is up to you.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/positioning.gif">
 						<p><strong>Positioning</strong></p>
-<<<<<<< HEAD
 						<p>Start a new html file and make a Scandinavian flag using divs, classes and absolute positioning.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/bits.gif">
 						<p><strong>Digital Bits</strong></p>
-<<<<<<< HEAD
 						<p>Make five drawings using div tags and css classes. Create an html file for each digital bit, and put them into a folder called "Digital Bits" in your github repo.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 				</div>
 
@@ -274,38 +201,24 @@
 						<h3>week two<h3>
 					</div>
 					<div>
-						<img src="img/candy.png">
-						<p><strong>CSS Grid</strong></p>
-<<<<<<< HEAD
-						<p>Make two flags using CSS grid. Use an implicit grid for the Nairu flag. Use an explicit one for the United States flag.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
+						<img src="img/flag1.gif">
+						<p><strong>CSS Grid Part I</strong></p>
+						<p>Make a flag using CSS grid. Use an implicit grid for the Nairu flag.</p>
 					</div>
 					<div>
-						<img src="img/candy.png">
-						<p><strong>Grid Drawing</strong></p>
-<<<<<<< HEAD
+						<img src="img/flag2.gif">
+						<p><strong>CSS Grid Part II</strong></p>
+						<p>Make a flag using CSS grid. Use an explicit one for the United States flag.</p>
+					</div>
+					<div>
+						<img src="img/grid1.gif">
+						<p><strong>Grid Drawing 1</strong></p>
 						<p>Assignment two asks that you play with the new css layout properties (grid and flexbox) to come up with abstract compositions. The webpages should change when the browser changes viewport widths.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
+					</div>
+					<div>
+						<img src="img/grid2.gif">
+						<p><strong>Grid Drawing 2</strong></p>
+						<p>Assignment two asks that you play with the new css layout properties (grid and flexbox) to come up with abstract compositions. The webpages should change when the browser changes viewport widths.</p>
 					</div>
 				</div>
 
@@ -316,72 +229,19 @@
 						<h3>week three<h3>
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/flags.gif">
 						<p><strong>CSS Flexbox</strong></p>
-<<<<<<< HEAD
 						<p>Code up the following flags in separate html files using flexbox and external svgs provided. Commit and sync your work.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/mediaquery.gif">
 						<p><strong>Media Queries</strong></p>
-<<<<<<< HEAD
 						<p>Using flex or grid, create a simple flag (your own country?). Change that flag to two other designs at two breakpoints (720px width and 360px width).</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 					<div>
-						<img src="img/candy.png">
-						<p><strong>Interactive Pages</strong></p>
-<<<<<<< HEAD
-						<p>Code up the flag of Burkina Faso. On click, change it to the flag of Senegal.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
-					</div>
-					<div>
-						<img src="img/candy.png">
+						<img src="img/animation.gif">
 						<p><strong>Web Animation</strong></p>
-<<<<<<< HEAD
 						<p>Create a single animation that goes as far as you can go with motion. You do not need to use only abstract shapes; the look of the site is up to you.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 				</div>
 
@@ -392,43 +252,18 @@
 						<h3>week four<h3>
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/candy.gif">
 						<p><strong>SVG Candy Cane</strong></p>
-<<<<<<< HEAD
 						<p>Copy the candy cane svg from the example file and paste into a new file. Color the candy cane the same as the candy cane you were given.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 					<div>
-						<img src="img/candy.png">
+						<img src="img/website.gif">
 						<p><strong>Personal Site</strong></p>
-<<<<<<< HEAD
 						<p>This final assignment asks you to create a single page website that collects your exercises and previous assignments. You should use CSS Grid and Flexbox for the overall structure of the webpage. Floats and positioning may also be needed.</p>
-
-=======
-						<p>Set up a webpage that includes some biographical information to share with your peers.Only use your first name and you may change or delete this page later.</p>
-						<ul>
-								<li>Countries/Cities visited (include flags, images)</li>
-								<li>Image or two of your own work</li>
-								<li>Link to your favorite restaurant (Google Map or URL)</li>
-								<li>Your favorite font (link to specimen or more info)</li>
-								<li>Embed trailer of your favorite movie</li>
-						</ul>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
 					</div>
 				</div>
 			</main>
 
-<<<<<<< HEAD
 			<script>
 			/* Zoom in to Pictures */
 				$("img").click(function() {
@@ -440,19 +275,5 @@
 					$(this).toggleClass("zoom-in");
 				});
 			</script>
-
-=======
-			<footer>
-				<div>
-					<h2>about</h2>
-				</div>
-				<div>
-					<h2>contact</h2>
-				</div>
-				<div>
-					<h2>social</h2>
-				</div>
-			</footer>
->>>>>>> 861516c9f457a5f8eeff31bd77d08e210f93d8a8
     </body>
 </html>
