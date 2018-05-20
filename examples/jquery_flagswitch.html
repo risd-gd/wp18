@@ -1,0 +1,48 @@
+<html>
+  <title>Burkina Faso</title>
+  <head>
+    <style>
+      section { width: 600px; height: 400px;
+}
+    .faso {
+        display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  transition: 1s all;  }
+
+    .senegal {
+        display: grid;
+      grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+  transition: 1s all; }
+
+      .red { background: red; width: 100%; height: 200px; }
+
+      .green { background: green; width: 100%; height: 200px;}
+
+      .star { justify-self: center;
+        align-self: center;
+      grid-row: 1/3; grid-column: 1/2; }
+
+      img { width: 15vw;}
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="faso">
+      <div class="red">a</div>
+      <div class="green"></div>
+      <img class="star" src="../img/star2.svg">
+    </section>
+
+    <script>
+      $("section").click(function() {
+        $("section").toggleClass("senegal");
+    });
+    </script>
+
+
+  </body>
+</html>

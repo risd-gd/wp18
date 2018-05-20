@@ -1,0 +1,70 @@
+<html>
+
+  <head>
+    <title>Pencil</title>
+      <style>
+      body {
+      background-color: mediumblue;
+    }
+    .mainshape {
+			height:400px;
+			width:30px;
+			background:#2C2C2B;
+
+			position:absolute;
+			top:200px;
+			left:400px;
+			border-radius:4px;
+    }
+
+    .tip1 {
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 50px solid white;
+
+			position:absolute;
+			top:595px;
+			left:400px;
+      transform: rotate(180deg);
+		}
+
+    .tip {
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-bottom: 15px solid #2C2C2B;
+
+			position:relative;
+			top:0px;
+			left:0px;
+		}
+
+    .metal {
+			height:30px;
+			width:30px;
+			background:white;
+
+			position:absolute;
+			top:400px;
+			left:-10px;
+			border-radius:4px;
+    }
+
+
+
+      </style>
+  </head>
+  <body>
+
+<div class="mainshape">
+  </div>
+
+  <div class="tip1">
+    <div class="tip">
+    </div>
+
+  <div class="metal">
+      </div>
+
+  </body>
+
+</html>

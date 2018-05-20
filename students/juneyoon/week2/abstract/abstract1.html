@@ -1,0 +1,68 @@
+<html>
+
+  <head>
+    <title>Abstract 1</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #EAEAEA;
+      }
+
+      .grid {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template: repeat(20, 10%) / repeat(20, 5%);
+      }
+
+      .a {
+        grid-area: 2 / 2 / 4 / 7;
+        border: 2px solid #FF00C0;
+        z-index:1;
+      }
+
+      .b {
+        grid-area: 1 / 4 / 8 / 17;
+        background-color: #00F0FF;
+        mix-blend-mode: multiply;
+        z-index: 2;
+      }
+
+      .c {
+        grid-area: 1 / 10 / 11 / 21;
+        background-color: white;
+      }
+
+      .d {
+        height: 500px;
+        width: 500px;
+        position: relative;
+        top: 20%;
+        left: 30%;
+        background-color: #FFFE00;
+        border-radius: 1000px;
+        z-index: 0;
+      }
+
+      .e {
+        grid-area: 2 / 10 / 10 / 19;
+        border: 5px dashed #A800FF;
+        z-index: 3;
+      }
+
+
+    </style>
+  </head>
+
+ <body>
+   <div class="grid">
+     <div class="a"></div>
+     <div class="b"></div>
+     <div class="c"></div>
+     <div class="d"></div>
+     <div class="e"></div>
+  </div>
+
+ </body>
+
+</html>

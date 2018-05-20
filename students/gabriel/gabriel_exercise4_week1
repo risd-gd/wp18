@@ -1,0 +1,43 @@
+<html>
+
+  <head>
+    <title>Scandinavian flags</title>
+      <style>
+        .red {
+        width: 14%;
+        height: 100px;
+        background: red;
+        position: absolute;
+        margin: 0px;
+      }
+        .white {
+        width: 100%;
+        height: 20px;
+        background: white;
+        float:none;
+        padding: 0px;
+        margin-top: 40px;
+        margin-left: 0px;
+      }
+      .white2 {
+      width: 12%;
+      height: 100px;
+      background: white;
+      padding: 0px;
+      position: absolute;
+      top: 0px;
+      left: 20%;
+    }
+    </style>
+  </head>
+  <body>
+
+  <div class="red">
+      <div class="white">
+  </div>
+
+  <div class="white2"></div>
+
+  </body>
+
+</html>

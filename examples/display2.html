@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Display</title>
+    <style>
+      div {
+      width: 30%; height: 100px;
+      background: grey; padding: 10px; margin: 10px;
+      }
+      .invisible { visibility: hidden; }
+      .block { display: block; }
+      .inline { display: inline; }
+      .inline-block { display: inline-block; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; }
+      .flex { display: flex; }
+      .none { display: none; }
+      .flex aside { flex: 1 1 auto; }
+      section { border: 1px solid red; margin-bottom: 30px; }
+    </style>
+  </head>
+  <body>
+
+    <h1>Common Display values</h1>
+
+    <section>
+      <h2>block</h2>
+      <div class="block invisible">block</div>
+      <div class="block">block</div>
+      <div class="block invisible">block</div>
+      <div class="block">block</div>
+    </section>
+
+    <section>
+      <h2>inline</h2>
+      <div class="inline">inline</div>
+      <div class="inline">inline</div>
+      <div class="inline">inline</div>
+      <div class="inline">inline</div>
+      <div class="inline">inline</div>
+    </section>
+
+    <section>
+      <h2>inline-block</h2>
+      <div class="inline-block">inline-block</div>
+      <div class="inline-block">inline-block</div>
+    </section>
+
+    <section>
+      <h2>grid</h2>
+      <div class="grid">
+        <aside>grid</aside>
+        <aside>grid</aside>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>flex</h2>
+      <div class="flex">
+        <aside>flex</aside>
+        <aside>flex</aside>
+      </div>
+    </section>
+
+    <section>
+      <h2>none</h2>
+      <div class="none">none</div>
+      <div class="none">none</div>
+    </section>
+
+
+  </body>
+</html>

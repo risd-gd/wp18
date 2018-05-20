@@ -1,0 +1,33 @@
+<html>
+  <head>
+      <style>
+        * { margin: 0; }
+
+        section { display: flex;
+    /*      flex-wrap: wrap; */
+           width: 100vw;}
+
+        div { background: green;
+          flex-wrap:wrap;
+          flex: 1 1 200px;
+          /* flex: grow shrink basis */
+          margin: 1px;
+           }
+        .grow {
+          flex-grow: 2;
+          flex-basis: 500px;
+        }
+
+      </style>
+  </head>
+  <body>
+      <h1>Flex grow shrink</h1>
+
+      <section>
+        <div>1</div>
+        <div class="grow">2</div>
+        <div>3</div>
+      </section>
+
+  </body>
+<html>

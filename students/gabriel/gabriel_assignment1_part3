@@ -1,0 +1,539 @@
+<html>
+
+  <head>
+    <title>Notebook</title>
+      <style>
+      body {
+      background-color: mediumblue;
+    }
+    .mainshape {
+			height:400px;
+			width:300px;
+			background: #232323;
+
+			position:absolute;
+			top:220px;
+			left:210px;
+			border-radius:10px;
+    }
+
+    .bluecircle1 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:10px;
+  		left:10px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle2 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle3 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle4 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle5 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle6 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle7 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle8 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+      .bluecircle9 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .bluecircle10 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .bluecircle11 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .bluecircle12 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .bluecircle13 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .bluecircle14 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+    }
+
+    .bluecircle15 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+    .bluecircle16 {
+      height:10px;
+  		width:10px;
+  		background: mediumblue;
+
+  		position:absolute;
+  		top:20px;
+  		left:0px;
+  		border-radius:50px;
+
+    }
+
+      .bluecircle17 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .bluecircle18 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .bluecircle19 {
+        height:10px;
+    		width:10px;
+    		background: mediumblue;
+
+    		position:absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:50px;
+
+      }
+
+      .spiral1 {
+        height:2px;
+    		width:30px;
+    		background: white;
+
+    		position: absolute;
+    		top:5px;
+    		left:-15px;
+    		border-radius:3px;
+
+      }
+
+      .spiral2 {
+        height:2px;
+    		width:30px;
+    		background: white;
+
+    		position: absolute;
+    		top:20px;
+    		left:0px;
+    		border-radius:3px;
+
+      }
+
+      .spiral3 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:-320px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral4 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:100px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral5 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:120px;
+        left:0px;
+        border-radius:3px;
+
+      }
+      .spiral6 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:140px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral7 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:-20px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral8 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:-60px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral9 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:-80px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral10 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:-40px;
+        left:0px;
+        border-radius:3px;
+
+      }
+      .spiral11 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:-20px;
+        left:0px;
+        border-radius:3px;
+
+      }
+      .spiral12 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:0px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral13 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:40px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral14 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:80px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral15 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top:-20px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral16 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top: -120px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral17 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top: -100px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral18 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top: 20px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+      .spiral19 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top: 20px;
+        left:0px;
+        border-radius:3px;
+
+      }
+      .spiral20 {
+        height:2px;
+        width:30px;
+        background: white;
+
+        position: absolute;
+        top: 20px;
+        left:0px;
+        border-radius:3px;
+
+      }
+
+
+
+      </style>
+  </head>
+  <body>
+
+  <div class="mainshape">
+    <div class="bluecircle1">
+      <div class="bluecircle2">
+        <div class="bluecircle3">
+          <div class="bluecircle4">
+            <div class="bluecircle5">
+              <div class="bluecircle6">
+                <div class="bluecircle7">
+                  <div class="bluecircle8">
+                    <div class="bluecircle9">
+                      <div class="bluecircle10">
+                        <div class="bluecircle11">
+                          <div class="bluecircle12">
+                            <div class="bluecircle13">
+                              <div class="bluecircle14">
+                                <div class="bluecircle15">
+                                  <div class="bluecircle16">
+                                    <div class="bluecircle17">
+                                      <div class="bluecircle18">
+                                        <div class="bluecircle19">
+
+      </div>
+    </div>
+  </div>
+
+<div class="spiral1">
+  <div class="spiral2">
+    <div class="spiral3">
+      <div class="spiral4">
+        <div class="spiral5">
+          <div class="spiral6">
+              <div class="spiral7">
+                <div class="spiral8">
+                  <div class="spiral9">
+                    <div class="spiral10">
+                      <div class="spiral11">
+                        <div class="spiral12">
+                          <div class="spiral13">
+                            <div class="spiral14">
+                              <div class="spiral15">
+                                <div class="spiral16">
+                                  <div class="spiral17">
+                                    <div class="spiral18">
+                                      <div class="spiral19">
+                                        <div class="spiral20">
+  </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Contact</title>
+        <style>
+            #wrapper {
+                margin-left: 100px;
+                margin-top: 100px;
+            }
+            
+            #cap-top {
+                width: 140px;
+                margin-left: 25px;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 30px solid black;
+            }
+            
+            .bottle {
+                margin-left: 100px;
+                z-index: 1;
+            }
+            
+            #outside {
+                background-color: black;
+                width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                z-index: -1;
+                position: absolute;
+                margin-left: 70px;
+            }
+            
+            #negspace {
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                z-index: 1;
+                position: absolute;
+                border-radius: 25px;
+                margin-left: 84px;
+                margin-top: 14px;
+            }
+            
+            #cap {
+                background-color: black;
+                width: 200px;
+                height: 60px;
+                margin-left: 25px;
+            }
+            
+            #metal {
+                background-color: lightgray;
+                width: 200px;
+                height: 10px;
+                margin-left: 25px;
+            }
+            
+            #base {
+                width: 250px;
+                height: 500px;
+                background-color: navy;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="handle">
+                <div id="outside"></div>
+                <div id="negspace"></div>
+            </div>
+            <div class="bottle">
+                <div id="cap-top"></div>
+                <div id="cap"></div>
+                <div id="metal"></div>
+                <div id="base"></div>
+            </div>
+        </div>
+    </body>
+</html>
