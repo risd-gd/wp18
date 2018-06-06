@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+    <style>
+    body {
+      background-color:
+    }
+      div { width: 100px; height: 100px;
+      background: pink; margin: 1px;
+      transition: 1s all; float: left;
+    }
+    p {
+      font-family: monospace;
+      color: white;
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+    }
+    .circle1 {
+  			height:100px;
+  			width:100px;
+  			background:#c6e0ff;
+
+  			position:absolute;
+  			top:100px;
+  			left:40%;
+  			border-radius:50px;
+        transition: 1s all;
+
+  		}
+      .circle2 {
+          height:150px;
+          width:150px;
+          background:#c6e0ff;
+
+          position:absolute;
+          top:180px;
+          left:37%;
+          border-radius:150px;
+          transition: 1s all;
+
+        }
+        .circle3 {
+            height:200px;
+            width:200px;
+            background:#c6e0ff;
+
+            position:absolute;
+            top:280px;
+            left:34%;
+            border-radius:150px;
+            transition: 1s all;
+
+          }
+          .line1 {
+            height:200px;
+            width:7px;
+            background-color: brown;
+
+            position:absolute;
+            top:150px;
+            left:49%;
+            z-index: -3;
+
+            -webkit-transform:rotate(45deg);
+          }
+          .line2 {
+            height:200px;
+            width:7px;
+            background-color: brown;
+
+            position:absolute;
+            top:150px;
+            left:36%;
+            z-index: -3;
+
+            -webkit-transform:rotate(-45deg);
+          }
+          .line3 {
+            height:60px;
+            width:15px;
+            background-color: brown;
+
+            position:absolute;
+            top:50px;
+            left:43%;
+            z-index: -3;
+
+            -webkit-transform:rotate(90deg);
+          }
+          .line4 {
+            height:45px;
+            width:45px;
+            background-color: brown;
+
+            position:absolute;
+            top:30px;
+            left:42%;
+            z-index: -3;
+
+            -webkit-transform:rotate(90deg);
+          }
+          .snow1 {
+            height:60px;
+            width:7px;
+            background-color: white;
+
+            position:absolute;
+            top:300px;
+            left:75%;
+            z-index: 6;
+            transform:rotate(45deg);
+          cursor: crosshair;
+
+            -webkit-transform:rotate(90deg);
+          }
+          .snow2 {
+            height:60px;
+            width:7px;
+            background-color: white;
+
+            position:absolute;
+            top:300px;
+            left:75%;
+            z-index: 6;
+
+            -webkit-transform:rotate(0deg);
+          }
+          .snow3 {
+            height:60px;
+            width:7px;
+            background-color: white;
+
+            position:absolute;
+            top:300px;
+            left:75%;
+            z-index: 6;
+
+            -webkit-transform:rotate(45deg);
+          }
+          .snow4 {
+            height:60px;
+            width:7px;
+            background-color: white;
+
+            position:absolute;
+            top:300px;
+            left:75%;
+            z-index: 6;
+
+            -webkit-transform:rotate(-45deg);
+          }
+
+      div:hover { background: white;
+      }
+
+      .wrapper div  {
+        background: blue;
+      }
+      .rotate { transform:rotate(45deg);
+    cursor: crosshair;
+    margin-top: -10px;}
+    body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #c6e0ff, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+      <div class="line4"></div>
+      <div class="snow1"></div>
+      <div class="snow2"></div>
+      <div class="snow3"></div>
+      <div class="snow4"></div>
+      <p>Click to disassemble snowflake</p>
+
+
+      <script>
+        $("div").click(function() {
+          $(this).toggleClass("rotate");
+        //  $(this).find('img').toggle();
+        });
+
+      </script>
+
+  </body>
+</html>
