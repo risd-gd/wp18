@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	  <title>AJ Hansen Web Programming</title>
+
+    <style>
+/* CSS */
+		/* Template */
+			body { background: mistyrose;
+				margin-top: 20px;
+				margin-left: 70px;
+				margin-right: 70px;
+				cursor: url("img/mouse-02.png"), auto;
+			}
+
+			nav {
+				background: transparent;
+	      height: 100%;
+				border: 20px solid transparent;
+				display: grid;
+	        grid-template-columns: 2fr;
+					grid-template-rows: 1fr;
+	    }
+
+			footer {
+				margin-left: 37%;
+				margin-top: 15px;
+				margin-bottom: 30px;
+	      display: grid;
+	        grid-template-columns: repeat(6, 1fr);
+					grid-template-rows: 1fr;
+			}
+
+			div {
+		    margin: 0px;
+		    background: transparent;
+		  }
+
+			.weekGrid {
+				background: transparent;
+				height: 100%;
+				border: 20px solid transparent;
+				display: grid;
+	        grid-template-columns: 100px 1fr 1fr;
+					grid-template-rows: 1fr;
+					grid-gap: 5%;
+					grid-row-gap: 30px;
+			}
+
+			.weekGrid div:nth-child(4) {
+				grid-column: 2;
+			}
+
+			.weekGrid div:nth-child(6) {
+				grid-column: 2;
+			}
+
+			img {
+				width: 30vw;
+			}
+
+			.space {
+				height: 40px;
+				width: 100%;
+			}
+
+			/* Media Queries */
+			@media (max-width: 800px) {
+				.weekGrid {
+					height: 100%;
+					border: 20px solid transparent;
+					display: grid;
+						grid-template-columns: 1fr;
+						grid-template-rows: 1fr;
+						grid-gap: 10px;}
+				.weekGrid div:nth-child(4) {
+					grid-column: 1;}
+				.weekGrid div:nth-child(6) {
+					grid-column: 1;}
+				img {
+					width: 70vw;
+					height: 100%;
+				}
+			}
+
+			/* Type Styles */
+			h1 {
+				margin: 0px;
+				font-family: 'Roboto', sans-serif;
+				font-size: 34px;
+				line-height: 38px;
+				letter-spacing: 1.8px;
+				font-weight: bold;
+				font-variant: small-caps;
+			}
+
+			h2 {
+				margin: 0px;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 16px;
+				line-height: 20px;
+				font-weight: lighter;
+				font-variant: normal;
+				color: blue;
+			}
+
+			h3 {
+				margin: 0px;
+				margin-bottom: 15px;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 22px;
+				line-height: 26px;
+				letter-spacing: .5px;
+				font-weight: lighter;
+				font-variant: small-caps;
+			}
+
+			p {
+				margin-top: 0px;
+				font-family: 'Roboto', sans-serif;
+				font-size: 12px;
+				line-height: 16px;
+				font-weight: normal;
+				font-variant: normal;
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			em {
+				font-weight: lighter;
+				font-style: normal;
+			}
+
+/* Animation */
+			/* Hovers */
+			a:hover {
+		    background-color: white;
+		  }
+
+			img:hover {
+		    transform: scale(1.02);
+				transition: .4s all;
+			}
+
+			/* JQuery Classes */
+			.grow {
+				width: auto;
+				height: 40vw;
+			}
+
+
+/*HTML*/
+    </style>
+    <body>
+			<nav>
+				<div>
+					<h1><a href="https://andreajanehansen.com">aj hansen programming</a></h1>
+				</div>
+			</nav>
+
+				<div class="space"></div>
+
+			<main>
+				<div class="weekGrid">
+					<h3>week one</h3>
+					<div>
+						<img src="img/basichtml.gif">
+						<p><strong><a href="">Basic HTML</a></strong></p>
+						<p>Set up a webpage that includes some biographical information to share with your peers. Only use your first name and you may change or delete this page later.</p>
+					</div>
+					<div>
+						<img src="img/basiccss.gif">
+						<p><strong>CSS Basics</strong></p>
+						<p>Duplicate your first exercise and add internal styles to it. How might you call out certain content? Commit and sync to the repository.</p>
+					</div>
+					<div>
+						<img src="img/basiclayout.gif">
+						<p><strong>Basic Layout</strong></p>
+						<p>Start a new html file. Choose one of the Scandinavian flags and code it using divs, classes and floats. The size of the flag is up to you.</p>
+					</div>
+					<div>
+						<img src="img/positioning.gif">
+						<p><strong>Positioning</strong></p>
+						<p>Start a new html file and make a Scandinavian flag using divs, classes and absolute positioning.</p>
+					</div>
+					<div>
+						<img src="img/bits.gif">
+						<p><strong>Digital Bits</strong></p>
+						<p>Make five drawings using div tags and css classes. Create an html file for each digital bit, and put them into a folder called "Digital Bits" in your github repo.</p>
+					</div>
+				</div>
+
+				<div class="space"></div>
+
+				<div class="weekGrid">
+					<div>
+						<h3>week two<h3>
+					</div>
+					<div>
+						<img src="img/flag1.gif">
+						<p><strong>CSS Grid Part I</strong></p>
+						<p>Make a flag using CSS grid. Use an implicit grid for the Nairu flag.</p>
+					</div>
+					<div>
+						<img src="img/flag2.gif">
+						<p><strong>CSS Grid Part II</strong></p>
+						<p>Make a flag using CSS grid. Use an explicit one for the United States flag.</p>
+					</div>
+					<div>
+						<img src="img/grid1.gif">
+						<p><strong>Grid Drawing 1</strong></p>
+						<p>Assignment two asks that you play with the new css layout properties (grid and flexbox) to come up with abstract compositions. The webpages should change when the browser changes viewport widths.</p>
+					</div>
+					<div>
+						<img src="img/grid2.gif">
+						<p><strong>Grid Drawing 2</strong></p>
+						<p>Assignment two asks that you play with the new css layout properties (grid and flexbox) to come up with abstract compositions. The webpages should change when the browser changes viewport widths.</p>
+					</div>
+				</div>
+
+				<div class="space"></div>
+
+				<div class="weekGrid">
+					<div>
+						<h3>week three<h3>
+					</div>
+					<div>
+						<img src="img/flags.gif">
+						<p><strong>CSS Flexbox</strong></p>
+						<p>Code up the following flags in separate html files using flexbox and external svgs provided. Commit and sync your work.</p>
+					</div>
+					<div>
+						<img src="img/mediaquery.gif">
+						<p><strong>Media Queries</strong></p>
+						<p>Using flex or grid, create a simple flag (your own country?). Change that flag to two other designs at two breakpoints (720px width and 360px width).</p>
+					</div>
+					<div>
+						<img src="img/animation.gif">
+						<p><strong>Web Animation</strong></p>
+						<p>Create a single animation that goes as far as you can go with motion. You do not need to use only abstract shapes; the look of the site is up to you.</p>
+					</div>
+				</div>
+
+				<div class="space"></div>
+
+				<div class="weekGrid">
+					<div>
+						<h3>week four<h3>
+					</div>
+					<div>
+						<img src="img/candy.gif">
+						<p><strong>SVG Candy Cane</strong></p>
+						<p>Copy the candy cane svg from the example file and paste into a new file. Color the candy cane the same as the candy cane you were given.</p>
+					</div>
+					<div>
+						<img src="img/website.gif">
+						<p><strong>Personal Site</strong></p>
+						<p>This final assignment asks you to create a single page website that collects your exercises and previous assignments. You should use CSS Grid and Flexbox for the overall structure of the webpage. Floats and positioning may also be needed.</p>
+					</div>
+				</div>
+			</main>
+
+			<script>
+			/* Zoom in to Pictures */
+				$("img").click(function() {
+					$(this).toggleClass("grow");
+				});
+
+			/* Mouse Over Cursor Changes */
+				$("img").mouseover(function() {
+					$(this).toggleClass("zoom-in");
+				});
+			</script>
+    </body>
+</html>

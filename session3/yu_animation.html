@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+
+
+<style>
+body{
+  background: red;
+}
+section {  width: 600vw;
+  height: 20vw;
+  margin-top:200px;
+  border: 1px solid  blue;
+  margin-right: 100px; margin-left:100px;
+  display: grid;
+     grid-template-columns: repeat(100,40px);
+   grid-auto-rows: 5vw;
+   background:red;
+
+
+}
+
+.circle{
+  background:red;
+  width: 20px;
+  height:20px;
+  border-radius:50%;
+  margin-top:-90px;
+}
+
+
+
+.red{
+  background:red;
+  width: 20px;
+  height:20px;
+  border-radius:50%;
+  margin-top:-90px;
+}
+
+
+
+
+       .move { background: white;
+       animation: myanimation 0.3s ; }
+
+
+       @keyframes myanimation {
+    0%   { opacity: 1; margin-top: 0; }
+    100% { opacity: 0; margin-top: 1250px; }
+
+  }
+
+
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<section>
+
+<script>
+var i;
+for (i = 0; i < 1430; i++) {
+  document.write("<div class='red'></div>");
+}
+</script>
+
+</section>
+
+</body>
+
+<script>
+  $("div").mouseover(function() {
+    $(this).addClass("move");
+});
+</script>
+
+
+
+</html>

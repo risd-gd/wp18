@@ -1,0 +1,69 @@
+<html>
+  <head>
+      <title>Interaction</title>
+    <style>
+
+    @keyframes colorit {
+      0%   { background: white; }
+      50% { margin: 20px; background: black; }
+      100% { background: white; }
+    }
+
+
+
+
+
+
+
+     section {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       height: 100vh;
+     }
+
+      div {  flex: 200px;
+         margin: 1px;
+      background: red;
+      transition: 1s all;
+}
+    div:hover {
+      transform: scale(.9);
+      /* background: pink;
+      flex: 2 400px;
+      margin: 20px; */
+    }
+
+  @media (min-width: 1024px) {
+    div {
+      animation: colorit 5s infinite;
+    }
+
+  }
+  @media (max-width: 1px) {
+    section {
+      flex-direction: column;
+    }
+    div {
+        flex: 1 1 100px;
+        margin: 20px;  background: blue;
+     }
+  }
+
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <section>
+
+      <div class="">2</div>
+      <div>?</div>
+      <div class="none"><img src="img/star.svg"</div>
+
+    </section>
+
+  </body>
+</html>

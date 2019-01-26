@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+body {
+  margin: 0;
+  font-family: 'Archivo Black', serif;
+}
+
+section {
+  background: blue;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  border: 10px solid red;
+  padding: 50px;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 5vw;
+  color: rgb(119, 173, 143);
+}
+
+header {
+  border: 5px solid yellow;
+  border-width: 5px 10px 20px 30px;
+  background: green;
+  width: 500px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.fullwidth{
+  width: 100vw;
+}
+
+#special{
+  background: yellow;
+}
+
+.text{
+  color: red;
+}

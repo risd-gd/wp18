@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <style>
+      nav {
+      display: flex;
+      flex-wrap: wrap;
+      }
+      div { flex: 2 1 200px; margin: 20px;
+      height: 100px;
+      background: blue;
+    }
+
+      @media (max-width: 600px)
+      /* min-width: 300px */
+      {
+         nav {
+         flex-direction: column;}
+     }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </nav>
+  </body>
+</html>

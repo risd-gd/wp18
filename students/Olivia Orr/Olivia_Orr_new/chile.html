@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <style>
+      nav {
+        display: grid; width: 500px; height: 350px; background-color: gray;
+        grid-template-rows: 200px 200px;
+          grid-template-columns: 1fr 1fr 1fr;
+
+      }
+      div {
+      width: 200px;
+      height: 200px;
+      background: blue; }
+
+      img {
+        width: 50%;
+        align-self: center;
+      }
+      div:nth-child(1) {
+
+      display: center;
+
+   }
+      div:nth-child(2) {
+
+      background-color: white;
+
+   }
+   div:nth-child(3) {
+
+   background-color: white;
+
+}
+div:nth-child(4) {
+
+background-color: red;
+
+}
+div:nth-child(5) {
+
+background-color: red;
+
+}
+div:nth-child(6) {
+
+background-color: red;
+
+}
+
+      @media (max-width: 600px)
+      {
+
+        div:nth-child(2) {
+
+        background-color: green;
+        position: absolute;
+        right: 50px;
+
+
+     }
+     div:nth-child(1) {
+
+     background-color: red;
+
+  }
+  div:nth-child(3) {
+
+  background-color: yellow;
+  position: absolute;
+  top: 500px;
+
+}
+div:nth-child(5) {
+
+background-color: pink;
+
+
+}
+  img {
+    width: 20%;
+    z-index: 4;
+  }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div><img src="img/greenstar.svg"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </nav>
+  </body>
+</html>
