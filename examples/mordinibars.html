@@ -1,0 +1,168 @@
+<html>
+	<head>
+		<style>
+		
+			
+			body {background-color: white;}
+			
+			div { width: 100vw; height: 50px;
+			background: #330000; opacity: .8; float: left; margin-top: -10px; 
+			transition: all 1s;
+			}
+			.different { background: #330033; clear: both; }
+			.different2 { background: #330066; clear: both; }
+			.different3 { background: #330099; clear: both; }
+			.different4 { background: #3300CC; clear: both; }
+			.different5 { background: #3300FF; clear: both; }
+
+			div:hover { opacity: 1;}
+			
+			
+				@media (max-width: 1067px) {
+			
+			div{ background: #3300FF; opacity:.8;
+			 }
+			.different{ background: #3300CC; opacity .8;
+			 } 
+			 .different2{ background: #330099; opacity:.8;
+			 } 
+			 .different3{ background: #330066; opacity:.8;
+			 } 
+			 .different4{ background: #330033; opacity:.8;
+			 } 
+			 .different5{ background: #330000; opacity:.8;
+			 } 
+	 
+			}
+			
+			@media (max-width: 767px) {
+			div{ background: #660000; opacity:.7;
+			 }
+			.different{ background: #660033; opacity:.7;
+			 } 
+			 .different2{ background: #660066; opacity:.7;
+			 } 
+			 .different3{ background: #660099; opacity:.7;
+			 } 
+			 .different4{ background: #6600CC; opacity:.7;
+			 } 
+			 .different5{ background: #6600FF; opacity:.7;
+			 } 
+			 
+			}
+		
+		.animate {
+		
+		-webkit-animation: turn 5s 100 normal linear forwards 0s;
+			}
+			
+		@-webkit-keyframes turn {
+ 						 from {transform: rotate(0deg);}
+ 						 to {transform: rotate(360deg);}
+								}
+		
+		.faster {
+		
+		-webkit-animation: fastturn 2s infinite normal linear forwards 0s;
+			}
+			
+		@-webkit-keyframes fastturn {
+ 						 from {transform: rotate(0deg);}
+ 						 to {transform: rotate(360deg);}
+								}
+		
+		
+		
+		</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	</head>
+	
+	<body>
+		
+		<div></div>
+		<div class="different"></div>
+		<div class="different2"></div>
+		<div class="different3"></div>
+		<div class="different4"></div>
+		<div class="different5"></div>
+		<div class="different4"></div>
+		<div class="different3"></div>
+		<div class="different2"></div>
+		<div class="different"></div>
+		<div></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div class="different2"></div>
+		<div class="different2"></div>
+		<div class="different2"></div>
+		<div class="different2"></div>
+		<div class="different3"></div>
+		<div class="different3"></div>
+		<div class="different3"></div>
+		<div class="different4"></div>
+		<div class="different4"></div>	
+		<div class="different5"></div>
+		<div class="different4"></div>
+		<div class="different4"></div>	
+		<div class="different3"></div>
+		<div class="different3"></div>
+		<div class="different3"></div>
+		<div class="different2"></div>
+		<div class="different2"></div>
+		<div class="different2"></div>
+		<div class="different2"></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div class="different"></div>
+		<div></div>
+		<div class="different"></div>
+		<div class="different2"></div>
+		<div class="different3"></div>
+		<div class="different4"></div>
+		<div class="different5"></div>
+		<div class="different4"></div>
+		<div class="different3"></div>
+		<div class="different2"></div>
+		<div class="different"></div>
+		<div></div>
+		
+		<script>
+		
+		
+			$("div").click(function() {
+				$(this).toggleClass("faster");
+				});
+				
+			$("different").click(function() {
+				$(this).toggleClass("faster");
+			});
+			
+			$("different3").click(function() {
+				$(this).toggleClass("faster");
+			});
+			
+			$("different2").click(function() {
+				$(this).toggleClass("animate");
+			});
+			
+			$("different4").click(function()
+			 {
+				$(this).toggleClass("animate");
+			});
+			
+		</script>
+
+
+
+
+	</body>
+
+
+</html>
